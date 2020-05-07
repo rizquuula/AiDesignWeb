@@ -21,6 +21,7 @@
                         <img anima-src="{{ url_for('static',filename='img/back-gradient-red@1x.png') }}" class="back-gradient-red12-jxpZV7" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="/>
                     </div>
                 </div>
+                <form method="post" >
                 <div class="input12-5m2GSS anima-flexbox-container">
                     <div class="sign-up-title4-Mg7eNM">
                         <div class="rectangle1910-hG0XRr">
@@ -29,32 +30,65 @@
                             <span class="span0-YQjAWx">SIGN UP </span><span class="span1-fJWqTZ">NOW </span><span class="span2-CYZ481">!</span>
                         </div>
                     </div>
+
                     <div class="username11-J0GUZc anima-flexbox-container">
-                        <input class="username-input11-WojPLZ font-class-2" name="username" placeholder="Username" required="" type="text"/>
+                        <input class="username-input11-WojPLZ font-class-2" name="username" placeholder="Username" required type="text"
+                        title="Enter your username" minlength="6" style="width: 100%;"/>
                         <img anima-src="{{ url_for('static',filename='img/text-path@1x.png') }}" class="textpath05-gQnypi" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="/>
+                        {% with messages = get_flashed_messages() %}
+                          {% if messages %}
+                            <div class=flashes>
+                            {% for message in messages %}
+                                {% if message=='username already taken by other user' %}
+                                    <div style="color:rgba(255,0,0,0.9);">{{ message }}</div>
+                                {% endif %}
+                            {% endfor %}
+                            </div>
+                          {% endif %}
+                        {% endwith %}
+
                     </div>
-                    <div class="username3-AIplYO anima-flexbox-container">
-                        <input class="email-input1-dNNH4j" name="emailInput1" placeholder="email" required="" type="email"/>
+                    <div class="username3-AIplYO anima-flexbox-container" >
+                        <input class="email-input1-dNNH4j font-class-2" name="email" placeholder="Your E-Mail" required type="email" style="color: rgba(255,255,255,0.7); text-align:center;"
+                        title="Enter your email address" style="width: 100%;"/>
                         <img anima-src="{{ url_for('static',filename='img/text-path@1x.png') }}" class="textpath07-zknLZm" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="/>
+                        {% with messages = get_flashed_messages() %}
+                          {% if messages %}
+                            <div class=flashes>
+                            {% for message in messages %}
+                                {% if message=='email already used' %}
+                                    <div style="color:rgba(255,0,0,0.9);">{{ message }}</div>
+                                {% endif %}
+                            {% endfor %}
+                            </div>
+                          {% endif %}
+                        {% endwith %}
                     </div>
                     <div class="password01-sGWqzL anima-flexbox-container">
-                        <input class="password-input11-XK5b09 font-class-2" id="password" name="password" placeholder="Password" required="" type="password"/>
+                        <input class="password-input11-XK5b09 font-class-2" id="password" name="password" placeholder="Password" required type="password" minlength="8"
+                        pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"  title="Must contain at least one  number and one uppercase and lowercase letter, and at least 8 or more characters"
+                        style="width: 100%;" />
                         <img anima-src="{{ url_for('static',filename='img/text-path@1x.png') }}" class="textpath04-lWDZIi" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="/>
                     </div>
                     <div class="password2-fWej8O anima-flexbox-container">
-                        <input class="re-password-input1-IAhSLd font-class-2" id="retypepassword" name="retypepassword" placeholder="Retype password" required="" type="password"/>
+                        <input class="re-password-input1-IAhSLd font-class-2" id="confirm_password" name="retypepassword" placeholder="Retype password" required type="password" minlength="8"
+                        pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"  title="Must contain at least one  number and one uppercase and lowercase letter, and at least 8 or more characters"
+                        style="width: 100%;" />
                         <img anima-src="{{ url_for('static',filename='img/text-path@1x.png') }}" class="textpath06-tzQu7C" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="/>
                     </div>
-                    <a href="/login" methods="POST">
+<!--                    <a href="/register" methods="POST">-->
+
                         <div class="sign-up-button5-SEMEWs anima-smart-layers-pointers " id="signupbutton">
                             <div class="group3430-lMeRmw">
+                                <button type="submit" style="background-color:rgba(255,255,255,0);border-color:rgba(255,255,255,0);">
                                 <img anima-src="{{ url_for('static',filename='img/path-1@1x.png') }}" class="path106-O3du5n" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="/>
-                                <div class="pressed15-PqQsmT font-class-3">
-                                    SIGN UP
-                                </div>
+                                    <div class="pressed15-PqQsmT font-class-3">
+                                        SIGN UP
+                                    </div>
+                                </button>
                             </div>
                         </div>
-                    </a>
+<!--                    </a>-->
 
                         <div class="already-have-account-login-here6-jIJqhi font-class-4">
                             <span class="span0-x4GKfI">Already have account? </span><span class="span1-OF7t8l">
@@ -63,6 +97,7 @@
                         </span>
                         </div>
                 </div>
+                    </form>
             </div>
         </div>
         <!-- Scripts -->
@@ -141,17 +176,19 @@
                 anima_loadAsyncSrc();
             }, 200);
 
-            $(function () {
-            $("#signupbutton").click(function () {
-                var password = $("#password").val();
-                var confirmPassword = $("#retypepassword").val();
-                if (password != confirmPassword) {
-                    alert("Passwords do not match.");
-                    return false;
-                }
-                return true;
-            });
-        });
+            var password = document.getElementById("password")
+              , confirm_password = document.getElementById("confirm_password");
+
+            function validatePassword(){
+              if(password.value != confirm_password.value) {
+                confirm_password.setCustomValidity("Passwords Don't Match");
+              } else {
+                confirm_password.setCustomValidity('');
+              }
+            }
+
+            password.onchange = validatePassword;
+            confirm_password.onkeyup = validatePassword;
         </script>
         <!-- End of Scripts -->
     </body>

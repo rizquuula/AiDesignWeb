@@ -21,6 +21,7 @@
                         <img anima-src="{{ url_for('static',filename='img/back-gradient-red@1x.png') }}" class="back-gradient-red11-5gyd2d" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="/>
                     </div>
                 </div>
+                <form method="post" >
                 <div class="input11-NpU0rV anima-flexbox-container">
                     <div class="login-title2-lqCiPX anima-flexbox-container" style="
     background-image: url({{ url_for('static',filename='img/path-3@1x.png') }});
@@ -31,22 +32,49 @@
                             LOGIN SESSION
                         </div>
                     </div>
-                    <div class="username1-n1ty0c anima-flexbox-container">
-                        <input class="username-input1-LK8DzI font-class-2" name="usernameInput1" placeholder="Username" required="" type="text"/>
+                    <div class="username1-n1ty0c anima-flexbox-container" >
+                        <input class="username-input1-LK8DzI font-class-2" name="username" placeholder="Username or E-Mail" required
+                               type="text" style="width: 100%;" title="Enter your username or email"/>
                         <img anima-src="{{ url_for('static',filename='img/text-path@1x.png') }}" class="textpath03-kkXBKj" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="/>
+                        {% with messages = get_flashed_messages() %}
+                          {% if messages %}
+                            <div class=flashes>
+                            {% for message in messages %}
+                                {% if message=='Login failed : Username/email not registered' %}
+                                    <div style="color:rgba(255,0,0,0.9);">{{ message }}</div>
+                                {% endif %}
+                            {% endfor %}
+                            </div>
+                          {% endif %}
+                        {% endwith %}
                     </div>
+
                     <div class="password0-shhM2N anima-flexbox-container">
-                        <input class="password-input1-YnZVrA font-class-2" name="passwordInput1" placeholder="Password" required="" type="password"/>
+                        <input class="password-input1-YnZVrA font-class-2" name="password" placeholder="Password" required type="password"
+                        style="width: 100%;" title="Enter your password" minlength="8"/>
                         <img anima-src="{{ url_for('static',filename='img/text-path@1x.png') }}" class="textpath02-JX75nk" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="/>
+                        {% with messages = get_flashed_messages() %}
+                          {% if messages %}
+                            <div class=flashes>
+                            {% for message in messages %}
+                                {% if message=='Wrong password' %}
+                                    <div style="color:rgba(255,0,0,0.9);">{{ message }}</div>
+                                {% endif %}
+                            {% endfor %}
+                            </div>
+                          {% endif %}
+                        {% endwith %}
                     </div>
-                    <a href="/dashboard">
+<!--                    <a href="/dashboard">-->
                         <div class="login-button3-6HZ4Vr anima-smart-layers-pointers ">
+                            <button type="submit" style="background-color:rgba(255,255,255,0);border-color:rgba(255,255,255,0);">
                             <img anima-src="{{ url_for('static',filename='img/path-1@1x.png') }}" class="path105-glmZPg" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="/>
                             <div class="pressed14-l2zmkw font-class-3">
                                 LOGIN
                             </div>
+                            </button>
                         </div>
-                    </a>
+<!--                    </a>-->
 
                         <div class="not-yet-have-an-account-sign-up-here4-A9wQkc font-class-4">
                             <span class="span0-j3r82o">Not yet have an account? </span><span class="span1-fnwlcC">
@@ -55,6 +83,7 @@
                         </div>
 
                 </div>
+                </form>
             </div>
         </div>
         <!-- Scripts -->

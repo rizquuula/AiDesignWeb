@@ -29,10 +29,14 @@
                     <div class="sidenavlefttop1-cVRxWG anima-flexbox-container">
                         <img anima-src="{{ url_for('static',filename='img/circle@1x.png') }}" class="circle2-XL7A18" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="/>
                         <div class="email1-bL5s1Y font-class-1">
-                            User Name
+                            {% if session['name'] %}
+								{{ session['name'] }}
+							{% else %}
+								Anonymous?
+							{% endif %}
                         </div>
                     </div>
-					<a href="/">
+					<a href="/logout">
 						<div class="component2122-6bgdeh anima-flexbox-container" id="logout-key" style="margin-top:-40%;">
 							<img anima-src="{{ url_for('static',filename='img/icon-open-account-logout@1x.png') }}" class="icon-open-account-logout0-zWyfjg" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="/>
 							<div class="logout1-LrSY2X font-class-2">
@@ -138,7 +142,11 @@
                 <div id="Quick Start" class="welcome-screen1-FKvnMV anima-flexbox-container tabcontent"
                      style="margin-left:20%; max-width : 70%; display: none; ">
                     <div class="alohaaa-welcome-name0-UY5hJu font-class-3" >
-                        Alohaaa!!! Welcome NAME..
+						{% if session['name'] %}
+								Alohaaa!!! Welcome {{ session['name'] }} !!!
+							{% else %}
+								Alohaaa!!! Welcome Home Hacker..
+							{% endif %}
                     </div>
                     <div class="overlap-group1-gFP5RD">
                         <div class="welcome-to-aidesign-beta-a-place-to-design-in-easiest-way1-JI40xm font-class-3">
