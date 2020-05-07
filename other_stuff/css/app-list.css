@@ -1,0 +1,976 @@
+<style id="applicationStylesheet" type="text/css">
+	.mediaViewInfo {
+		--web-view-name: Application list;
+		--web-view-id: Application_list;
+		--web-scale-on-resize: true;
+		--web-center-horizontally: true;
+		--web-enable-deep-linking: true;
+	}
+	:root {
+		--web-view-ids: Application_list;
+	}
+	* {
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+		border: none;
+	}
+	#Application_list {
+		position: absolute;
+		transform: translateX(-50%);
+		left: 50%;
+		width: 1366px;
+		height: 768px;
+		background-color: rgba(48,48,48,1);
+		overflow: hidden;
+		--web-view-name: Application list;
+		--web-view-id: Application_list;
+		--web-scale-on-resize: true;
+		--web-center-horizontally: true;
+		--web-enable-deep-linking: true;
+	}
+	#sideNav_left {
+		position: absolute;
+		width: 256px;
+		height: 768px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+	#BG_Rect {
+		position: absolute;
+		width: 256px;
+		height: 768px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+	.rectangle {
+		filter: drop-shadow(0px 5.5px 5px rgba(0, 0, 0, 0.239));
+		position: absolute;
+		overflow: visible;
+		width: 271px;
+		height: 783px;
+		left: 0px;
+		top: 0px;
+	}
+	.rectangle_o {
+		filter: drop-shadow(0px 9px 18px rgba(0, 0, 0, 0.18));
+		overflow: visible;
+		position: absolute;
+		width: 310px;
+		height: 821.839px;
+		left: 0px;
+		top: 0px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#sideNav_left_top {
+		position: absolute;
+		width: 256px;
+		height: 144px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+	.sideNav_left_top_q {
+		position: absolute;
+		overflow: visible;
+		width: 256px;
+		height: 144px;
+		left: 0px;
+		top: 0px;
+	}
+	#Email {
+		position: absolute;
+		left: 24px;
+		top: 106px;
+		overflow: visible;
+		width: 77px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Roboto;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 13px;
+		color: rgba(255,255,255,1);
+	}
+	.ic_arrow_drop_down {
+		overflow: visible;
+		position: absolute;
+		width: 10px;
+		height: 5px;
+		left: 223px;
+		top: 113.233px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	.circle {
+		position: absolute;
+		overflow: visible;
+		width: 56px;
+		height: 56px;
+		left: 24px;
+		top: 24px;
+	}
+	#Quick_Start {
+		position: absolute;
+		width: 256px;
+		height: 37px;
+		left: 0px;
+		top: 152px;
+		overflow: visible;
+		hover-color:  #000000;
+	}
+	.Rectangle_186 {
+		position: absolute;
+		overflow: visible;
+		width: 256px;
+		height: 37px;
+		left: 0px;
+		top: 0px;
+	}
+	#Group_335 {
+		position: absolute;
+		width: 131px;
+		height: 24.238px;
+		left: 38px;
+		top: 6px;
+		overflow: visible;
+	}
+	.rectangle_x {
+		position: absolute;
+		overflow: visible;
+		width: 24px;
+		height: 24px;
+		left: 0px;
+		top: 0px;
+	}
+	#Quick_Start_y {
+		position: absolute;
+		left: 60px;
+		top: 3px;
+		overflow: visible;
+		width: 72px;
+		white-space: nowrap;
+		line-height: 20px;
+		margin-top: -3px;
+		text-align: left;
+		font-family: Roboto;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 14px;
+		color: rgba(110,110,110,1);
+	}
+	.Icon_awesome_play {
+		overflow: visible;
+		position: absolute;
+		width: 20.606px;
+		height: 23.552px;
+		left: 1.396px;
+		top: 0.687px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#Application {
+		position: absolute;
+		width: 256px;
+		height: 37px;
+		left: 0px;
+		top: 197px;
+		overflow: visible;
+		hover-color:  #000000;
+	}
+	.Rectangle_186_ {
+		position: absolute;
+		overflow: visible;
+		width: 256px;
+		height: 37px;
+		left: 0px;
+		top: 0px;
+	}
+	#Group_335_ {
+		position: absolute;
+		width: 131.536px;
+		height: 24px;
+		left: 37.464px;
+		top: 6px;
+		overflow: visible;
+	}
+	.rectangle_ {
+		position: absolute;
+		overflow: visible;
+		width: 24px;
+		height: 24px;
+		left: 0.536px;
+		top: 0px;
+	}
+	#Application_ {
+		position: absolute;
+		left: 60.536px;
+		top: 3px;
+		overflow: visible;
+		width: 72px;
+		white-space: nowrap;
+		line-height: 20px;
+		margin-top: -3px;
+		text-align: left;
+		font-family: Roboto;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 14px;
+		color: rgba(110,110,110,1);
+	}
+	#Icon_ionic_ios_apps {
+		position: absolute;
+		width: 23.08px;
+		height: 23.075px;
+		left: 0px;
+		top: 0.925px;
+		overflow: visible;
+	}
+	.Path_4 {
+		overflow: visible;
+		position: absolute;
+		width: 23.074px;
+		height: 10.577px;
+		left: 0.006px;
+		top: 0px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#Group_342 {
+		position: absolute;
+		width: 23.08px;
+		height: 13.352px;
+		left: 0px;
+		top: 9.724px;
+		overflow: visible;
+	}
+	.Path_5 {
+		overflow: visible;
+		position: absolute;
+		width: 23.074px;
+		height: 7.193px;
+		left: 0.006px;
+		top: 6.159px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	.Path_6 {
+		overflow: visible;
+		position: absolute;
+		width: 23.079px;
+		height: 7.103px;
+		left: 0px;
+		top: 0px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#Preferences {
+		position: absolute;
+		width: 256px;
+		height: 37px;
+		left: 0px;
+		top: 242px;
+		overflow: visible;
+		hover-color:  #000000;
+	}
+	.Rectangle_186_bb {
+		position: absolute;
+		overflow: visible;
+		width: 256px;
+		height: 37px;
+		left: 0px;
+		top: 0px;
+	}
+	#Group_335_bc {
+		position: absolute;
+		width: 137px;
+		height: 24.862px;
+		left: 37px;
+		top: 6px;
+		overflow: visible;
+	}
+	.rectangle_bd {
+		position: absolute;
+		overflow: visible;
+		width: 24px;
+		height: 24px;
+		left: 1px;
+		top: 0px;
+	}
+	#Preferences_be {
+		position: absolute;
+		left: 61px;
+		top: 3px;
+		overflow: visible;
+		width: 77px;
+		white-space: nowrap;
+		line-height: 20px;
+		margin-top: -3px;
+		text-align: left;
+		font-family: Roboto;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 14px;
+		color: rgba(110,110,110,1);
+	}
+	#Icon_feather_settings {
+		position: absolute;
+		width: 24.8px;
+		height: 24.8px;
+		left: 0px;
+		top: 0.063px;
+		overflow: visible;
+	}
+	.Path_7 {
+		overflow: visible;
+		position: absolute;
+		width: 9.764px;
+		height: 9.764px;
+		left: 9.018px;
+		top: 9.018px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	.Path_8 {
+		overflow: visible;
+		position: absolute;
+		width: 27.8px;
+		height: 27.8px;
+		left: 0px;
+		top: 0px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#Help {
+		position: absolute;
+		width: 256px;
+		height: 37px;
+		left: 0px;
+		top: 287px;
+		overflow: visible;
+		hover-color:  #000000;
+	}
+	.Rectangle_186_bj {
+		position: absolute;
+		overflow: visible;
+		width: 256px;
+		height: 37px;
+		left: 0px;
+		top: 0px;
+	}
+	#Group_335_bk {
+		position: absolute;
+		width: 89px;
+		height: 24px;
+		left: 38px;
+		top: 6px;
+		overflow: visible;
+	}
+	.rectangle_bl {
+		position: absolute;
+		overflow: visible;
+		width: 24px;
+		height: 24px;
+		left: 0px;
+		top: 0px;
+	}
+	#Help_bm {
+		position: absolute;
+		left: 60px;
+		top: 3px;
+		overflow: visible;
+		width: 30px;
+		white-space: nowrap;
+		line-height: 20px;
+		margin-top: -3px;
+		text-align: left;
+		font-family: Roboto;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 14px;
+		color: rgba(110,110,110,1);
+	}
+	#Icon_feather_help_circle {
+		position: absolute;
+		width: 19.075px;
+		height: 19.075px;
+		left: 2.062px;
+		top: 2.925px;
+		overflow: visible;
+	}
+	.Path_9 {
+		overflow: visible;
+		position: absolute;
+		width: 22.075px;
+		height: 22.075px;
+		left: 0px;
+		top: 0px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	.Path_10 {
+		overflow: visible;
+		position: absolute;
+		width: 8.973px;
+		height: 9.156px;
+		left: 6.762px;
+		top: 4.764px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	.Path_11 {
+		overflow: visible;
+		position: absolute;
+		width: 3px;
+		height: 3px;
+		left: 9.538px;
+		top: 14.306px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#Services {
+		position: absolute;
+		width: 842px;
+		height: 623px;
+		left: 317px;
+		top: 54px;
+		overflow: visible;
+	}
+	#App {
+		position: absolute;
+		width: 244px;
+		height: 57px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+	#Our_Services {
+		position: absolute;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+		width: 245px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Roboto;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 43px;
+		color: rgba(238,238,238,1);
+	}
+	#Items {
+		position: absolute;
+		width: 831px;
+		height: 499px;
+		left: 11px;
+		top: 124px;
+		overflow: visible;
+	}
+	#Image_Splitter {
+		position: absolute;
+		width: 253px;
+		height: 216px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+	#Group_346 {
+		position: absolute;
+		width: 253px;
+		height: 38px;
+		left: 0px;
+		top: 178px;
+		overflow: visible;
+	}
+	#Rectangle_193 {
+		opacity: 0.3;
+	}
+	.Rectangle_193 {
+		position: absolute;
+		overflow: visible;
+		width: 253px;
+		height: 38px;
+		left: 0px;
+		top: 0px;
+	}
+	#Image_Splitter_by {
+		position: absolute;
+		left: 83px;
+		top: 9px;
+		overflow: visible;
+		width: 89px;
+		white-space: nowrap;
+		line-height: 20px;
+		margin-top: -3px;
+		text-align: center;
+		font-family: Roboto;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 14px;
+		color: rgba(238,238,238,1);
+	}
+	#Group_345 {
+		position: absolute;
+		width: 253px;
+		height: 163px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+	.Rectangle_192 {
+		position: absolute;
+		overflow: visible;
+		width: 253px;
+		height: 163px;
+		left: 0px;
+		top: 0px;
+	}
+	#Icon_ionic_md_images {
+		position: absolute;
+		width: 113.439px;
+		height: 97.235px;
+		left: 69.48px;
+		top: 32.883px;
+		overflow: visible;
+	}
+	.Path_12 {
+		overflow: visible;
+		position: absolute;
+		width: 113.439px;
+		height: 97.235px;
+		left: 0px;
+		top: 0px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	.Path_13 {
+		overflow: visible;
+		position: absolute;
+		width: 16.206px;
+		height: 16.206px;
+		left: 81.021px;
+		top: 32.404px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#N_A__1 {
+		position: absolute;
+		width: 253px;
+		height: 216px;
+		left: 289px;
+		top: 0px;
+		overflow: visible;
+	}
+	#Group_346_b {
+		position: absolute;
+		width: 253px;
+		height: 38px;
+		left: 0px;
+		top: 178px;
+		overflow: visible;
+	}
+	#Rectangle_193_b {
+		opacity: 0.3;
+	}
+	.Rectangle_193_b {
+		position: absolute;
+		overflow: visible;
+		width: 253px;
+		height: 38px;
+		left: 0px;
+		top: 0px;
+	}
+	#N_A_ {
+		position: absolute;
+		left: 114px;
+		top: 9px;
+		overflow: visible;
+		width: 27px;
+		white-space: nowrap;
+		line-height: 20px;
+		margin-top: -3px;
+		text-align: center;
+		font-family: Roboto;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 14px;
+		color: rgba(238,238,238,1);
+	}
+	#Group_345_b {
+		position: absolute;
+		width: 253px;
+		height: 163px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+	.Path_14 {
+		overflow: visible;
+		position: absolute;
+		width: 253px;
+		height: 163px;
+		left: 0px;
+		top: 0px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#Icon_ionic_md_construct {
+		position: absolute;
+		width: 106.67px;
+		height: 92.477px;
+		left: 73.359px;
+		top: 35.718px;
+		overflow: visible;
+	}
+	.Path_15 {
+		overflow: visible;
+		position: absolute;
+		width: 93.346px;
+		height: 92.477px;
+		left: 0px;
+		top: 0px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	.Path_16 {
+		overflow: visible;
+		position: absolute;
+		width: 56.664px;
+		height: 51.858px;
+		left: 50.006px;
+		top: 0px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#N_A__2 {
+		position: absolute;
+		width: 253px;
+		height: 216px;
+		left: 578px;
+		top: 0px;
+		overflow: visible;
+	}
+	#Group_346_ce {
+		position: absolute;
+		width: 253px;
+		height: 38px;
+		left: 0px;
+		top: 178px;
+		overflow: visible;
+	}
+	#Rectangle_193_cf {
+		opacity: 0.3;
+	}
+	.Rectangle_193_cf {
+		position: absolute;
+		overflow: visible;
+		width: 253px;
+		height: 38px;
+		left: 0px;
+		top: 0px;
+	}
+	#N_A__cg {
+		position: absolute;
+		left: 114px;
+		top: 9px;
+		overflow: visible;
+		width: 27px;
+		white-space: nowrap;
+		line-height: 20px;
+		margin-top: -3px;
+		text-align: center;
+		font-family: Roboto;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 14px;
+		color: rgba(238,238,238,1);
+	}
+	#Group_345_ch {
+		position: absolute;
+		width: 253px;
+		height: 163px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+	.Path_14_ci {
+		overflow: visible;
+		position: absolute;
+		width: 253px;
+		height: 163px;
+		left: 0px;
+		top: 0px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#Icon_ionic_md_construct_cj {
+		position: absolute;
+		width: 106.67px;
+		height: 92.477px;
+		left: 73.359px;
+		top: 35.718px;
+		overflow: visible;
+	}
+	.Path_15_ck {
+		overflow: visible;
+		position: absolute;
+		width: 93.346px;
+		height: 92.477px;
+		left: 0px;
+		top: 0px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	.Path_16_cl {
+		overflow: visible;
+		position: absolute;
+		width: 56.664px;
+		height: 51.858px;
+		left: 50.006px;
+		top: 0px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#N_A__3 {
+		position: absolute;
+		width: 253px;
+		height: 216px;
+		left: 0px;
+		top: 283px;
+		overflow: visible;
+	}
+	#Group_346_cn {
+		position: absolute;
+		width: 253px;
+		height: 38px;
+		left: 0px;
+		top: 178px;
+		overflow: visible;
+	}
+	#Rectangle_193_co {
+		opacity: 0.3;
+	}
+	.Rectangle_193_co {
+		position: absolute;
+		overflow: visible;
+		width: 253px;
+		height: 38px;
+		left: 0px;
+		top: 0px;
+	}
+	#N_A__cp {
+		position: absolute;
+		left: 114px;
+		top: 9px;
+		overflow: visible;
+		width: 27px;
+		white-space: nowrap;
+		line-height: 20px;
+		margin-top: -3px;
+		text-align: center;
+		font-family: Roboto;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 14px;
+		color: rgba(238,238,238,1);
+	}
+	#Group_345_cq {
+		position: absolute;
+		width: 253px;
+		height: 163px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+	.Path_14_cr {
+		overflow: visible;
+		position: absolute;
+		width: 253px;
+		height: 163px;
+		left: 0px;
+		top: 0px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#Icon_ionic_md_construct_cs {
+		position: absolute;
+		width: 106.67px;
+		height: 92.477px;
+		left: 73.359px;
+		top: 35.718px;
+		overflow: visible;
+	}
+	.Path_15_ct {
+		overflow: visible;
+		position: absolute;
+		width: 93.346px;
+		height: 92.477px;
+		left: 0px;
+		top: 0px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	.Path_16_cu {
+		overflow: visible;
+		position: absolute;
+		width: 56.664px;
+		height: 51.858px;
+		left: 50.006px;
+		top: 0px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#N_A__4 {
+		position: absolute;
+		width: 253px;
+		height: 216px;
+		left: 289px;
+		top: 283px;
+		overflow: visible;
+	}
+	#Group_346_cw {
+		position: absolute;
+		width: 253px;
+		height: 38px;
+		left: 0px;
+		top: 178px;
+		overflow: visible;
+	}
+	#Rectangle_193_cx {
+		opacity: 0.3;
+	}
+	.Rectangle_193_cx {
+		position: absolute;
+		overflow: visible;
+		width: 253px;
+		height: 38px;
+		left: 0px;
+		top: 0px;
+	}
+	#N_A__cy {
+		position: absolute;
+		left: 114px;
+		top: 9px;
+		overflow: visible;
+		width: 27px;
+		white-space: nowrap;
+		line-height: 20px;
+		margin-top: -3px;
+		text-align: center;
+		font-family: Roboto;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 14px;
+		color: rgba(238,238,238,1);
+	}
+	#Group_345_cz {
+		position: absolute;
+		width: 253px;
+		height: 163px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+	.Path_14_c {
+		overflow: visible;
+		position: absolute;
+		width: 253px;
+		height: 163px;
+		left: 0px;
+		top: 0px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#Icon_ionic_md_construct_c {
+		position: absolute;
+		width: 106.67px;
+		height: 92.477px;
+		left: 73.359px;
+		top: 35.718px;
+		overflow: visible;
+	}
+	.Path_15_c {
+		overflow: visible;
+		position: absolute;
+		width: 93.346px;
+		height: 92.477px;
+		left: 0px;
+		top: 0px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	.Path_16_c {
+		overflow: visible;
+		position: absolute;
+		width: 56.664px;
+		height: 51.858px;
+		left: 50.006px;
+		top: 0px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#N_A__5 {
+		position: absolute;
+		width: 253px;
+		height: 216px;
+		left: 578px;
+		top: 283px;
+		overflow: visible;
+	}
+	#Group_346_c {
+		position: absolute;
+		width: 253px;
+		height: 38px;
+		left: 0px;
+		top: 178px;
+		overflow: visible;
+	}
+	#Rectangle_193_c {
+		opacity: 0.3;
+	}
+	.Rectangle_193_c {
+		position: absolute;
+		overflow: visible;
+		width: 253px;
+		height: 38px;
+		left: 0px;
+		top: 0px;
+	}
+	#N_A__c {
+		position: absolute;
+		left: 114px;
+		top: 9px;
+		overflow: visible;
+		width: 27px;
+		white-space: nowrap;
+		line-height: 20px;
+		margin-top: -3px;
+		text-align: center;
+		font-family: Roboto;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 14px;
+		color: rgba(238,238,238,1);
+	}
+	#Group_345_c {
+		position: absolute;
+		width: 253px;
+		height: 163px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+	.Path_14_da {
+		overflow: visible;
+		position: absolute;
+		width: 253px;
+		height: 163px;
+		left: 0px;
+		top: 0px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#Icon_ionic_md_construct_da {
+		position: absolute;
+		width: 106.67px;
+		height: 92.477px;
+		left: 73.359px;
+		top: 35.718px;
+		overflow: visible;
+	}
+	.Path_15_db {
+		overflow: visible;
+		position: absolute;
+		width: 93.346px;
+		height: 92.477px;
+		left: 0px;
+		top: 0px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	.Path_16_dc {
+		overflow: visible;
+		position: absolute;
+		width: 56.664px;
+		height: 51.858px;
+		left: 50.006px;
+		top: 0px;
+		transform: matrix(1,0,0,1,0,0);
+  	}
+</style>

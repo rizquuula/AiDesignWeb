@@ -1,0 +1,871 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:500,700,400|Roboto+Condensed:700');
+@import ('app-list.css');
+
+
+/* ANIMA screen - quick-start */
+.font-class-1 {
+  font-family         : Roboto, Helvetica, Arial, serif;
+  font-style          : normal;
+  font-weight         : 500;
+}
+.font-class-2 {
+  font-family         : Roboto, Helvetica, Arial, serif;
+  font-style          : normal;
+  font-weight         : 700;
+}
+.font-class-3 {
+  font-family         : Roboto, Helvetica, Arial, serif;
+  font-style          : normal;
+  font-weight         : 400;
+}
+.font-class-4 {
+  font-family         : "Roboto", Helvetica, Arial, serif;
+  font-size           : 14.0px;
+  line-height         : 20.0px;
+}
+:root {
+  --auto-palette-color-1: rgba(255,255,255,1.0);
+  --auto-palette-color-2: rgba(238,238,238,1.0);
+  --auto-palette-color-3: rgba(110,110,110,1.0);
+  --auto-palette-color-4: rgba(112,112,112,1.0);
+  --auto-palette-color-5: rgba(250,250,250,1.0);
+  --auto-palette-color-6: rgba(48,48,48,1.0);
+  --auto-palette-color-7: rgba(0,150,136,1.0);
+  --auto-palette-color-8: rgba(193,193,193,1.0);
+  --auto-palette-color-9: rgba(149,152,154,1.0);
+}
+.quick-start-XnhOrf .sidenavleft0-s9zAsR .quick-start3-h9Egry .group3351-ebMxkm .overlap-group-20C7rk {
+  background-color    : rgba(255,255,255,0);
+  flex-shrink         : 0;
+  height              : 24px;
+  position            : relative;
+  width               : 24px;
+}
+.quick-start-XnhOrf .sidenavleft0-s9zAsR .application4-72pjIB .group33511-1RO073 .overlap-group-K0oJ9Q {
+  background-color    : rgba(255,255,255,0);
+  flex-shrink         : 0;
+  height              : 24px;
+  position            : relative;
+  width               : 25px;
+}
+.quick-start-XnhOrf .sidenavleft0-s9zAsR .preferences5-svQgmJ .group33512-CUKxeM .overlap-group-X2fo9g {
+  background-color    : rgba(255,255,255,0);
+  flex-shrink         : 0;
+  height              : 25px;
+  position            : relative;
+  width               : 25px;
+}
+.quick-start-XnhOrf .sidenavleft0-s9zAsR .help6-epUsgF .group33513-bnWywl .overlap-group-ZmNZlb {
+  background-color    : rgba(255,255,255,0);
+  flex-shrink         : 0;
+  height              : 24px;
+  position            : relative;
+  width               : 24px;
+}
+.quick-start-XnhOrf .sidenavleft0-s9zAsR .application7-7CM5xU .group33514-3NLpS7 .overlap-group-y02oZx {
+  background-color    : rgba(255,255,255,0);
+  flex-shrink         : 0;
+  height              : 24px;
+  position            : relative;
+  width               : 25px;
+}
+.quick-start-XnhOrf .welcome-screen1-FKvnMV .overlap-group1-gFP5RD .group3402-jYucQm {
+  align-items         : flex-start;
+  background-color    : rgba(255,255,255,0);
+  box-sizing          : border-box;
+  display             : inline-flex;
+  flex-direction      : row;
+  height              : 89px;
+  justify-content     : flex-start;
+  left                : 402px;
+  position            : absolute;
+  top                 : 170px;
+  transform           : rotate(0deg);
+  width               : auto;
+}
+.quick-start-XnhOrf .welcome-screen1-FKvnMV .overlap-group1-gFP5RD .group3402-jYucQm .start-button0-PGzmQs {
+  background-color    : rgba(255,255,255,0);
+  flex-shrink         : 0;
+  height              : 89px;
+  pointer-events      : auto;
+  position            : relative;
+  transform           : rotate(0deg);
+  transition          : all 0.2s ease;
+  width               : 273px;
+}
+.quick-start-XnhOrf .welcome-screen1-FKvnMV .overlap-group1-gFP5RD .group3402-jYucQm .start-button0-PGzmQs:hover {
+  box-shadow          : 0px 0px 10px 2px rgba(0,0,0,0.2);
+  transform           : scale(1.1);
+}
+.quick-start-XnhOrf .welcome-screen1-FKvnMV .overlap-group1-gFP5RD .group3402-jYucQm .start-button0-PGzmQs .rectangle1900-uqm6mO {
+  background-color    : var(--auto-palette-color-7);
+  border-color        : var(--auto-palette-color-4);
+  border-radius       : 24.0px;
+  border-style        : solid;
+  border-width        : 1.0px;
+  height              : 89px;
+  left                : 0px;
+  position            : absolute;
+  top                 : 0px;
+  transform           : rotate(0deg);
+  width               : 273px;
+}
+.quick-start-XnhOrf .welcome-screen1-FKvnMV .overlap-group1-gFP5RD .group3402-jYucQm .start-button0-PGzmQs .start1-pLEsG0 {
+  background-color    : rgba(255,255,255,0);
+  color               : var(--auto-palette-color-1);
+  font-size           : 40.0px;
+  height              : auto;
+  left                : 77px;
+  line-height         : 20.0px;
+  position            : absolute;
+  text-align          : center;
+  top                 : 34px;
+  transform           : rotate(0deg);
+  width               : auto;
+}
+.quick-start-XnhOrf .sidenavleft0-s9zAsR .bg-rect0-xHTL32 .rectangle0-DDADkJ {
+  background-color    : rgba(250,250,250,0);
+  height              : 783px;
+  left                : -8px;
+  position            : absolute;
+  top                 : -2px;
+  transform           : rotate(0deg);
+  width               : 271px;
+}
+.quick-start-XnhOrf .sidenavleft0-s9zAsR .bg-rect0-xHTL32 {
+  background-color    : rgba(255,255,255,0);
+  height              : 768px;
+  left                : 0px;
+  position            : absolute;
+  top                 : 0px;
+  transform           : rotate(0deg);
+  width               : 256px;
+}
+.quick-start-XnhOrf .sidenavleft0-s9zAsR {
+  background-color    : rgba(255,255,255,0);
+  flex-shrink         : 0;
+  height              : 768px;
+  position            : relative;
+  transform           : rotate(0deg);
+  width               : 256px;
+}
+.quick-start-XnhOrf {
+  align-items         : flex-start;
+  background-color    : var(--auto-palette-color-6);
+  box-sizing          : border-box;
+  display             : inline-flex;
+  flex-direction      : row;
+  height              : 768.0px;
+  justify-content     : flex-start;
+  min-width           : 1366px;
+  overflow            : hidden;
+  position            : relative;
+  width               : auto;
+}
+.quick-start-XnhOrf .sidenavleft0-s9zAsR .bg-rect0-xHTL32 .rectangle1-lR4fkt {
+  background-color    : rgba(250,250,250,0);
+  height              : 822px;
+  left                : -27px;
+  position            : absolute;
+  top                 : -18px;
+  transform           : rotate(0deg);
+  width               : 310px;
+}
+.quick-start-XnhOrf .sidenavleft0-s9zAsR .sidenavlefttop1-cVRxWG {
+  align-items         : center;
+  background-color    : var(--auto-palette-color-7);
+  box-sizing          : border-box;
+  display             : flex;
+  flex-direction      : column;
+  height              : auto;
+  justify-content     : flex-start;
+  left                : 0px;
+  min-height          : 144px;
+  padding             : 5.5px 0;
+  position            : absolute;
+  top                 : 0px;
+  transform           : rotate(0deg);
+  width               : 256px;
+}
+.quick-start-XnhOrf .sidenavleft0-s9zAsR .sidenavlefttop1-cVRxWG .email1-bL5s1Y {
+  background-color    : rgba(255,255,255,0);
+  color               : var(--auto-palette-color-1);
+  flex-shrink         : 0;
+  font-size           : 13.0px;
+  height              : auto;
+  line-height         : 13.0px;
+  margin-left         : 2.0px;
+  margin-top          : 6px;
+  min-height          : 20px;
+  min-width           : 76px;
+  position            : relative;
+  text-align          : center;
+  transform           : rotate(0deg);
+  width               : auto;
+}
+.quick-start-XnhOrf .sidenavleft0-s9zAsR .quick-start3-h9Egry .group3351-ebMxkm .overlap-group-20C7rk .icon-awesome-play2-PGFZvW {
+  background-color    : rgba(110,110,110,0);
+  height              : 24px;
+  left                : 1px;
+  position            : absolute;
+  top                 : 1px;
+  transform           : rotate(0deg);
+  width               : 21px;
+}
+.quick-start-XnhOrf .sidenavleft0-s9zAsR .quick-start3-h9Egry .group3351-ebMxkm .overlap-group-20C7rk .rectangle01-KrXtzo {
+  background-color    : rgba(255,255,255,0);
+  height              : 24px;
+  left                : 0px;
+  position            : absolute;
+  top                 : 0px;
+  transform           : rotate(0deg);
+  width               : 24px;
+}
+.quick-start-XnhOrf .sidenavleft0-s9zAsR .quick-start3-h9Egry .group3351-ebMxkm {
+  align-items         : flex-start;
+  background-color    : rgba(255,255,255,0);
+  box-sizing          : border-box;
+  display             : inline-flex;
+  flex-direction      : row;
+  height              : 24px;
+  justify-content     : flex-start;
+  left                : 38px;
+  position            : relative;
+  top                 : 6px;
+  transform           : rotate(0deg);
+  width               : auto;
+}
+.quick-start-XnhOrf .sidenavleft0-s9zAsR .application4-72pjIB {
+  background-color    : var(--auto-palette-color-5);
+  height              : 37px;
+  left                : 0px;
+  pointer-events      : auto;
+  position            : absolute;
+  top                 : 197px;
+  transform           : rotate(0deg);
+  transition          : all 0.2s ease;
+  width               : 256px;
+}
+.quick-start-XnhOrf .sidenavleft0-s9zAsR .application4-72pjIB:hover {
+  transform           : scale(1.1);
+  box-shadow          : 0px 0px 10px 2px rgba(0,0,0,0.1);
+}
+.quick-start-XnhOrf .sidenavleft0-s9zAsR .application4-72pjIB .group33511-1RO073 {
+  align-items         : flex-end;
+  background-color    : rgba(255,255,255,0);
+  box-sizing          : border-box;
+  display             : inline-flex;
+  flex-direction      : row;
+  height              : 24px;
+  justify-content     : flex-start;
+  left                : 37px;
+  position            : relative;
+  top                 : 6px;
+  transform           : rotate(0deg);
+  width               : auto;
+}
+.quick-start-XnhOrf .sidenavleft0-s9zAsR .quick-start3-h9Egry .group3351-ebMxkm .quick-start1-UPNFzx {
+  align-self          : flex-end;
+  background-color    : rgba(110,110,110,0);
+  color               : var(--auto-palette-color-3);
+  flex-shrink         : 0;
+  font-size           : 14.0px;
+  height              : auto;
+  line-height         : 20.0px;
+  margin-bottom       : 0.74px;
+  margin-left         : 36px;
+  min-height          : 21px;
+  min-width           : 83px;
+  position            : relative;
+  text-align          : left;
+  transform           : rotate(0deg);
+  width               : auto;
+}
+.quick-start-XnhOrf .sidenavleft0-s9zAsR .application4-72pjIB .group33511-1RO073 .overlap-group-K0oJ9Q .rectangle02-7wZ4Zf {
+  background-color    : rgba(255,255,255,0);
+  height              : 24px;
+  left                : 1px;
+  position            : absolute;
+  top                 : 0px;
+  transform           : rotate(0deg);
+  width               : 24px;
+}
+.quick-start-XnhOrf .sidenavleft0-s9zAsR .application4-72pjIB .group33511-1RO073 .application1-GcuTrx {
+  background-color    : rgba(110,110,110,0);
+  color               : var(--auto-palette-color-3);
+  flex-shrink         : 0;
+  font-size           : 14.0px;
+  height              : auto;
+  line-height         : 20.0px;
+  margin-bottom       : 0.5px;
+  margin-left         : 36px;
+  min-height          : 21px;
+  min-width           : 83px;
+  position            : relative;
+  text-align          : left;
+  transform           : rotate(0deg);
+  width               : auto;
+}
+.quick-start-XnhOrf .sidenavleft0-s9zAsR .application4-72pjIB .group33511-1RO073 .overlap-group-K0oJ9Q .icon-ionic-ios-apps2-51y9PA {
+  background-color    : rgba(255,255,255,0);
+  height              : 23px;
+  left                : 0px;
+  position            : absolute;
+  top                 : 1px;
+  transform           : rotate(0deg);
+  width               : 23px;
+}
+.quick-start-XnhOrf .sidenavleft0-s9zAsR .application4-72pjIB .group33511-1RO073 .overlap-group-K0oJ9Q .icon-ionic-ios-apps2-51y9PA .path40-2SMz8r {
+  background-color    : rgba(110,110,110,0);
+  height              : 11px;
+  left                : 0px;
+  position            : absolute;
+  top                 : -0px;
+  transform           : rotate(0deg);
+  width               : 23px;
+}
+.quick-start-XnhOrf .sidenavleft0-s9zAsR .application4-72pjIB .group33511-1RO073 .overlap-group-K0oJ9Q .icon-ionic-ios-apps2-51y9PA .group3421-gJCzri {
+  background-color    : rgba(255,255,255,0);
+  height              : 13px;
+  left                : 0px;
+  position            : absolute;
+  top                 : 10px;
+  transform           : rotate(0deg);
+  width               : 23px;
+}
+.quick-start-XnhOrf .sidenavleft0-s9zAsR .application4-72pjIB .group33511-1RO073 .overlap-group-K0oJ9Q .icon-ionic-ios-apps2-51y9PA .group3421-gJCzri .path50-md37qX {
+  background-color    : rgba(110,110,110,0);
+  height              : 7px;
+  left                : 0px;
+  position            : absolute;
+  top                 : 6px;
+  transform           : rotate(0deg);
+  width               : 23px;
+}
+.quick-start-XnhOrf .sidenavleft0-s9zAsR .preferences5-svQgmJ .group33512-CUKxeM {
+  align-items         : center;
+  background-color    : rgba(255,255,255,0);
+  box-sizing          : border-box;
+  display             : inline-flex;
+  flex-direction      : row;
+  height              : 25px;
+  justify-content     : flex-start;
+  left                : 37px;
+  position            : relative;
+  top                 : 6px;
+  transform           : rotate(0deg);
+  width               : auto;
+}
+.quick-start-XnhOrf .sidenavleft0-s9zAsR .preferences5-svQgmJ .group33512-CUKxeM .overlap-group-X2fo9g .rectangle03-jkdIkl {
+  background-color    : rgba(255,255,255,0);
+  height              : 24px;
+  left                : 1px;
+  position            : absolute;
+  top                 : 0px;
+  transform           : rotate(0deg);
+  width               : 24px;
+}
+.quick-start-XnhOrf .sidenavleft0-s9zAsR .preferences5-svQgmJ .group33512-CUKxeM .preferences1-ED4KYA {
+  background-color    : rgba(110,110,110,0);
+  color               : var(--auto-palette-color-3);
+  flex-shrink         : 0;
+  font-size           : 14.0px;
+  height              : auto;
+  line-height         : 20.0px;
+  margin-left         : 36px;
+  margin-top          : 1.14px;
+  min-height          : 21px;
+  min-width           : 88px;
+  position            : relative;
+  text-align          : left;
+  transform           : rotate(0deg);
+  width               : auto;
+}
+.quick-start-XnhOrf .sidenavleft0-s9zAsR .application4-72pjIB .group33511-1RO073 .overlap-group-K0oJ9Q .icon-ionic-ios-apps2-51y9PA .group3421-gJCzri .path61-kUIKFR {
+  background-color    : rgba(110,110,110,0);
+  height              : 7px;
+  left                : 0px;
+  position            : absolute;
+  top                 : -0px;
+  transform           : rotate(0deg);
+  width               : 23px;
+}
+.quick-start-XnhOrf .sidenavleft0-s9zAsR .preferences5-svQgmJ {
+  background-color    : var(--auto-palette-color-5);
+  height              : 37px;
+  left                : 0px;
+  pointer-events      : auto;
+  position            : absolute;
+  top                 : 287px;
+  transform           : rotate(0deg);
+  transition          : all 0.2s ease;
+  width               : 256px;
+}
+.quick-start-XnhOrf .sidenavleft0-s9zAsR .preferences5-svQgmJ:hover {
+  transform           : scale(1.1);
+  box-shadow          : 0px 0px 10px 2px rgba(0,0,0,0.1);
+}
+.quick-start-XnhOrf .sidenavleft0-s9zAsR .component2122-6bgdeh .icon-open-account-logout0-zWyfjg {
+  background-color    : rgba(185,45,0,0);
+  flex-shrink         : 0;
+  height              : 21px;
+  position            : relative;
+  transform           : rotate(0deg);
+  width               : 24px;
+}
+.quick-start-XnhOrf .sidenavleft0-s9zAsR .sidenavlefttop1-cVRxWG .circle2-XL7A18 {
+  background-color    : rgba(0,0,0,0);
+  flex-shrink         : 0;
+  height              : 94px;
+  position            : relative;
+  transform           : rotate(0deg);
+  width               : 94px;
+}
+.quick-start-XnhOrf .sidenavleft0-s9zAsR .component2122-6bgdeh {
+  align-items         : flex-end;
+  background-color    : rgba(255,255,255,0);
+  box-sizing          : border-box;
+  display             : inline-flex;
+  flex-direction      : row;
+  height              : 21px;
+  justify-content     : flex-start;
+  left                : 90px;
+  position            : absolute;
+  top                 : 712px;
+  transform           : rotate(0deg);
+  width               : auto;
+}
+
+.quick-start-XnhOrf .welcome-screen1-FKvnMV .overlap-group1-gFP5RD {
+  background-color    : rgba(255,255,255,0);
+  flex-shrink         : 0;
+  height              : 274px;
+  margin-top          : 37px;
+  position            : relative;
+  width               : 675px;
+}
+.quick-start-XnhOrf .welcome-screen1-FKvnMV .overlap-group1-gFP5RD .welcome-to-aidesign-beta-a-place-to-design-in-easiest-way1-JI40xm {
+  background-color    : rgba(255,255,255,0);
+  color               : var(--auto-palette-color-1);
+  font-size           : 14.0px;
+  height              : 274px;
+  left                : 0px;
+  line-height         : 20.0px;
+  position            : absolute;
+  text-align          : left;
+  top                 : 0px;
+  transform           : rotate(0deg);
+  width               : 589px;
+}
+.quick-start-XnhOrf .sidenavleft0-s9zAsR .component2122-6bgdeh .logout1-LrSY2X {
+  background-color    : rgba(185,45,0,0);
+  color               : rgba(185,45,0,1.0);
+  flex-shrink         : 0;
+  font-size           : 13.0px;
+  height              : auto;
+  line-height         : 13.0px;
+  margin-bottom       : -3.13px;
+  margin-left         : 3px;
+  min-height          : 20px;
+  min-width           : 61px;
+  position            : relative;
+  text-align          : left;
+  transform           : rotate(0deg);
+  width               : auto;
+}
+.quick-start-XnhOrf .sidenavleft0-s9zAsR .quick-start3-h9Egry {
+  background-color    : var(--auto-palette-color-5);
+  height              : 37px;
+  left                : 0px;
+  pointer-events      : auto;
+  position            : absolute;
+  top                 : 152px;
+  transform           : rotate(0deg);
+  transition          : all 0.2s ease;
+  width               : 256px;
+}
+.quick-start-XnhOrf .sidenavleft0-s9zAsR .quick-start3-h9Egry:hover {
+  transform           : scale(1.1);
+  box-shadow          : 0px 0px 10px 2px rgba(0,0,0,0.1);
+}
+.quick-start-XnhOrf .sidenavleft0-s9zAsR .preferences5-svQgmJ .group33512-CUKxeM .overlap-group-X2fo9g .icon-feather-settings2-yWAkFt {
+  background-color    : rgba(255,255,255,0);
+  height              : 25px;
+  left                : 0px;
+  position            : absolute;
+  top                 : 0px;
+  transform           : rotate(0deg);
+  width               : 25px;
+}
+.quick-start-XnhOrf .sidenavleft0-s9zAsR .preferences5-svQgmJ .group33512-CUKxeM .overlap-group-X2fo9g .icon-feather-settings2-yWAkFt .path70-XcDAV8 {
+  background-color    : rgba(255,255,255,0);
+  height              : 10px;
+  left                : 8px;
+  position            : absolute;
+  top                 : 8px;
+  transform           : rotate(0deg);
+  width               : 10px;
+}
+.quick-start-XnhOrf .sidenavleft0-s9zAsR .help6-epUsgF {
+  background-color    : var(--auto-palette-color-5);
+  height              : 37px;
+  left                : 0px;
+  pointer-events      : auto;
+  position            : absolute;
+  top                 : 332px;
+  transform           : rotate(0deg);
+  transition          : all 0.2s ease;
+  width               : 256px;
+}
+.quick-start-XnhOrf .sidenavleft0-s9zAsR .help6-epUsgF:hover {
+  transform           : scale(1.1);
+  box-shadow          : 0px 0px 10px 2px rgba(0,0,0,0.1);
+}
+.quick-start-XnhOrf .sidenavleft0-s9zAsR .preferences5-svQgmJ .group33512-CUKxeM .overlap-group-X2fo9g .icon-feather-settings2-yWAkFt .path81-73FBzR {
+  background-color    : rgba(255,255,255,0);
+  height              : 28px;
+  left                : -2px;
+  position            : absolute;
+  top                 : -2px;
+  transform           : rotate(0deg);
+  width               : 28px;
+}
+.quick-start-XnhOrf .sidenavleft0-s9zAsR .help6-epUsgF .group33513-bnWywl .overlap-group-ZmNZlb .rectangle04-e6nVOL {
+  background-color    : rgba(255,255,255,0);
+  height              : 24px;
+  left                : 0px;
+  position            : absolute;
+  top                 : 0px;
+  transform           : rotate(0deg);
+  width               : 24px;
+}
+.quick-start-XnhOrf .sidenavleft0-s9zAsR .help6-epUsgF .group33513-bnWywl {
+  align-items         : flex-end;
+  background-color    : rgba(255,255,255,0);
+  box-sizing          : border-box;
+  display             : inline-flex;
+  flex-direction      : row;
+  height              : 24px;
+  justify-content     : flex-start;
+  left                : 38px;
+  position            : relative;
+  top                 : 6px;
+  transform           : rotate(0deg);
+  width               : auto;
+}
+.quick-start-XnhOrf .sidenavleft0-s9zAsR .help6-epUsgF .group33513-bnWywl .help1-CLMuUZ {
+  background-color    : rgba(110,110,110,0);
+  color               : var(--auto-palette-color-3);
+  flex-shrink         : 0;
+  font-size           : 14.0px;
+  height              : auto;
+  line-height         : 20.0px;
+  margin-bottom       : 0.5px;
+  margin-left         : 36px;
+  min-height          : 21px;
+  min-width           : 41px;
+  position            : relative;
+  text-align          : left;
+  transform           : rotate(0deg);
+  width               : auto;
+}
+.quick-start-XnhOrf .sidenavleft0-s9zAsR .help6-epUsgF .group33513-bnWywl .overlap-group-ZmNZlb .icon-feather-help-circle2-XCRNUK .path101-sfn0jo {
+  background-color    : rgba(255,255,255,0);
+  height              : 9px;
+  left                : 5px;
+  position            : absolute;
+  top                 : 3px;
+  transform           : rotate(0deg);
+  width               : 9px;
+}
+.quick-start-XnhOrf .sidenavleft0-s9zAsR .help6-epUsgF .group33513-bnWywl .overlap-group-ZmNZlb .icon-feather-help-circle2-XCRNUK .path90-OjyI2N {
+  background-color    : rgba(255,255,255,0);
+  height              : 22px;
+  left                : -1px;
+  position            : absolute;
+  top                 : -2px;
+  transform           : rotate(0deg);
+  width               : 22px;
+}
+.quick-start-XnhOrf .sidenavleft0-s9zAsR .help6-epUsgF .group33513-bnWywl .overlap-group-ZmNZlb .icon-feather-help-circle2-XCRNUK {
+  background-color    : rgba(255,255,255,0);
+  height              : 19px;
+  left                : 2px;
+  position            : absolute;
+  top                 : 3px;
+  transform           : rotate(0deg);
+  width               : 19px;
+}
+.quick-start-XnhOrf .sidenavleft0-s9zAsR .help6-epUsgF .group33513-bnWywl .overlap-group-ZmNZlb .icon-feather-help-circle2-XCRNUK .path112-8y0dEo {
+  background-color    : rgba(255,255,255,0);
+  height              : 3px;
+  left                : 8px;
+  position            : absolute;
+  top                 : 13px;
+  transform           : rotate(0deg);
+  width               : 3px;
+}
+.quick-start-XnhOrf .sidenavleft0-s9zAsR .application7-7CM5xU {
+  background-color    : var(--auto-palette-color-5);
+  height              : 37px;
+  left                : 0px;
+  pointer-events      : auto;
+  position            : absolute;
+  top                 : 242px;
+  transform           : rotate(0deg);
+  transition          : all 0.2s ease;
+  width               : 256px;
+}
+.quick-start-XnhOrf .sidenavleft0-s9zAsR .application7-7CM5xU:hover {
+  transform           : scale(1.1);
+  box-shadow          : 0px 0px 10px 2px rgba(0,0,0,0.1);
+}
+.quick-start-XnhOrf .sidenavleft0-s9zAsR .application7-7CM5xU .group33514-3NLpS7 {
+  align-items         : flex-end;
+  background-color    : rgba(255,255,255,0);
+  box-sizing          : border-box;
+  display             : inline-flex;
+  flex-direction      : row;
+  height              : 24px;
+  justify-content     : flex-start;
+  left                : 37px;
+  position            : relative;
+  top                 : 6px;
+  transform           : rotate(0deg);
+  width               : auto;
+}
+.quick-start-XnhOrf .sidenavleft0-s9zAsR .application7-7CM5xU .group33514-3NLpS7 .file-manager1-GS6XUp {
+  background-color    : rgba(110,110,110,0);
+  color               : var(--auto-palette-color-3);
+  flex-shrink         : 0;
+  font-size           : 14.0px;
+  height              : auto;
+  line-height         : 20.0px;
+  margin-bottom       : 0.5px;
+  margin-left         : 36px;
+  min-height          : 21px;
+  min-width           : 94px;
+  position            : relative;
+  text-align          : left;
+  transform           : rotate(0deg);
+  width               : auto;
+}
+.quick-start-XnhOrf .sidenavleft0-s9zAsR .application7-7CM5xU .group33514-3NLpS7 .overlap-group-y02oZx .icon-feather-hard-drive2-cKD52d .path203-pD6n1E {
+  background-color    : rgba(255,255,255,0);
+  height              : 3px;
+  left                : 8px;
+  position            : absolute;
+  top                 : 13px;
+  transform           : rotate(0deg);
+  width               : 3px;
+}
+.quick-start-XnhOrf .welcome-screen1-FKvnMV .alohaaa-welcome-name0-UY5hJu {
+  background-color    : rgba(238,238,238,0);
+  color               : var(--auto-palette-color-2);
+  flex-shrink         : 0;
+  font-size           : 43.0px;
+  height              : auto;
+  line-height         : 20.0px;
+  min-height          : 59px;
+  min-width           : 549px;
+  position            : absolute;
+  text-align          : left;
+  transform           : rotate(0deg);
+  width               : auto;
+}
+.quick-start-XnhOrf .sidenavleft0-s9zAsR .application7-7CM5xU .group33514-3NLpS7 .overlap-group-y02oZx .icon-feather-hard-drive2-cKD52d {
+  background-color    : rgba(255,255,255,0);
+  height              : 19px;
+  left                : 0px;
+  position            : absolute;
+  top                 : 3px;
+  transform           : rotate(0deg);
+  width               : 24px;
+}
+.quick-start-XnhOrf .sidenavleft0-s9zAsR .application7-7CM5xU .group33514-3NLpS7 .overlap-group-y02oZx .icon-feather-hard-drive2-cKD52d .path192-4lqCt7 {
+  background-color    : rgba(255,255,255,0);
+  height              : 3px;
+  left                : 3px;
+  position            : absolute;
+  top                 : 13px;
+  transform           : rotate(0deg);
+  width               : 3px;
+}
+.quick-start-XnhOrf .sidenavleft0-s9zAsR .application7-7CM5xU .group33514-3NLpS7 .overlap-group-y02oZx .icon-feather-hard-drive2-cKD52d .path181-qdz852 {
+  background-color    : rgba(255,255,255,0);
+  height              : 22px;
+  left                : -2px;
+  position            : absolute;
+  top                 : -2px;
+  transform           : rotate(0deg);
+  width               : 27px;
+}
+.quick-start-XnhOrf .sidenavleft0-s9zAsR .application7-7CM5xU .group33514-3NLpS7 .overlap-group-y02oZx .icon-feather-hard-drive2-cKD52d .path170-oKG6tw {
+  background-color    : rgba(255,255,255,0);
+  height              : 3px;
+  left                : -2px;
+  position            : absolute;
+  top                 : 8px;
+  transform           : rotate(0deg);
+  width               : 27px;
+}
+
+.quick-start-XnhOrf .welcome-screen1-FKvnMV {
+  align-items         : flex-start;
+  background-color    : rgba(255,255,255,0);
+  box-sizing          : border-box;
+  display             : flex;
+  flex-direction      : column;
+  flex-shrink         : 0;
+  height              : auto;
+  justify-content     : flex-start;
+  margin-left         : 25px;
+  margin-top          : 54.0px;
+  min-height          : 390px;
+  padding             : 1.0px 0;
+  position            : relative;
+  transform           : rotate(0deg);
+  width               : 675px;
+}
+.quick-start-XnhOrf .sidenavleft0-s9zAsR .application7-7CM5xU .group33514-3NLpS7 .overlap-group-y02oZx .rectangle05-4Xit43 {
+  background-color    : rgba(255,255,255,0);
+  height              : 24px;
+  left                : 1px;
+  position            : absolute;
+  top                 : 0px;
+  transform           : rotate(0deg);
+  width               : 24px;
+}
+/* .anima-animate-appear prefix for appear animations */
+.anima-animate-appear {
+  opacity             : 0;
+  display             : block;
+  animation           : anima-reveal 0.3s ease-in-out 1 normal forwards;
+}
+.anima-animate-disappear {
+  opacity             : 1;
+  display             : block;
+  animation           : anima-reveal 0.3s ease-in-out 1 reverse forwards;
+}
+.anima-animate-nodelay {
+  animation-delay     : 0s;
+}
+@keyframes anima-reveal {
+  from {
+    opacity             : 0;
+  }
+  to {
+    opacity             : 1;
+  }
+}
+* {
+  box-sizing          : border-box;
+}
+.anima-component-wrapper,
+.anima-component-wrapper * {
+  pointer-events      : none;
+}
+.anima-component-wrapper a *,
+.anima-component-wrapper a,
+.anima-component-wrapper input,
+.anima-component-wrapper video,
+.anima-component-wrapper iframe,
+.anima-listeners-active,
+.anima-listeners-active * {
+  pointer-events      : auto;
+}
+.anima-hidden,
+.anima-hidden * {
+  visibility          : hidden;
+  pointer-events      : none;
+}
+.anima-smart-layers-pointers,
+.anima-smart-layers-pointers * {
+  pointer-events      : auto;
+  visibility          : visible;
+}
+.anima-component-wrapper.anima-not-ready,
+.anima-component-wrapper.anima-not-ready * {
+  visibility          : hidden !important;
+}
+.anima-listeners-active-click,
+.anima-listeners-active-click * {
+  cursor              : pointer;
+}
+.anima-component-wrapper a,
+.anima-screen a {
+  text-decoration     : none;
+}
+.anima-flexbox-container a {
+  line-height         : 0;
+}
+.anima-full-width-a {
+  width               : 100%;
+}
+.anima-full-height-a {
+  height              : 100%;
+}
+.anima-screen textarea:focus,
+.anima-screen input:focus {
+  outline             : none;
+}
+.anima-screen div {
+  -webkit-text-size-adjust: none;
+}
+.anima-container-center-vertical,
+.anima-container-center-horizontal {
+  pointer-events      : none;
+  display             : flex;
+  flex-direction      : row;
+  padding             : 0;
+  margin              : 0;
+}
+.anima-container-center-vertical {
+  align-items         : center;
+  height              : 100%;
+}
+.anima-container-center-horizontal {
+  justify-content     : center;
+  width               : 100%;
+}
+.anima-container-center-vertical > *,
+.anima-container-center-horizontal > * {
+  pointer-events      : auto;
+  flex-shrink         : 0;
+}
+.anima-word-break {
+  overflow-wrap       : break-word;
+  word-wrap           : break-word;
+  word-break          : break-all;
+  word-break          : break-word;
+}
+
+.tablink {
+  background-color: #555;
+  color: white;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  font-size: 17px;
+  width: 25%;
+}
+
+.tablink:hover {
+  background-color: #777;
+}
+
+/* Style the tab content (and add height:100% for full page content) */
+.tabcontent {
+  color: white;
+  display: none;
+  padding: 100px 20px;
+  height: 100%;
+}
+
+
+
+
+
+

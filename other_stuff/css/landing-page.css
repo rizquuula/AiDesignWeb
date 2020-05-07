@@ -1,0 +1,338 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:500,700,400|Roboto+Condensed:700');
+
+
+/* ANIMA screen - landing-page */
+.font-class-1 {
+  font-family         : Roboto, Helvetica, Arial, serif;
+  font-style          : normal;
+  font-weight         : 500;
+}
+.font-class-2 {
+  font-family         : Roboto, Helvetica, Arial, serif;
+  font-style          : normal;
+  font-weight         : 700;
+}
+.font-class-3 {
+  font-family         : Roboto, Helvetica, Arial, serif;
+  font-style          : normal;
+  font-weight         : 400;
+}
+.font-class-4 {
+  font-family         : "Roboto", Helvetica, Arial, serif;
+  font-size           : 14.0px;
+  line-height         : 20.0px;
+}
+:root {
+  --auto-palette-color-1: rgba(255,255,255,1.0);
+  --auto-palette-color-2: rgba(238,238,238,1.0);
+  --auto-palette-color-3: rgba(110,110,110,1.0);
+  --auto-palette-color-4: rgba(112,112,112,1.0);
+  --auto-palette-color-5: rgba(250,250,250,1.0);
+  --auto-palette-color-6: rgba(48,48,48,1.0);
+  --auto-palette-color-7: rgba(0,150,136,1.0);
+  --auto-palette-color-8: rgba(193,193,193,1.0);
+  --auto-palette-color-9: rgba(149,152,154,1.0);
+}
+.landing-page-Qz8lkD {
+  align-items         : flex-start;
+  background-color    : var(--auto-palette-color-6);
+  box-sizing          : border-box;
+  display             : inline-flex;
+  flex-direction      : row;
+  height              : 768.0px;
+  justify-content     : flex-start;
+  min-width           : 1366px;
+  overflow            : hidden;
+  position            : relative;
+  width               : auto;
+}
+.landing-page-Qz8lkD .welcome-screen0-rCoH8Z {
+  background-color    : rgba(255,255,255,0);
+  flex-shrink         : 0;
+  height              : 768px;
+  position            : relative;
+  transform           : rotate(0deg);
+  width               : 1366px;
+}
+.landing-page-Qz8lkD .welcome-screen0-rCoH8Z .background0-HuPXUJ {
+  align-items         : flex-start;
+  background-color    : rgba(255,255,255,0);
+  box-sizing          : border-box;
+  display             : inline-flex;
+  flex-direction      : row;
+  height              : 768px;
+  justify-content     : flex-start;
+  left                : 0px;
+  position            : absolute;
+  top                 : 0px;
+  transform           : rotate(0deg);
+  width               : auto;
+}
+.landing-page-Qz8lkD .welcome-screen0-rCoH8Z .background0-HuPXUJ .back-gradient-red1-Qdr2bp {
+  background-color    : rgba(255,255,255,0);
+  flex-shrink         : 0;
+  height              : 768px;
+  position            : relative;
+  transform           : rotate(0deg);
+  width               : 1366px;
+}
+.landing-page-Qz8lkD .welcome-screen0-rCoH8Z .start-content1-BeIJHM {
+  align-items         : flex-start;
+  background-color    : rgba(255,255,255,0);
+  box-sizing          : border-box;
+  display             : inline-flex;
+  flex-direction      : row;
+  height              : 343px;
+  justify-content     : flex-start;
+  left                : 499px;
+  position            : absolute;
+  top                 : 151px;
+  transform           : rotate(0deg);
+  width               : auto;
+}
+.landing-page-Qz8lkD .welcome-screen0-rCoH8Z .start-content1-BeIJHM .title0-U2H7cn {
+  align-items         : center;
+  background-color    : rgba(255,255,255,0);
+  box-sizing          : border-box;
+  display             : flex;
+  flex-direction      : column;
+  flex-shrink         : 0;
+  height              : auto;
+  justify-content     : flex-start;
+  min-height          : 343px;
+  position            : relative;
+  transform           : rotate(0deg);
+  width               : 368px;
+}
+.landing-page-Qz8lkD .welcome-screen0-rCoH8Z .start-content1-BeIJHM .title0-U2H7cn .start-button01-B0j18S {
+  background-color    : rgba(255,255,255,0);
+  flex-shrink         : 0;
+  height              : 89px;
+  margin-left         : 9.0px;
+  margin-top          : 74px;
+  pointer-events      : auto;
+  position            : relative;
+  transform           : rotate(0deg);
+  transition          : all 0.5s ease;
+  width               : 273px;
+}
+.landing-page-Qz8lkD .welcome-screen0-rCoH8Z .start-content1-BeIJHM .title0-U2H7cn .start-button01-B0j18S:hover {
+  transform           : scale(1.1);
+  box-shadow          : 0px 0px 10px 2px rgba(0,0,0,0.2);
+}
+.landing-page-Qz8lkD .welcome-screen0-rCoH8Z .start-content1-BeIJHM .title0-U2H7cn .start-button01-B0j18S .rectangle19001-ycirNc {
+  background-color    : rgba(146,203,197,0);
+  border-radius       : 45.0px;
+  height              : 89px;
+  left                : 0px;
+  position            : absolute;
+  top                 : 0px;
+  transform           : rotate(0deg);
+  width               : 273px;
+}
+.landing-page-Qz8lkD .welcome-screen0-rCoH8Z .start-content1-BeIJHM .title0-U2H7cn .start-button01-B0j18S .start11-rv7xYA {
+  background-color    : rgba(238,238,238,0);
+  color               : var(--auto-palette-color-2);
+  font-size           : 40.0px;
+  height              : auto;
+  left                : 77px;
+  line-height         : 20.0px;
+  position            : absolute;
+  text-align          : center;
+  top                 : 34px;
+  transform           : rotate(0deg);
+  width               : auto;
+}
+.landing-page-Qz8lkD .welcome-screen0-rCoH8Z .start-content1-BeIJHM .title0-U2H7cn .made-with3-by-m-razif-rizqullah-and-team1-NF1Ty6 {
+  background-color    : rgba(238,238,238,0);
+  color               : var(--auto-palette-color-2);
+  flex-shrink         : 0;
+  font-family         : Roboto, Helvetica, Arial, serif;
+  font-size           : 18.0px;
+  font-style          : italic;
+  font-weight         : 400;
+  height              : auto;
+  letter-spacing      : 0.00px;
+  line-height         : 20.0px;
+  margin-left         : 2.0px;
+  margin-top          : 44px;
+  min-height          : 26px;
+  min-width           : 350px;
+  position            : relative;
+  text-align          : center;
+  transform           : rotate(0deg);
+  width               : auto;
+}
+.landing-page-Qz8lkD .welcome-screen0-rCoH8Z .start-content1-BeIJHM .title0-U2H7cn .group3442-EjMFVT {
+  align-items         : center;
+  background-color    : rgba(255,255,255,0);
+  box-sizing          : border-box;
+  display             : flex;
+  flex-direction      : column;
+  flex-shrink         : 0;
+  height              : auto;
+  justify-content     : flex-start;
+  margin-left         : 2.0px;
+  min-height          : 114px;
+  position            : relative;
+  transform           : rotate(0deg);
+  width               : 370px;
+}
+.landing-page-Qz8lkD .welcome-screen0-rCoH8Z .start-content1-BeIJHM .title0-U2H7cn .group3442-EjMFVT .build-your-design-from-artificial-intelligent-stuff0-5nh6YZ {
+  background-color    : rgba(238,238,238,0);
+  color               : var(--auto-palette-color-2);
+  flex-shrink         : 0;
+  font-family         : Roboto, Helvetica, Arial, serif;
+  font-size           : 18.0px;
+  font-style          : italic;
+  font-weight         : 400;
+  height              : auto;
+  letter-spacing      : 0.00px;
+  line-height         : 20.0px;
+  margin-top          : 5px;
+  min-height          : 26px;
+  min-width           : 380px;
+  position            : relative;
+  text-align          : center;
+  transform           : rotate(0deg);
+  width               : auto;
+}
+.landing-page-Qz8lkD .welcome-screen0-rCoH8Z .start-content1-BeIJHM .title0-U2H7cn .group3442-EjMFVT .group3411-a1elzF {
+  align-items         : flex-end;
+  background-color    : rgba(255,255,255,0);
+  box-sizing          : border-box;
+  display             : inline-flex;
+  flex-direction      : row;
+  flex-shrink         : 0;
+  height              : 87px;
+  justify-content     : flex-start;
+  margin-left         : 2.0px;
+  position            : relative;
+  transform           : rotate(0deg);
+  width               : auto;
+}
+.landing-page-Qz8lkD .welcome-screen0-rCoH8Z .start-content1-BeIJHM .title0-U2H7cn .group3442-EjMFVT .group3411-a1elzF .ai-design0-66lak1 {
+  background-color    : rgba(238,238,238,0);
+  color               : var(--auto-palette-color-2);
+  flex-shrink         : 0;
+  font-family         : Roboto Condensed, Helvetica, Arial, serif;
+  font-size           : 66.0px;
+  font-style          : normal;
+  font-weight         : 700;
+  height              : auto;
+  letter-spacing      : 0.00px;
+  line-height         : 31.0px;
+  margin-bottom       : -30.0px;
+  min-height          : 89px;
+  min-width           : 256px;
+  position            : relative;
+  text-align          : center;
+  transform           : rotate(0deg);
+  width               : auto;
+}
+/* .anima-animate-appear prefix for appear animations */
+.anima-animate-appear {
+  opacity             : 0;
+  display             : block;
+  animation           : anima-reveal 0.3s ease-in-out 1 normal forwards;
+}
+.anima-animate-disappear {
+  opacity             : 1;
+  display             : block;
+  animation           : anima-reveal 0.3s ease-in-out 1 reverse forwards;
+}
+.anima-animate-nodelay {
+  animation-delay     : 0s;
+}
+@keyframes anima-reveal {
+  from {
+    opacity             : 0;
+  }
+  to {
+    opacity             : 1;
+  }
+}
+a {
+  text-decoration     : none;
+}
+.anima-flexbox-container a {
+  line-height         : 0;
+}
+.anima-component-wrapper,
+.anima-component-wrapper * {
+  pointer-events      : none;
+}
+.anima-component-wrapper a *,
+.anima-component-wrapper a,
+.anima-component-wrapper input,
+.anima-component-wrapper video,
+.anima-component-wrapper iframe,
+.anima-listeners-active,
+.anima-listeners-active * {
+  pointer-events      : auto;
+}
+.anima-hidden,
+.anima-hidden * {
+  visibility          : hidden;
+  pointer-events      : none;
+}
+.anima-smart-layers-pointers,
+.anima-smart-layers-pointers * {
+  pointer-events      : auto;
+  visibility          : visible;
+}
+.anima-component-wrapper.anima-not-ready,
+.anima-component-wrapper.anima-not-ready * {
+  visibility          : hidden !important;
+}
+.anima-listeners-active-click,
+.anima-listeners-active-click * {
+  cursor              : pointer;
+}
+.anima-component-wrapper a,
+.anima-screen a {
+  text-decoration     : none;
+}
+.anima-flexbox-container a {
+  line-height         : 0;
+}
+.anima-full-width-a {
+  width               : 100%;
+}
+.anima-full-height-a {
+  height              : 100%;
+}
+.anima-screen textarea:focus,
+.anima-screen input:focus {
+  outline             : none;
+}
+.anima-screen div {
+  -webkit-text-size-adjust: none;
+}
+.anima-container-center-vertical,
+.anima-container-center-horizontal {
+  pointer-events      : none;
+  display             : flex;
+  flex-direction      : row;
+  padding             : 0;
+  margin              : 0;
+}
+.anima-container-center-vertical {
+  align-items         : center;
+  height              : 100%;
+}
+.anima-container-center-horizontal {
+  justify-content     : center;
+  width               : 100%;
+}
+.anima-container-center-vertical > *,
+.anima-container-center-horizontal > * {
+  pointer-events      : auto;
+  flex-shrink         : 0;
+}
+.anima-word-break {
+  overflow-wrap       : break-word;
+  word-wrap           : break-word;
+  word-break          : break-all;
+  word-break          : break-word;
+}

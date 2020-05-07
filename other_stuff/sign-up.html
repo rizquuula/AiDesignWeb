@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="./img/favicon.png" rel="shortcut icon"/>
+        <meta charset="utf-8"/>
+        <meta content="width=1366, maximum-scale=1.0" name="viewport"/>
+        <link href="./css/sign-up.css" rel="stylesheet" type="text/css"/>
+        <meta content="AnimaApp.com - Design to code, Automated." name="author">
+        </meta>
+    </head>
+    <body style="margin: 0;
+ background: rgba(48, 48, 48, 1.0);">
+        <input id="anPageName" name="page" type="hidden" value="sign-up"/>
+        <div class="anima-container-center-horizontal">
+            <div class="sign-up-hO2H6A anima-screen anima-word-break ">
+                <div class="welcome-screen02-t8Rizb anima-flexbox-container">
+                    <div class="background02-oZPuib anima-flexbox-container" style="
+    background-image: url('./img/back-gradient-green@1x.png');
+    background-size: cover;">
+                        <img anima-src="./img/back-gradient-red@1x.png" class="back-gradient-red12-mMB6JG" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="/>
+                    </div>
+                </div>
+                <div class="input11-4KXMbu anima-flexbox-container">
+                    <div class="sign-up-title4-d27v5G">
+                        <div class="rectangle1910-m5MEuB">
+                        </div>
+                        <div class="login-session11-V7Dhhd font-class-4">
+                            <span class="span0-ezPfiy">SIGN UP </span><span class="span1-SNckia">NOW </span><span class="span2-HPhFf0">!</span>
+                        </div>
+                    </div>
+                    <div class="username11-EWLTVg anima-flexbox-container">
+                        <input class="username-input11-Iqm52w font-class-3" name="usernameInput11" placeholder="Username" required="" type="text"/>
+                        <img anima-src="./img/text-path@1x.png" class="textpath03-ntiDLa" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="/>
+                    </div>
+                    <div class="username3-4wnBuY anima-flexbox-container">
+                        <input class="email-input1-zZjlxE" name="emailInput1" placeholder="E-Mail address" required="" type="email"/>
+                        <img anima-src="./img/text-path@1x.png" class="textpath05-uVu3OU" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="/>
+                    </div>
+                    <div class="password01-xB1ArY anima-flexbox-container">
+                        <input class="password-input11-oqxLSx font-class-3" name="passwordInput11" placeholder="Password" required="" type="password"/>
+                        <img anima-src="./img/text-path@1x.png" class="textpath02-4O39kC" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="/>
+                    </div>
+                    <div class="password2-iEmqEM anima-flexbox-container">
+                        <input class="re-password-input1-3bOsi9 font-class-3" name="rePasswordInput1" placeholder="Repeat password" required="" type="password"/>
+                        <img anima-src="./img/text-path@1x.png" class="textpath04-9Kkmw1" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="/>
+                    </div>
+                    <a href="login-page.html">
+                        <div class="sign-up-button5-wphyiP anima-smart-layers-pointers ">
+                            <div class="group3430-MwJJGr">
+                                <img anima-src="./img/path-1@1x.png" class="path102-prKPuD" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="/>
+                                <div class="pressed11-jLis8W font-class-2">
+                                    SIGN UP
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="login-page.html">
+                        <div class="already-have-account-login-here6-LOJWuK font-class-4">
+                            <span class="span0-QhjG6E">Already have account? </span><span class="span1-dUO4Pc">Login</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!-- Scripts -->
+        <script>
+            anima_isHidden = function(e) {
+                if (!(e instanceof HTMLElement)) return !1;
+                if (getComputedStyle(e).display == "none") return !0; else if (e.parentNode && anima_isHidden(e.parentNode)) return !0;
+                return !1;
+            };
+            anima_loadAsyncSrcForTag = function(tag) {
+                var elements = document.getElementsByTagName(tag);
+                var toLoad = [];
+                for (var i = 0; i < elements.length; i++) {
+                    var e = elements[i];
+                    var src = e.getAttribute("src");
+                    var loaded = (src != undefined && src.length > 0 && src != 'data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==');
+                    if (loaded) continue;
+                    var asyncSrc = e.getAttribute("anima-src");
+                    if (asyncSrc == undefined || asyncSrc.length == 0) continue;
+                    if (anima_isHidden(e)) continue;
+                    toLoad.push(e);
+                }
+                toLoad.sort(function(a, b) {
+                    return anima_getTop(a) - anima_getTop(b);
+                });
+                for (var i = 0; i < toLoad.length; i++) {
+                    var e = toLoad[i];
+                    var asyncSrc = e.getAttribute("anima-src");
+                    e.setAttribute("src", asyncSrc);
+                }
+            };
+            anima_pauseHiddenVideos = function(tag) {
+                var elements = document.getElementsByTagName("video");
+                for (var i = 0; i < elements.length; i++) {
+                    var e = elements[i];
+                    var isPlaying = !!(e.currentTime > 0 && !e.paused && !e.ended && e.readyState > 2);
+                    var isHidden = anima_isHidden(e);
+                    if (!isPlaying && !isHidden && e.getAttribute("autoplay") == "autoplay") {
+                        e.play();
+                    } else if (isPlaying && isHidden) {
+                        e.pause();
+                    }
+                }
+            };
+            anima_loadAsyncSrc = function(tag) {
+                anima_loadAsyncSrcForTag("img");
+                anima_loadAsyncSrcForTag("iframe");
+                anima_loadAsyncSrcForTag("video");
+                anima_pauseHiddenVideos();
+            };
+            var anima_getTop = function(e) {
+                var top = 0;
+                do {
+                    top += e.offsetTop || 0;
+                    e = e.offsetParent;
+                } while (e);
+                return top;
+            };
+            anima_loadAsyncSrc();
+            anima_old_onResize = window.onresize;
+            anima_new_onResize = undefined;
+            anima_updateOnResize = function() {
+                if (anima_new_onResize == undefined || window.onresize != anima_new_onResize) {
+                    anima_new_onResize = function(x) {
+                        if (anima_old_onResize != undefined) anima_old_onResize(x);
+                        anima_loadAsyncSrc();
+                    };
+                    window.onresize = anima_new_onResize;
+                    setTimeout(function() {
+                        anima_updateOnResize();
+                    }, 3000);
+                }
+            };
+            anima_updateOnResize();
+            setTimeout(function() {
+                anima_loadAsyncSrc();
+            }, 200);
+        </script>
+        <!-- End of Scripts -->
+    </body>
+</html>

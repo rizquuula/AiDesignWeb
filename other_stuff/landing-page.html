@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="./img/favicon.png" rel="shortcut icon"/>
+        <meta charset="utf-8"/>
+        <meta content="width=1366, maximum-scale=1.0" name="viewport"/>
+        <link href="./css/landing-page.css" rel="stylesheet" type="text/css"/>
+        <meta content="AnimaApp.com - Design to code, Automated." name="author">
+        </meta>
+    </head>
+    <body style="margin: 0;
+ background: rgba(48, 48, 48, 1.0);">
+        <input id="anPageName" name="page" type="hidden" value="landing-page"/>
+        <div class="anima-container-center-horizontal">
+            <div class="landing-page-Qz8lkD anima-flexbox-container anima-screen anima-word-break ">
+                <div class="welcome-screen0-rCoH8Z">
+                    <div class="background0-HuPXUJ anima-flexbox-container" style="
+    background-image: url('./img/back-gradient-green@1x.png');
+    background-size: cover;">
+                        <img anima-src="./img/back-gradient-red@1x.png" class="back-gradient-red1-Qdr2bp" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="/>
+                    </div>
+                    <div class="start-content1-BeIJHM anima-flexbox-container">
+                        <div class="title0-U2H7cn anima-flexbox-container">
+                            <div class="group3442-EjMFVT anima-flexbox-container">
+                                <div class="group3411-a1elzF anima-flexbox-container">
+                                    <div class="ai-design0-66lak1">
+                                        AI Design
+                                    </div>
+                                </div>
+                                <div class="build-your-design-from-artificial-intelligent-stuff0-5nh6YZ">
+                                    Build your design from Artificial Intelligent stuff.
+                                </div>
+                            </div>
+                            <a href="login-page.html">
+                                <div class="start-button01-B0j18S anima-smart-layers-pointers ">
+                                    <img anima-src="./img/rectangle-190@1x.png" class="rectangle19001-ycirNc" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="/>
+                                    <div class="start11-rv7xYA font-class-2">
+                                        START
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="https://github.com/stacia" target="_blank">
+                                <div class="made-with3-by-m-razif-rizqullah-and-team1-NF1Ty6">
+                                    Made with &lt;3 by M Razif Rizqullah and team
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Scripts -->
+        <script>
+            anima_isHidden = function(e) {
+                if (!(e instanceof HTMLElement)) return !1;
+                if (getComputedStyle(e).display == "none") return !0; else if (e.parentNode && anima_isHidden(e.parentNode)) return !0;
+                return !1;
+            };
+            anima_loadAsyncSrcForTag = function(tag) {
+                var elements = document.getElementsByTagName(tag);
+                var toLoad = [];
+                for (var i = 0; i < elements.length; i++) {
+                    var e = elements[i];
+                    var src = e.getAttribute("src");
+                    var loaded = (src != undefined && src.length > 0 && src != 'data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==');
+                    if (loaded) continue;
+                    var asyncSrc = e.getAttribute("anima-src");
+                    if (asyncSrc == undefined || asyncSrc.length == 0) continue;
+                    if (anima_isHidden(e)) continue;
+                    toLoad.push(e);
+                }
+                toLoad.sort(function(a, b) {
+                    return anima_getTop(a) - anima_getTop(b);
+                });
+                for (var i = 0; i < toLoad.length; i++) {
+                    var e = toLoad[i];
+                    var asyncSrc = e.getAttribute("anima-src");
+                    e.setAttribute("src", asyncSrc);
+                }
+            };
+            anima_pauseHiddenVideos = function(tag) {
+                var elements = document.getElementsByTagName("video");
+                for (var i = 0; i < elements.length; i++) {
+                    var e = elements[i];
+                    var isPlaying = !!(e.currentTime > 0 && !e.paused && !e.ended && e.readyState > 2);
+                    var isHidden = anima_isHidden(e);
+                    if (!isPlaying && !isHidden && e.getAttribute("autoplay") == "autoplay") {
+                        e.play();
+                    } else if (isPlaying && isHidden) {
+                        e.pause();
+                    }
+                }
+            };
+            anima_loadAsyncSrc = function(tag) {
+                anima_loadAsyncSrcForTag("img");
+                anima_loadAsyncSrcForTag("iframe");
+                anima_loadAsyncSrcForTag("video");
+                anima_pauseHiddenVideos();
+            };
+            var anima_getTop = function(e) {
+                var top = 0;
+                do {
+                    top += e.offsetTop || 0;
+                    e = e.offsetParent;
+                } while (e);
+                return top;
+            };
+            anima_loadAsyncSrc();
+            anima_old_onResize = window.onresize;
+            anima_new_onResize = undefined;
+            anima_updateOnResize = function() {
+                if (anima_new_onResize == undefined || window.onresize != anima_new_onResize) {
+                    anima_new_onResize = function(x) {
+                        if (anima_old_onResize != undefined) anima_old_onResize(x);
+                        anima_loadAsyncSrc();
+                    };
+                    window.onresize = anima_new_onResize;
+                    setTimeout(function() {
+                        anima_updateOnResize();
+                    }, 3000);
+                }
+            };
+            anima_updateOnResize();
+            setTimeout(function() {
+                anima_loadAsyncSrc();
+            }, 200);
+        </script>
+        <!-- End of Scripts -->
+    </body>
+</html>

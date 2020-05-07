@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="{{ url_for('static',filename='img/favicon.png') }}" rel="shortcut icon"/>
+        <meta charset="utf-8"/>
+        <meta content="width=1366, maximum-scale=1.0" name="viewport"/>
+        <link href="{{ url_for('static',filename='css/login-page.css') }}" rel="stylesheet" type="text/css"/>
+        <meta content="AnimaApp.com - Design to code, Automated." name="author">
+        </meta>
+    </head>
+    <body style="margin: 0;
+    max-width : 98%;
+ background: rgba(48, 48, 48, 1.0);">
+        <input id="anPageName" name="page" type="hidden" value="login-page"/>
+        <div class="anima-container-center-horizontal">
+            <div class="login-page-m6aP35 anima-screen anima-word-break ">
+                <div class="welcome-screen01-dxl9og anima-flexbox-container">
+                    <div class="background01-0BZuDi anima-flexbox-container" style="
+    background-image: url('./img/back-gradient-green@1x.png');
+    background-size: cover;">
+                        <img anima-src="{{ url_for('static',filename='img/back-gradient-red@1x.png') }}" class="back-gradient-red11-5gyd2d" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="/>
+                    </div>
+                </div>
+                <div class="input11-NpU0rV anima-flexbox-container">
+                    <div class="login-title2-lqCiPX anima-flexbox-container" style="
+    background-image: url({{ url_for('static',filename='img/path-3@1x.png') }});
+<!--    url('./img/path-3@1x.png');-->
+    max-width = 100%;
+    background-size: cover;">
+                        <div class="login-session1-v8KroQ font-class-3">
+                            LOGIN SESSION
+                        </div>
+                    </div>
+                    <div class="username1-n1ty0c anima-flexbox-container">
+                        <input class="username-input1-LK8DzI font-class-2" name="usernameInput1" placeholder="Username" required="" type="text"/>
+                        <img anima-src="{{ url_for('static',filename='img/text-path@1x.png') }}" class="textpath03-kkXBKj" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="/>
+                    </div>
+                    <div class="password0-shhM2N anima-flexbox-container">
+                        <input class="password-input1-YnZVrA font-class-2" name="passwordInput1" placeholder="Password" required="" type="password"/>
+                        <img anima-src="{{ url_for('static',filename='img/text-path@1x.png') }}" class="textpath02-JX75nk" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="/>
+                    </div>
+                    <a href="/dashboard">
+                        <div class="login-button3-6HZ4Vr anima-smart-layers-pointers ">
+                            <img anima-src="{{ url_for('static',filename='img/path-1@1x.png') }}" class="path105-glmZPg" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="/>
+                            <div class="pressed14-l2zmkw font-class-3">
+                                LOGIN
+                            </div>
+                        </div>
+                    </a>
+
+                        <div class="not-yet-have-an-account-sign-up-here4-A9wQkc font-class-4">
+                            <span class="span0-j3r82o">Not yet have an account? </span><span class="span1-fnwlcC">
+                            <a href="/register">Sign Up</a>
+                        </span><span class="span2-4mRczC"> here</span>
+                        </div>
+
+                </div>
+            </div>
+        </div>
+        <!-- Scripts -->
+        <script>
+            anima_isHidden = function(e) {
+                if (!(e instanceof HTMLElement)) return !1;
+                if (getComputedStyle(e).display == "none") return !0; else if (e.parentNode && anima_isHidden(e.parentNode)) return !0;
+                return !1;
+            };
+            anima_loadAsyncSrcForTag = function(tag) {
+                var elements = document.getElementsByTagName(tag);
+                var toLoad = [];
+                for (var i = 0; i < elements.length; i++) {
+                    var e = elements[i];
+                    var src = e.getAttribute("src");
+                    var loaded = (src != undefined && src.length > 0 && src != 'data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==');
+                    if (loaded) continue;
+                    var asyncSrc = e.getAttribute("anima-src");
+                    if (asyncSrc == undefined || asyncSrc.length == 0) continue;
+                    if (anima_isHidden(e)) continue;
+                    toLoad.push(e);
+                }
+                toLoad.sort(function(a, b) {
+                    return anima_getTop(a) - anima_getTop(b);
+                });
+                for (var i = 0; i < toLoad.length; i++) {
+                    var e = toLoad[i];
+                    var asyncSrc = e.getAttribute("anima-src");
+                    e.setAttribute("src", asyncSrc);
+                }
+            };
+            anima_pauseHiddenVideos = function(tag) {
+                var elements = document.getElementsByTagName("video");
+                for (var i = 0; i < elements.length; i++) {
+                    var e = elements[i];
+                    var isPlaying = !!(e.currentTime > 0 && !e.paused && !e.ended && e.readyState > 2);
+                    var isHidden = anima_isHidden(e);
+                    if (!isPlaying && !isHidden && e.getAttribute("autoplay") == "autoplay") {
+                        e.play();
+                    } else if (isPlaying && isHidden) {
+                        e.pause();
+                    }
+                }
+            };
+            anima_loadAsyncSrc = function(tag) {
+                anima_loadAsyncSrcForTag("img");
+                anima_loadAsyncSrcForTag("iframe");
+                anima_loadAsyncSrcForTag("video");
+                anima_pauseHiddenVideos();
+            };
+            var anima_getTop = function(e) {
+                var top = 0;
+                do {
+                    top += e.offsetTop || 0;
+                    e = e.offsetParent;
+                } while (e);
+                return top;
+            };
+            anima_loadAsyncSrc();
+            anima_old_onResize = window.onresize;
+            anima_new_onResize = undefined;
+            anima_updateOnResize = function() {
+                if (anima_new_onResize == undefined || window.onresize != anima_new_onResize) {
+                    anima_new_onResize = function(x) {
+                        if (anima_old_onResize != undefined) anima_old_onResize(x);
+                        anima_loadAsyncSrc();
+                    };
+                    window.onresize = anima_new_onResize;
+                    setTimeout(function() {
+                        anima_updateOnResize();
+                    }, 3000);
+                }
+            };
+            anima_updateOnResize();
+            setTimeout(function() {
+                anima_loadAsyncSrc();
+            }, 200);
+        </script>
+        <!-- End of Scripts -->
+    </body>
+</html>

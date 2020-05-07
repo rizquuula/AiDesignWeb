@@ -1,0 +1,858 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:500,700,400|Star+Strella:400|Roboto+Condensed:700');
+
+
+/* ANIMA screen - application */
+.font-class-1 {
+  font-family         : Roboto, Helvetica, Arial, serif;
+  font-style          : normal;
+  font-weight         : 500;
+}
+.font-class-2 {
+  font-family         : Roboto, Helvetica, Arial, serif;
+  font-style          : normal;
+  font-weight         : 400;
+}
+.font-class-3 {
+  font-family         : Roboto, Helvetica, Arial, serif;
+  font-style          : normal;
+  font-weight         : 700;
+  line-height         : 20.0px;
+}
+.font-class-4 {
+  font-family         : "Roboto", Helvetica, Arial, serif;
+  font-size           : 14.0px;
+  line-height         : 20.0px;
+}
+:root {
+  --auto-palette-color-1: rgba(255,255,255,1.0);
+  --auto-palette-color-2: rgba(110,110,110,1.0);
+  --auto-palette-color-3: rgba(250,250,250,1.0);
+  --auto-palette-color-4: rgba(238,238,238,1.0);
+  --auto-palette-color-5: rgba(193,193,193,1.0);
+  --auto-palette-color-6: rgba(48,48,48,1.0);
+  --auto-palette-color-7: rgba(0,150,136,1.0);
+  --auto-palette-color-8: rgba(149,152,154,1.0);
+}
+.application-KG42sx .sidenavleft0-ZUEqxf .sidenavlefttop1-XKj08n .auto-flex-aKtfNW {
+  align-items         : flex-start;
+  background-color    : rgba(255,255,255,0);
+  box-sizing          : border-box;
+  display             : flex;
+  flex-direction      : column;
+  flex-shrink         : 0;
+  height              : auto;
+  justify-content     : flex-start;
+  position            : relative;
+  width               : 78px;
+}
+.application-KG42sx .input1-ttSWWI .auto-flex1-OjtaH6 {
+  align-items         : center;
+  align-self          : flex-start;
+  background-color    : rgba(255,255,255,0);
+  box-sizing          : border-box;
+  display             : inline-flex;
+  flex-direction      : row;
+  flex-shrink         : 0;
+  height              : 36px;
+  justify-content     : flex-start;
+  margin-top          : 56px;
+  position            : relative;
+  width               : auto;
+}
+.application-KG42sx .sidenavleft0-ZUEqxf .bg-rect0-3svmoy {
+  background-color    : rgba(255,255,255,0);
+  height              : 768px;
+  left                : 0px;
+  position            : absolute;
+  top                 : 0px;
+  transform           : rotate(0deg);
+  width               : 256px;
+}
+.application-KG42sx .sidenavleft0-ZUEqxf {
+  background-color    : rgba(255,255,255,0);
+  flex-shrink         : 0;
+  height              : 768px;
+  position            : relative;
+  transform           : rotate(0deg);
+  width               : 256px;
+}
+.application-KG42sx .sidenavleft0-ZUEqxf .bg-rect0-3svmoy .rectangle0-laJIRR {
+  background-color    : rgba(250,250,250,0);
+  height              : 783px;
+  left                : -8px;
+  position            : absolute;
+  top                 : -2px;
+  transform           : rotate(0deg);
+  width               : 271px;
+}
+.application-KG42sx .sidenavleft0-ZUEqxf .bg-rect0-3svmoy .rectangle1-YXBnst {
+  background-color    : rgba(250,250,250,0);
+  height              : 822px;
+  left                : -27px;
+  position            : absolute;
+  top                 : -18px;
+  transform           : rotate(0deg);
+  width               : 310px;
+}
+.application-KG42sx .sidenavleft0-ZUEqxf .sidenavlefttop1-XKj08n {
+  align-items         : flex-end;
+  background-color    : var(--auto-palette-color-7);
+  box-sizing          : border-box;
+  display             : inline-flex;
+  flex-direction      : row;
+  height              : 144px;
+  justify-content     : flex-end;
+  left                : 0px;
+  min-width           : 256px;
+  padding             : 15.5px 23.0px;
+  position            : absolute;
+  top                 : 0px;
+  transform           : rotate(0deg);
+  width               : auto;
+}
+.application-KG42sx .sidenavleft0-ZUEqxf .sidenavlefttop1-XKj08n .auto-flex-aKtfNW .email1-8UB2lV {
+  background-color    : rgba(255,255,255,0);
+  color               : var(--auto-palette-color-1);
+  flex-shrink         : 0;
+  font-size           : 13.0px;
+  height              : auto;
+  line-height         : 13.0px;
+  margin-top          : 28px;
+  min-height          : 20px;
+  min-width           : 88px;
+  position            : relative;
+  text-align          : left;
+  transform           : rotate(0deg);
+  width               : auto;
+}
+.application-KG42sx .sidenavleft0-ZUEqxf .sidenavlefttop1-XKj08n .icarrowdropdown2-KyFDHd {
+  background-color    : rgba(255,255,255,0);
+  flex-shrink         : 0;
+  height              : 5px;
+  margin-bottom       : 10.27px;
+  margin-left         : 121px;
+  position            : relative;
+  transform           : rotate(0deg);
+  width               : 10px;
+}
+.application-KG42sx .sidenavleft0-ZUEqxf .sidenavlefttop1-XKj08n .auto-flex-aKtfNW .circle3-4RqjHW {
+  background-color    : rgba(0,0,0,0);
+  flex-shrink         : 0;
+  height              : 56px;
+  position            : relative;
+  transform           : rotate(0deg);
+  width               : 56px;
+}
+.application-KG42sx .sidenavleft0-ZUEqxf .quick-start2-mN16iB {
+  background-color    : var(--auto-palette-color-3);
+  height              : 37px;
+  left                : 0px;
+  pointer-events      : auto;
+  position            : absolute;
+  top                 : 152px;
+  transform           : rotate(0deg);
+  transition          : all 0.2s ease;
+  width               : 256px;
+}
+.application-KG42sx .sidenavleft0-ZUEqxf .quick-start2-mN16iB:hover {
+  transform           : scale(1.1);
+  box-shadow          : 0px 0px 10px 2px rgba(0,0,0,0.1);
+}
+.application-KG42sx .sidenavleft0-ZUEqxf .quick-start2-mN16iB .group3351-BnKYHh {
+  align-items         : center;
+  background-color    : rgba(255,255,255,0);
+  box-sizing          : border-box;
+  display             : inline-flex;
+  flex-direction      : row;
+  height              : 24px;
+  justify-content     : flex-end;
+  left                : 39px;
+  min-width           : 132px;
+  position            : relative;
+  top                 : 7px;
+  transform           : rotate(0deg);
+  width               : auto;
+}
+.application-KG42sx .sidenavleft0-ZUEqxf .quick-start2-mN16iB .group3351-BnKYHh .quick-start0-QmRgBC {
+  background-color    : rgba(110,110,110,0);
+  color               : var(--auto-palette-color-2);
+  flex-shrink         : 0;
+  font-size           : 14.0px;
+  height              : auto;
+  line-height         : 20.0px;
+  margin-left         : 37px;
+  margin-top          : 1.08px;
+  min-height          : 21px;
+  min-width           : 83px;
+  position            : relative;
+  text-align          : left;
+  transform           : rotate(0deg);
+  width               : auto;
+}
+.application-KG42sx .sidenavleft0-ZUEqxf .quick-start2-mN16iB .group3351-BnKYHh .icon-awesome-play1-S3fI5P {
+  background-color    : rgba(110,110,110,0);
+  flex-shrink         : 0;
+  height              : 24px;
+  position            : relative;
+  transform           : rotate(0deg);
+  width               : 21px;
+}
+.application-KG42sx .sidenavleft0-ZUEqxf .application3-dzZLa4 {
+  background-color    : var(--auto-palette-color-3);
+  height              : 37px;
+  left                : 0px;
+  pointer-events      : auto;
+  position            : absolute;
+  top                 : 197px;
+  transform           : rotate(0deg);
+  transition          : all 0.2s ease;
+  width               : 256px;
+}
+.application-KG42sx .sidenavleft0-ZUEqxf .application3-dzZLa4:hover {
+  transform           : scale(1.1);
+  box-shadow          : 0px 0px 10px 2px rgba(0,0,0,0.1);
+}
+.application-KG42sx .sidenavleft0-ZUEqxf .preferences4-BwrcjF .group33512-rLQyeN .preferences0-d65jiC {
+  background-color    : rgba(110,110,110,0);
+  color               : var(--auto-palette-color-2);
+  flex-shrink         : 0;
+  font-size           : 14.0px;
+  height              : auto;
+  line-height         : 20.0px;
+  margin-left         : 35px;
+  margin-top          : 1.08px;
+  min-height          : 21px;
+  min-width           : 88px;
+  position            : relative;
+  text-align          : left;
+  transform           : rotate(0deg);
+  width               : auto;
+}
+.application-KG42sx .input1-ttSWWI {
+  align-items         : center;
+  background-color    : rgba(255,255,255,0);
+  box-sizing          : border-box;
+  display             : flex;
+  flex-direction      : column;
+  flex-shrink         : 0;
+  height              : auto;
+  justify-content     : flex-start;
+  margin-left         : 24px;
+  margin-top          : 46.0px;
+  position            : relative;
+  transform           : rotate(0deg);
+  width               : 290px;
+}
+.application-KG42sx .input1-ttSWWI .number-of-vertical-parts0-XCP9vL {
+  align-items         : flex-start;
+  background-color    : rgba(255,255,255,0);
+  box-sizing          : border-box;
+  display             : flex;
+  flex-direction      : column;
+  flex-shrink         : 0;
+  height              : auto;
+  justify-content     : flex-start;
+  margin-top          : 20px;
+  min-height          : 28px;
+  position            : relative;
+  transform           : rotate(0deg);
+  width               : 290px;
+}
+.application-KG42sx .input1-ttSWWI .number-of-vertical-parts0-XCP9vL .textpath0-D1Hm1V {
+  background-color    : rgba(193,193,193,0);
+  flex-shrink         : 0;
+  height              : 1px;
+  margin-top          : 5px;
+  position            : relative;
+  transform           : rotate(0deg);
+  width               : 290px;
+}
+.application-KG42sx {
+  align-items         : flex-start;
+  background-color    : var(--auto-palette-color-6);
+  box-sizing          : border-box;
+  display             : inline-flex;
+  flex-direction      : row;
+  height              : 768.0px;
+  justify-content     : flex-start;
+  min-width           : 1366px;
+  overflow            : hidden;
+  position            : relative;
+  width               : auto;
+}
+.application-KG42sx .sidenavleft0-ZUEqxf .preferences4-BwrcjF {
+  background-color    : var(--auto-palette-color-3);
+  height              : 37px;
+  left                : 0px;
+  pointer-events      : auto;
+  position            : absolute;
+  top                 : 242px;
+  transform           : rotate(0deg);
+  transition          : all 0.2s ease;
+  width               : 256px;
+}
+.application-KG42sx .sidenavleft0-ZUEqxf .preferences4-BwrcjF:hover {
+  transform           : scale(1.1);
+  box-shadow          : 0px 0px 10px 2px rgba(0,0,0,0.1);
+}
+.application-KG42sx .sidenavleft0-ZUEqxf .application3-dzZLa4 .group33511-6wssho .icon-ionic-ios-apps1-XtR7JY .group3421-6PlNkG .path61-H8PvNL {
+  background-color    : rgba(110,110,110,0);
+  height              : 7px;
+  left                : 0px;
+  position            : absolute;
+  top                 : -0px;
+  transform           : rotate(0deg);
+  width               : 23px;
+}
+.application-KG42sx .sidenavleft0-ZUEqxf .application3-dzZLa4 .group33511-6wssho {
+  align-items         : flex-end;
+  background-color    : rgba(255,255,255,0);
+  box-sizing          : border-box;
+  display             : inline-flex;
+  flex-direction      : row;
+  height              : 23px;
+  justify-content     : flex-start;
+  left                : 37px;
+  position            : relative;
+  top                 : 7px;
+  transform           : rotate(0deg);
+  width               : auto;
+}
+.application-KG42sx .sidenavleft0-ZUEqxf .application3-dzZLa4 .group33511-6wssho .icon-ionic-ios-apps1-XtR7JY .path40-pWz7NW {
+  background-color    : rgba(110,110,110,0);
+  height              : 11px;
+  left                : 0px;
+  position            : absolute;
+  top                 : 0px;
+  transform           : rotate(0deg);
+  width               : 23px;
+}
+.application-KG42sx .sidenavleft0-ZUEqxf .preferences4-BwrcjF .group33512-rLQyeN {
+  align-items         : center;
+  background-color    : rgba(255,255,255,0);
+  box-sizing          : border-box;
+  display             : inline-flex;
+  flex-direction      : row;
+  height              : 25px;
+  justify-content     : flex-start;
+  left                : 38px;
+  position            : relative;
+  top                 : 6px;
+  transform           : rotate(0deg);
+  width               : auto;
+}
+.application-KG42sx .sidenavleft0-ZUEqxf .preferences4-BwrcjF .group33512-rLQyeN .icon-feather-settings1-fl0ora {
+  background-color    : rgba(255,255,255,0);
+  flex-shrink         : 0;
+  height              : 25px;
+  position            : relative;
+  transform           : rotate(0deg);
+  width               : 25px;
+}
+.application-KG42sx .sidenavleft0-ZUEqxf .preferences4-BwrcjF .group33512-rLQyeN .icon-feather-settings1-fl0ora .path70-HyXCnQ {
+  background-color    : rgba(255,255,255,0);
+  height              : 10px;
+  left                : 8px;
+  position            : absolute;
+  top                 : 8px;
+  transform           : rotate(0deg);
+  width               : 10px;
+}
+.application-KG42sx .sidenavleft0-ZUEqxf .preferences4-BwrcjF .group33512-rLQyeN .icon-feather-settings1-fl0ora .path81-GBLAYB {
+  background-color    : rgba(255,255,255,0);
+  height              : 28px;
+  left                : -2px;
+  position            : absolute;
+  top                 : -1px;
+  transform           : rotate(0deg);
+  width               : 28px;
+}
+.application-KG42sx .sidenavleft0-ZUEqxf .help5-fNHuYw {
+  background-color    : var(--auto-palette-color-3);
+  height              : 37px;
+  left                : 0px;
+  pointer-events      : auto;
+  position            : absolute;
+  top                 : 287px;
+  transform           : rotate(0deg);
+  transition          : all 0.2s ease;
+  width               : 256px;
+}
+.application-KG42sx .sidenavleft0-ZUEqxf .help5-fNHuYw:hover {
+  transform           : scale(1.1);
+  box-shadow          : 0px 0px 10px 2px rgba(0,0,0,0.1);
+}
+.application-KG42sx .sidenavleft0-ZUEqxf .help5-fNHuYw .group33513-3QxJIm {
+  align-items         : flex-end;
+  background-color    : rgba(255,255,255,0);
+  box-sizing          : border-box;
+  display             : inline-flex;
+  flex-direction      : row;
+  height              : 19px;
+  justify-content     : flex-start;
+  left                : 42px;
+  position            : relative;
+  top                 : 9px;
+  transform           : rotate(0deg);
+  width               : auto;
+}
+.application-KG42sx .sidenavleft0-ZUEqxf .help5-fNHuYw .group33513-3QxJIm .icon-feather-help-circle1-PSDmuw .path101-s8h8de {
+  background-color    : rgba(255,255,255,0);
+  height              : 9px;
+  left                : 5px;
+  position            : absolute;
+  top                 : 3px;
+  transform           : rotate(0deg);
+  width               : 9px;
+}
+.application-KG42sx .sidenavleft0-ZUEqxf .help5-fNHuYw .group33513-3QxJIm .icon-feather-help-circle1-PSDmuw .path112-Z7WGoW {
+  background-color    : rgba(255,255,255,0);
+  height              : 3px;
+  left                : 8px;
+  position            : absolute;
+  top                 : 13px;
+  transform           : rotate(0deg);
+  width               : 3px;
+}
+.application-KG42sx .sidenavleft0-ZUEqxf .help5-fNHuYw .group33513-3QxJIm .help0-dEDsnq {
+  background-color    : rgba(110,110,110,0);
+  color               : var(--auto-palette-color-2);
+  flex-shrink         : 0;
+  font-size           : 14.0px;
+  height              : auto;
+  line-height         : 20.0px;
+  margin-bottom       : -1.5px;
+  margin-left         : 36px;
+  min-height          : 21px;
+  min-width           : 41px;
+  position            : relative;
+  text-align          : left;
+  transform           : rotate(0deg);
+  width               : auto;
+}
+.application-KG42sx .sidenavleft0-ZUEqxf .help5-fNHuYw .group33513-3QxJIm .icon-feather-help-circle1-PSDmuw {
+  background-color    : rgba(255,255,255,0);
+  flex-shrink         : 0;
+  height              : 19px;
+  position            : relative;
+  transform           : rotate(0deg);
+  width               : 19px;
+}
+.application-KG42sx .sidenavleft0-ZUEqxf .help5-fNHuYw .group33513-3QxJIm .icon-feather-help-circle1-PSDmuw .path90-2Hyf2q {
+  background-color    : rgba(255,255,255,0);
+  height              : 22px;
+  left                : -1px;
+  position            : absolute;
+  top                 : -2px;
+  transform           : rotate(0deg);
+  width               : 22px;
+}
+.application-KG42sx .sidenavleft0-ZUEqxf .application3-dzZLa4 .group33511-6wssho .application0-t0LvEv {
+  background-color    : rgba(110,110,110,0);
+  color               : var(--auto-palette-color-2);
+  flex-shrink         : 0;
+  font-size           : 14.0px;
+  height              : auto;
+  line-height         : 20.0px;
+  margin-bottom       : 0.5px;
+  margin-left         : 37px;
+  min-height          : 21px;
+  min-width           : 83px;
+  position            : relative;
+  text-align          : left;
+  transform           : rotate(0deg);
+  width               : auto;
+}
+.application-KG42sx .sidenavleft0-ZUEqxf .application3-dzZLa4 .group33511-6wssho .icon-ionic-ios-apps1-XtR7JY {
+  background-color    : rgba(255,255,255,0);
+  flex-shrink         : 0;
+  height              : 23px;
+  position            : relative;
+  transform           : rotate(0deg);
+  width               : 23px;
+}
+.application-KG42sx .sidenavleft0-ZUEqxf .application3-dzZLa4 .group33511-6wssho .icon-ionic-ios-apps1-XtR7JY .group3421-6PlNkG .path50-FnDSIc {
+  background-color    : rgba(110,110,110,0);
+  height              : 7px;
+  left                : 0px;
+  position            : absolute;
+  top                 : 6px;
+  transform           : rotate(0deg);
+  width               : 23px;
+}
+.application-KG42sx .sidenavleft0-ZUEqxf .application3-dzZLa4 .group33511-6wssho .icon-ionic-ios-apps1-XtR7JY .group3421-6PlNkG {
+  background-color    : rgba(255,255,255,0);
+  height              : 13px;
+  left                : 0px;
+  position            : absolute;
+  top                 : 10px;
+  transform           : rotate(0deg);
+  width               : 23px;
+}
+.application-KG42sx .input1-ttSWWI .number-of-vertical-parts0-XCP9vL .inputtext1-5CgmAu {
+  background-color    : rgba(149,152,154,0);
+  border              : 0;
+  color               : var(--auto-palette-color-8);
+  flex-shrink         : 0;
+  font-size           : 16.0px;
+  height              : 23px;
+  line-height         : 24.0px;
+  margin-top          : -1px;
+  padding             : 0;
+  position            : relative;
+  resize              : none;
+  text-align          : left;
+  transform           : rotate(0deg);
+  width               : 187px;
+}
+.application-KG42sx .input1-ttSWWI .number-of-vertical-parts0-XCP9vL .inputtext1-5CgmAu::placeholder {
+  color               : rgba(149,152,154,0.6);
+}
+.application-KG42sx .input1-ttSWWI .number-of-horizontal-parts1-CiTyJ0 .textpath01-HcqftE {
+  background-color    : rgba(193,193,193,0);
+  flex-shrink         : 0;
+  height              : 1px;
+  margin-top          : 5px;
+  position            : relative;
+  transform           : rotate(0deg);
+  width               : 290px;
+}
+.application-KG42sx .input1-ttSWWI .number-of-horizontal-parts1-CiTyJ0 {
+  align-items         : flex-start;
+  background-color    : rgba(255,255,255,0);
+  box-sizing          : border-box;
+  display             : flex;
+  flex-direction      : column;
+  flex-shrink         : 0;
+  height              : auto;
+  justify-content     : flex-start;
+  margin-top          : 49px;
+  min-height          : 28px;
+  position            : relative;
+  transform           : rotate(0deg);
+  width               : 290px;
+}
+.application-KG42sx .input1-ttSWWI .symbol7932-Bjlbg4 {
+  align-items         : center;
+  background-color    : rgba(255,255,255,0);
+  box-sizing          : border-box;
+  display             : inline-flex;
+  flex-direction      : row;
+  flex-shrink         : 0;
+  height              : 36px;
+  justify-content     : flex-end;
+  margin-left         : 0.21px;
+  min-width           : 166px;
+  padding             : 0 14.8px;
+  position            : relative;
+  transform           : rotate(0deg);
+  width               : auto;
+}
+.application-KG42sx .input1-ttSWWI .number-of-horizontal-parts1-CiTyJ0 .inputtext11-3pKVSJ {
+  background-color    : rgba(149,152,154,0);
+  border              : 0;
+  color               : var(--auto-palette-color-8);
+  flex-shrink         : 0;
+  font-size           : 16.0px;
+  height              : 23px;
+  line-height         : 24.0px;
+  margin-top          : -1px;
+  padding             : 0;
+  position            : relative;
+  resize              : none;
+  text-align          : left;
+  transform           : rotate(0deg);
+  width               : 206px;
+}
+.application-KG42sx .input1-ttSWWI .number-of-horizontal-parts1-CiTyJ0 .inputtext11-3pKVSJ::placeholder {
+  color               : rgba(149,152,154,0.6);
+}
+.application-KG42sx .input1-ttSWWI .symbol7932-Bjlbg4 .pressed1-nCtFm9 {
+  background-color    : rgba(255,255,255,0);
+  color               : var(--auto-palette-color-1);
+  flex-shrink         : 0;
+  font-size           : 14.0px;
+  height              : auto;
+  min-height          : 21px;
+  min-width           : 145px;
+  position            : relative;
+  text-align          : left;
+  transform           : rotate(0deg);
+  width               : auto;
+}
+.application-KG42sx .input1-ttSWWI .symbol7923-A4I6CF {
+  background-color    : rgba(255,255,255,0);
+  flex-shrink         : 0;
+  height              : 36px;
+  margin-right        : 0.62px;
+  margin-top          : 49px;
+  pointer-events      : auto;
+  position            : relative;
+  transform           : rotate(0deg);
+  transition          : all 0.2s ease;
+  width               : 103px;
+}
+.application-KG42sx .input1-ttSWWI .symbol7923-A4I6CF:hover {
+  transform           : scale(1.1);
+  box-shadow          : 0px 0px 10px 2px rgba(0,0,0,0.2);
+}
+.application-KG42sx .input1-ttSWWI .auto-flex1-OjtaH6 .number-of-horizontal-parts4-Cae5il {
+  align-items         : flex-start;
+  background-color    : rgba(255,255,255,0);
+  box-sizing          : border-box;
+  display             : inline-flex;
+  flex-direction      : row;
+  flex-shrink         : 0;
+  height              : 21px;
+  justify-content     : flex-start;
+  margin-top          : 1.0px;
+  position            : relative;
+  transform           : rotate(0deg);
+  width               : auto;
+}
+.application-KG42sx .input1-ttSWWI .symbol7923-A4I6CF .pressed11-oHdAU2 {
+  background-color    : rgba(255,255,255,0);
+  color               : var(--auto-palette-color-1);
+  font-size           : 14.0px;
+  height              : auto;
+  left                : 16px;
+  position            : absolute;
+  text-align          : left;
+  top                 : 8px;
+  transform           : rotate(0deg);
+  width               : auto;
+}
+.application-KG42sx .input1-ttSWWI .symbol7923-A4I6CF .path102-NPCF4d {
+  background-color    : rgba(110,110,110,0);
+  height              : 60px;
+  left                : -12px;
+  position            : absolute;
+  top                 : -4px;
+  transform           : rotate(0deg);
+  width               : 127px;
+}
+.application-KG42sx .input1-ttSWWI .auto-flex1-OjtaH6 .symbol7945-H6veYm {
+  background-color    : rgba(255,255,255,0);
+  flex-shrink         : 0;
+  height              : 36px;
+  margin-left         : 83px;
+  position            : relative;
+  transform           : rotate(0deg);
+  width               : 83px;
+}
+.application-KG42sx .input1-ttSWWI .auto-flex1-OjtaH6 .number-of-horizontal-parts4-Cae5il .inputtext0-3T48Ra {
+  background-color    : rgba(149,152,154,0);
+  color               : var(--auto-palette-color-8);
+  flex-shrink         : 0;
+  font-size           : 16.0px;
+  height              : auto;
+  line-height         : 24.0px;
+  margin-top          : -1.5px;
+  min-height          : 23px;
+  min-width           : 123px;
+  position            : relative;
+  text-align          : left;
+  transform           : rotate(0deg);
+  width               : auto;
+}
+.application-KG42sx .input1-ttSWWI .auto-flex1-OjtaH6 .symbol7945-H6veYm .pressed12-3FIRoc {
+  background-color    : rgba(255,255,255,0);
+  color               : var(--auto-palette-color-1);
+  font-size           : 14.0px;
+  height              : auto;
+  left                : 17px;
+  position            : absolute;
+  text-align          : center;
+  top                 : 8px;
+  transform           : rotate(0deg);
+  width               : auto;
+}
+.application-KG42sx .input1-ttSWWI .auto-flex1-OjtaH6 .symbol7945-H6veYm .path103-D13GJP {
+  background-color    : rgba(0,150,136,0);
+  height              : 36px;
+  left                : -0px;
+  position            : absolute;
+  top                 : 0px;
+  transform           : rotate(0deg);
+  width               : 83px;
+}
+.application-KG42sx .image-preview2-W4nSID .group3361-Fd9Qh2 .symbol7911-LPMOTc .path104-gCKWQB {
+  background-color    : rgba(0,150,136,0);
+  height              : 36px;
+  left                : -0px;
+  position            : absolute;
+  top                 : 0px;
+  transform           : rotate(0deg);
+  width               : 166px;
+}
+.application-KG42sx .image-preview2-W4nSID .group3361-Fd9Qh2 {
+  align-items         : center;
+  background-color    : rgba(255,255,255,0);
+  box-sizing          : border-box;
+  display             : flex;
+  flex-direction      : column;
+  flex-shrink         : 0;
+  height              : auto;
+  justify-content     : flex-start;
+  position            : relative;
+  transform           : rotate(0deg);
+  width               : 489px;
+}
+.application-KG42sx .image-preview2-W4nSID .group3361-Fd9Qh2 .rectangle1880-yr1lwj {
+  background-color    : rgba(238,238,238,0);
+  flex-shrink         : 0;
+  height              : 549px;
+  position            : relative;
+  transform           : rotate(0deg);
+  width               : 489px;
+}
+.application-KG42sx .image-preview2-W4nSID .group3361-Fd9Qh2 .symbol7911-LPMOTc {
+  background-color    : rgba(255,255,255,0);
+  flex-shrink         : 0;
+  height              : 36px;
+  margin-right        : 1.2px;
+  margin-top          : 53px;
+  pointer-events      : auto;
+  position            : relative;
+  transform           : rotate(0deg);
+  transition          : all 0.2s ease;
+  width               : 166px;
+}
+.application-KG42sx .image-preview2-W4nSID .group3361-Fd9Qh2 .symbol7911-LPMOTc:hover {
+  transform           : scale(1.1);
+  box-shadow          : 0px 0px 10px 2px rgba(0,0,0,0.2);
+}
+.application-KG42sx .image-preview2-W4nSID {
+  align-items         : flex-start;
+  background-color    : rgba(255,255,255,0);
+  box-sizing          : border-box;
+  display             : inline-flex;
+  flex-direction      : row;
+  flex-shrink         : 0;
+  height              : 768px;
+  justify-content     : flex-end;
+  margin-left         : 28px;
+  min-width           : 768px;
+  padding             : 61.0px 139.0px;
+  position            : relative;
+  transform           : rotate(0deg);
+  width               : auto;
+}
+.application-KG42sx .image-preview2-W4nSID .group3361-Fd9Qh2 .symbol7911-LPMOTc .pressed13-naVHaE {
+  background-color    : rgba(255,255,255,0);
+  color               : var(--auto-palette-color-1);
+  font-size           : 14.0px;
+  height              : auto;
+  left                : 26px;
+  position            : absolute;
+  text-align          : center;
+  top                 : 8px;
+  transform           : rotate(0deg);
+  width               : auto;
+}
+/* .anima-animate-appear prefix for appear animations */
+.anima-animate-appear {
+  opacity             : 0;
+  display             : block;
+  animation           : anima-reveal 0.3s ease-in-out 1 normal forwards;
+}
+.anima-animate-disappear {
+  opacity             : 1;
+  display             : block;
+  animation           : anima-reveal 0.3s ease-in-out 1 reverse forwards;
+}
+.anima-animate-nodelay {
+  animation-delay     : 0s;
+}
+@keyframes anima-reveal {
+  from {
+    opacity             : 0;
+  }
+  to {
+    opacity             : 1;
+  }
+}
+a {
+  text-decoration     : none;
+}
+.anima-flexbox-container a {
+  line-height         : 0;
+}
+.anima-component-wrapper,
+.anima-component-wrapper * {
+  pointer-events      : none;
+}
+.anima-component-wrapper a *,
+.anima-component-wrapper a,
+.anima-component-wrapper input,
+.anima-component-wrapper video,
+.anima-component-wrapper iframe,
+.anima-listeners-active,
+.anima-listeners-active * {
+  pointer-events      : auto;
+}
+.anima-hidden,
+.anima-hidden * {
+  visibility          : hidden;
+  pointer-events      : none;
+}
+.anima-smart-layers-pointers,
+.anima-smart-layers-pointers * {
+  pointer-events      : auto;
+  visibility          : visible;
+}
+.anima-component-wrapper.anima-not-ready,
+.anima-component-wrapper.anima-not-ready * {
+  visibility          : hidden !important;
+}
+.anima-listeners-active-click,
+.anima-listeners-active-click * {
+  cursor              : pointer;
+}
+.anima-component-wrapper a,
+.anima-screen a {
+  text-decoration     : none;
+}
+.anima-flexbox-container a {
+  line-height         : 0;
+}
+.anima-full-width-a {
+  width               : 100%;
+}
+.anima-full-height-a {
+  height              : 100%;
+}
+.anima-screen textarea:focus,
+.anima-screen input:focus {
+  outline             : none;
+}
+.anima-screen div {
+  -webkit-text-size-adjust: none;
+}
+.anima-container-center-vertical,
+.anima-container-center-horizontal {
+  pointer-events      : none;
+  display             : flex;
+  flex-direction      : row;
+  padding             : 0;
+  margin              : 0;
+}
+.anima-container-center-vertical {
+  align-items         : center;
+  height              : 100%;
+}
+.anima-container-center-horizontal {
+  justify-content     : center;
+  width               : 100%;
+}
+.anima-container-center-vertical > *,
+.anima-container-center-horizontal > * {
+  pointer-events      : auto;
+  flex-shrink         : 0;
+}
+.anima-word-break {
+  overflow-wrap       : break-word;
+  word-wrap           : break-word;
+  word-break          : break-all;
+  word-break          : break-word;
+}

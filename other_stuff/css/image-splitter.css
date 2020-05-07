@@ -1,0 +1,580 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:500,700,400|Roboto+Condensed:700');
+
+
+/* ANIMA screen - image-splitter */
+.font-class-1 {
+  font-family         : Roboto, Helvetica, Arial, serif;
+  font-style          : normal;
+  font-weight         : 500;
+}
+.font-class-2 {
+  font-family         : Roboto, Helvetica, Arial, serif;
+  font-style          : normal;
+  font-weight         : 700;
+}
+.font-class-3 {
+  font-family         : Roboto, Helvetica, Arial, serif;
+  font-style          : normal;
+  font-weight         : 400;
+}
+.font-class-4 {
+  font-family         : "Roboto", Helvetica, Arial, serif;
+  font-size           : 14.0px;
+  line-height         : 20.0px;
+}
+:root {
+  --auto-palette-color-1: rgba(255,255,255,1.0);
+  --auto-palette-color-2: rgba(238,238,238,1.0);
+  --auto-palette-color-3: rgba(110,110,110,1.0);
+  --auto-palette-color-4: rgba(112,112,112,1.0);
+  --auto-palette-color-5: rgba(250,250,250,1.0);
+  --auto-palette-color-6: rgba(48,48,48,1.0);
+  --auto-palette-color-7: rgba(0,150,136,1.0);
+  --auto-palette-color-8: rgba(193,193,193,1.0);
+  --auto-palette-color-9: rgba(149,152,154,1.0);
+}
+.image-splitter-nAtsxz .image-splitter01-Rn8MS6 .input0-jtwk46 .auto-flex-mO0cWo {
+  align-items         : center;
+  align-self          : flex-start;
+  background-color    : rgba(255,255,255,0);
+  box-sizing          : border-box;
+  display             : inline-flex;
+  flex-direction      : row;
+  flex-shrink         : 0;
+  height              : 36px;
+  justify-content     : flex-start;
+  margin-top          : 56px;
+  position            : relative;
+  width               : auto;
+}
+.image-splitter-nAtsxz {
+  align-items         : flex-start;
+  background-color    : var(--auto-palette-color-6);
+  box-sizing          : border-box;
+  display             : inline-flex;
+  flex-direction      : row;
+  height              : 768.0px;
+  justify-content     : flex-start;
+  min-width           : 1366px;
+  overflow            : hidden;
+  position            : relative;
+  width               : auto;
+}
+.image-splitter-nAtsxz .image-splitter01-Rn8MS6 {
+  align-items         : flex-start;
+  background-color    : rgba(255,255,255,0);
+  box-sizing          : border-box;
+  display             : inline-flex;
+  flex-direction      : row;
+  flex-shrink         : 0;
+  height              : 768px;
+  justify-content     : flex-start;
+  margin-left         : 109px;
+  position            : relative;
+  transform           : rotate(0deg);
+  width               : auto;
+}
+.image-splitter-nAtsxz .image-splitter01-Rn8MS6 .input0-jtwk46 {
+  align-items         : center;
+  background-color    : rgba(255,255,255,0);
+  box-sizing          : border-box;
+  display             : flex;
+  flex-direction      : column;
+  flex-shrink         : 0;
+  height              : auto;
+  justify-content     : flex-start;
+  margin-top          : 68.0px;
+  position            : relative;
+  transform           : rotate(0deg);
+  width               : 290px;
+}
+.image-splitter-nAtsxz .image-splitter01-Rn8MS6 .input0-jtwk46 .number-of-vertical-parts0-PpGUJH {
+  align-items         : flex-start;
+  background-color    : rgba(255,255,255,0);
+  box-sizing          : border-box;
+  display             : flex;
+  flex-direction      : column;
+  flex-shrink         : 0;
+  height              : auto;
+  justify-content     : flex-start;
+  margin-top          : 20px;
+  min-height          : 28px;
+  position            : relative;
+  transform           : rotate(0deg);
+  width               : 290px;
+}
+.image-splitter-nAtsxz .image-splitter01-Rn8MS6 .input0-jtwk46 .number-of-vertical-parts0-PpGUJH .textpath06-LkfeoP {
+  background-color    : rgba(193,193,193,0);
+  flex-shrink         : 0;
+  height              : 1px;
+  margin-top          : 5px;
+  position            : relative;
+  transform           : rotate(0deg);
+  width               : 290px;
+}
+.image-splitter-nAtsxz .image-splitter01-Rn8MS6 .input0-jtwk46 .number-of-vertical-parts0-PpGUJH .inputtext1-QOtsfy {
+  background-color    : rgba(149,152,154,0);
+  border              : 0;
+  color               : var(--auto-palette-color-9);
+  flex-shrink         : 0;
+  font-size           : 16.0px;
+  height              : 23px;
+  line-height         : 24.0px;
+  margin-top          : -1px;
+  padding             : 0;
+  position            : relative;
+  resize              : none;
+  text-align          : left;
+  transform           : rotate(0deg);
+  width               : 187px;
+}
+.image-splitter-nAtsxz .image-splitter01-Rn8MS6 .input0-jtwk46 .number-of-vertical-parts0-PpGUJH .inputtext1-QOtsfy::placeholder {
+  color               : rgba(149,152,154,0.6);
+}
+.image-splitter-nAtsxz .image-splitter01-Rn8MS6 .input0-jtwk46 .number-of-horizontal-parts1-AgpvLQ {
+  align-items         : flex-start;
+  background-color    : rgba(255,255,255,0);
+  box-sizing          : border-box;
+  display             : flex;
+  flex-direction      : column;
+  flex-shrink         : 0;
+  height              : auto;
+  justify-content     : flex-start;
+  margin-top          : 49px;
+  min-height          : 28px;
+  position            : relative;
+  transform           : rotate(0deg);
+  width               : 290px;
+}
+.image-splitter-nAtsxz .image-splitter01-Rn8MS6 .input0-jtwk46 .number-of-horizontal-parts1-AgpvLQ .textpath07-FLVfDU {
+  background-color    : rgba(193,193,193,0);
+  flex-shrink         : 0;
+  height              : 1px;
+  margin-top          : 5px;
+  position            : relative;
+  transform           : rotate(0deg);
+  width               : 290px;
+}
+.image-splitter-nAtsxz .image-splitter01-Rn8MS6 .input0-jtwk46 .number-of-horizontal-parts1-AgpvLQ .inputtext11-VcAgED {
+  background-color    : rgba(149,152,154,0);
+  border              : 0;
+  color               : var(--auto-palette-color-9);
+  flex-shrink         : 0;
+  font-size           : 16.0px;
+  height              : 23px;
+  line-height         : 24.0px;
+  margin-top          : -1px;
+  padding             : 0;
+  position            : relative;
+  resize              : none;
+  text-align          : left;
+  transform           : rotate(0deg);
+  width               : 206px;
+}
+.image-splitter-nAtsxz .image-splitter01-Rn8MS6 .input0-jtwk46 .number-of-horizontal-parts1-AgpvLQ .inputtext11-VcAgED::placeholder {
+  color               : rgba(149,152,154,0.6);
+}
+.image-splitter-nAtsxz .image-splitter01-Rn8MS6 .input0-jtwk46 .symbol7952-ja6TPl {
+  background-color    : rgba(255,255,255,0);
+  flex-shrink         : 0;
+  height              : 36px;
+  margin-left         : 0.21px;
+  position            : relative;
+  transform           : rotate(0deg);
+  width               : 166px;
+}
+.image-splitter-nAtsxz .image-splitter01-Rn8MS6 .input0-jtwk46 .symbol7952-ja6TPl .path103-fCjm2K {
+  background-color    : rgba(0,150,136,0);
+  height              : 36px;
+  left                : -0px;
+  position            : absolute;
+  top                 : 0px;
+  transform           : rotate(0deg);
+  width               : 166px;
+}
+.image-splitter-nAtsxz .image-splitter01-Rn8MS6 .input0-jtwk46 .symbol7952-ja6TPl .pressed12-mnUrm4 {
+  background-color    : rgba(255,255,255,0);
+  color               : var(--auto-palette-color-1);
+  font-size           : 14.0px;
+  height              : auto;
+  left                : 16px;
+  line-height         : 20.0px;
+  position            : absolute;
+  text-align          : left;
+  top                 : 8px;
+  transform           : rotate(0deg);
+  width               : auto;
+}
+.image-splitter-nAtsxz .image-splitter01-Rn8MS6 .input0-jtwk46 .symbol7963-gEw7yd {
+  background-color    : rgba(255,255,255,0);
+  flex-shrink         : 0;
+  height              : 36px;
+  margin-right        : 0.62px;
+  margin-top          : 49px;
+  pointer-events      : auto;
+  position            : relative;
+  transform           : rotate(0deg);
+  transition          : all 0.2s ease;
+  width               : 103px;
+}
+.image-splitter-nAtsxz .image-splitter01-Rn8MS6 .input0-jtwk46 .symbol7963-gEw7yd:hover {
+  transform           : scale(1.1);
+  box-shadow          : 0px 0px 10px 2px rgba(0,0,0,0.2);
+}
+.image-splitter-nAtsxz .image-splitter01-Rn8MS6 .input0-jtwk46 .symbol7963-gEw7yd .path104-uAIjiv {
+  background-color    : rgba(110,110,110,0);
+  height              : 60px;
+  left                : -12px;
+  position            : absolute;
+  top                 : -4px;
+  transform           : rotate(0deg);
+  width               : 127px;
+}
+.image-splitter-nAtsxz .image-splitter01-Rn8MS6 .input0-jtwk46 .symbol7963-gEw7yd .pressed13-lZAR1W {
+  background-color    : rgba(255,255,255,0);
+  color               : var(--auto-palette-color-1);
+  font-size           : 14.0px;
+  height              : auto;
+  left                : 16px;
+  line-height         : 20.0px;
+  position            : absolute;
+  text-align          : left;
+  top                 : 8px;
+  transform           : rotate(0deg);
+  width               : auto;
+}
+.image-splitter-nAtsxz .image-splitter01-Rn8MS6 .input0-jtwk46 .auto-flex-mO0cWo .number-of-horizontal-parts4-R6lKM9 {
+  align-items         : flex-start;
+  background-color    : rgba(255,255,255,0);
+  box-sizing          : border-box;
+  display             : inline-flex;
+  flex-direction      : row;
+  flex-shrink         : 0;
+  height              : 21px;
+  justify-content     : flex-start;
+  margin-top          : 1.0px;
+  position            : relative;
+  transform           : rotate(0deg);
+  width               : auto;
+}
+.image-splitter-nAtsxz .image-splitter01-Rn8MS6 .input0-jtwk46 .auto-flex-mO0cWo .number-of-horizontal-parts4-R6lKM9 .inputtext0-uUoRsb {
+  background-color    : rgba(149,152,154,0);
+  color               : var(--auto-palette-color-9);
+  flex-shrink         : 0;
+  font-size           : 16.0px;
+  height              : auto;
+  line-height         : 24.0px;
+  margin-top          : -1.5px;
+  min-height          : 23px;
+  min-width           : 123px;
+  position            : relative;
+  text-align          : left;
+  transform           : rotate(0deg);
+  width               : auto;
+}
+.image-splitter-nAtsxz .image-splitter01-Rn8MS6 .input0-jtwk46 .auto-flex-mO0cWo .symbol7975-8VkrKD {
+  background-color    : rgba(255,255,255,0);
+  flex-shrink         : 0;
+  height              : 36px;
+  margin-left         : 83px;
+  position            : relative;
+  transform           : rotate(0deg);
+  width               : 83px;
+}
+.image-splitter-nAtsxz .image-splitter01-Rn8MS6 .input0-jtwk46 .auto-flex-mO0cWo .symbol7975-8VkrKD .path105-1ARC3T {
+  background-color    : rgba(0,150,136,0);
+  height              : 36px;
+  left                : -0px;
+  position            : absolute;
+  top                 : 0px;
+  transform           : rotate(0deg);
+  width               : 83px;
+}
+.image-splitter-nAtsxz .image-splitter01-Rn8MS6 .input0-jtwk46 .auto-flex-mO0cWo .symbol7975-8VkrKD .pressed14-exRSH2 {
+  background-color    : rgba(255,255,255,0);
+  color               : var(--auto-palette-color-1);
+  font-size           : 14.0px;
+  height              : auto;
+  left                : 17px;
+  line-height         : 20.0px;
+  position            : absolute;
+  text-align          : center;
+  top                 : 8px;
+  transform           : rotate(0deg);
+  width               : auto;
+}
+.image-splitter-nAtsxz .image-splitter01-Rn8MS6 .image-preview1-hG9C4b {
+  align-items         : flex-start;
+  background-color    : rgba(255,255,255,0);
+  box-sizing          : border-box;
+  display             : inline-flex;
+  flex-direction      : row;
+  flex-shrink         : 0;
+  height              : 768px;
+  justify-content     : flex-end;
+  margin-left         : 50px;
+  min-width           : 768px;
+  padding             : 61.0px 139.0px;
+  position            : relative;
+  transform           : rotate(0deg);
+  width               : auto;
+}
+.image-splitter-nAtsxz .image-splitter01-Rn8MS6 .image-preview1-hG9C4b .group3361-S9kpUz {
+  align-items         : center;
+  background-color    : rgba(255,255,255,0);
+  box-sizing          : border-box;
+  display             : flex;
+  flex-direction      : column;
+  flex-shrink         : 0;
+  height              : auto;
+  justify-content     : flex-start;
+  position            : relative;
+  transform           : rotate(0deg);
+  width               : 489px;
+}
+.image-splitter-nAtsxz .image-splitter01-Rn8MS6 .image-preview1-hG9C4b .group3361-S9kpUz .rectangle1880-es9SX5 {
+  background-color    : rgba(238,238,238,0);
+  flex-shrink         : 0;
+  height              : 549px;
+  position            : relative;
+  transform           : rotate(0deg);
+  width               : 489px;
+}
+.image-splitter-nAtsxz .image-splitter01-Rn8MS6 .image-preview1-hG9C4b .group3361-S9kpUz .symbol7981-mVCATd {
+  background-color    : rgba(255,255,255,0);
+  flex-shrink         : 0;
+  height              : 36px;
+  margin-right        : 1.2px;
+  margin-top          : 53px;
+  pointer-events      : auto;
+  position            : relative;
+  transform           : rotate(0deg);
+  transition          : all 0.2s ease;
+  width               : 166px;
+}
+.image-splitter-nAtsxz .image-splitter01-Rn8MS6 .image-preview1-hG9C4b .group3361-S9kpUz .symbol7981-mVCATd:hover {
+  transform           : scale(1.1);
+  box-shadow          : 0px 0px 10px 2px rgba(0,0,0,0.2);
+}
+.image-splitter-nAtsxz .image-splitter01-Rn8MS6 .image-preview1-hG9C4b .group3361-S9kpUz .symbol7981-mVCATd .path106-yGgEPh {
+  background-color    : rgba(0,150,136,0);
+  height              : 36px;
+  left                : -0px;
+  position            : absolute;
+  top                 : 0px;
+  transform           : rotate(0deg);
+  width               : 166px;
+}
+.image-splitter-nAtsxz .image-splitter01-Rn8MS6 .image-preview1-hG9C4b .group3361-S9kpUz .symbol7981-mVCATd .pressed15-Cj3Krb {
+  background-color    : rgba(255,255,255,0);
+  color               : var(--auto-palette-color-1);
+  font-size           : 14.0px;
+  height              : auto;
+  left                : 26px;
+  line-height         : 20.0px;
+  position            : absolute;
+  text-align          : center;
+  top                 : 8px;
+  transform           : rotate(0deg);
+  width               : auto;
+}
+.image-splitter-nAtsxz .sidebar-left1-1jqn39 {
+  align-items         : flex-end;
+  background-color    : var(--auto-palette-color-7);
+  border-color        : var(--auto-palette-color-4);
+  border-style        : solid;
+  border-width        : 1.0px;
+  box-sizing          : border-box;
+  display             : flex;
+  flex-direction      : column;
+  flex-shrink         : 0;
+  height              : auto;
+  justify-content     : flex-start;
+  min-height          : 768px;
+  padding             : 18.0px 34.0px;
+  position            : relative;
+  transform           : rotate(0deg);
+  width               : 149px;
+}
+.image-splitter-nAtsxz .sidebar-left1-1jqn39 .component2111-LVdQWL {
+  align-items         : flex-end;
+  background-color    : rgba(255,255,255,0);
+  box-sizing          : border-box;
+  display             : inline-flex;
+  flex-direction      : row;
+  flex-shrink         : 0;
+  height              : 21px;
+  justify-content     : flex-end;
+  margin-top          : 650px;
+  min-width           : 78px;
+  position            : relative;
+  transform           : rotate(0deg);
+  width               : auto;
+}
+.image-splitter-nAtsxz .sidebar-left1-1jqn39 .component2111-LVdQWL .icon-open-account-logout01-d9tUbd {
+  background-color    : rgba(238,238,238,0);
+  flex-shrink         : 0;
+  height              : 21px;
+  position            : relative;
+  transform           : rotate(0deg);
+  width               : 24px;
+}
+.image-splitter-nAtsxz .sidebar-left1-1jqn39 .component2111-LVdQWL .logout11-ImttsX {
+  background-color    : rgba(255,255,255,0);
+  color               : var(--auto-palette-color-1);
+  flex-shrink         : 0;
+  font-size           : 13.0px;
+  height              : auto;
+  line-height         : 13.0px;
+  margin-bottom       : -3.13px;
+  margin-left         : 3px;
+  min-height          : 20px;
+  min-width           : 61px;
+  position            : relative;
+  text-align          : left;
+  transform           : rotate(0deg);
+  width               : auto;
+}
+.image-splitter-nAtsxz .sidebar-left1-1jqn39 .component2212-WFRLOy {
+  align-items         : center;
+  align-self          : center;
+  background-color    : rgba(255,255,255,0);
+  box-sizing          : border-box;
+  display             : flex;
+  flex-direction      : column;
+  flex-shrink         : 0;
+  height              : auto;
+  justify-content     : flex-start;
+  margin-left         : 1.0px;
+  min-height          : 49px;
+  position            : relative;
+  transform           : rotate(0deg);
+  width               : 78px;
+}
+.image-splitter-nAtsxz .sidebar-left1-1jqn39 .component2212-WFRLOy .icon-metro-home0-DmI67n {
+  background-color    : rgba(238,238,238,0);
+  flex-shrink         : 0;
+  height              : 28px;
+  margin-right        : 1.18px;
+  position            : relative;
+  transform           : rotate(0deg);
+  width               : 31px;
+}
+.image-splitter-nAtsxz .sidebar-left1-1jqn39 .component2212-WFRLOy .dashboard1-XmCkFS {
+  background-color    : rgba(255,255,255,0);
+  color               : var(--auto-palette-color-1);
+  flex-shrink         : 0;
+  font-size           : 13.0px;
+  height              : auto;
+  line-height         : 13.0px;
+  margin-top          : 5px;
+  min-height          : 20px;
+  min-width           : 88px;
+  position            : relative;
+  text-align          : center;
+  transform           : rotate(0deg);
+  width               : auto;
+}
+/* .anima-animate-appear prefix for appear animations */
+.anima-animate-appear {
+  opacity             : 0;
+  display             : block;
+  animation           : anima-reveal 0.3s ease-in-out 1 normal forwards;
+}
+.anima-animate-disappear {
+  opacity             : 1;
+  display             : block;
+  animation           : anima-reveal 0.3s ease-in-out 1 reverse forwards;
+}
+.anima-animate-nodelay {
+  animation-delay     : 0s;
+}
+@keyframes anima-reveal {
+  from {
+    opacity             : 0;
+  }
+  to {
+    opacity             : 1;
+  }
+}
+* {
+  box-sizing          : border-box;
+}
+.anima-component-wrapper,
+.anima-component-wrapper * {
+  pointer-events      : none;
+}
+.anima-component-wrapper a *,
+.anima-component-wrapper a,
+.anima-component-wrapper input,
+.anima-component-wrapper video,
+.anima-component-wrapper iframe,
+.anima-listeners-active,
+.anima-listeners-active * {
+  pointer-events      : auto;
+}
+.anima-hidden,
+.anima-hidden * {
+  visibility          : hidden;
+  pointer-events      : none;
+}
+.anima-smart-layers-pointers,
+.anima-smart-layers-pointers * {
+  pointer-events      : auto;
+  visibility          : visible;
+}
+.anima-component-wrapper.anima-not-ready,
+.anima-component-wrapper.anima-not-ready * {
+  visibility          : hidden !important;
+}
+.anima-listeners-active-click,
+.anima-listeners-active-click * {
+  cursor              : pointer;
+}
+.anima-component-wrapper a,
+.anima-screen a {
+  text-decoration     : none;
+}
+.anima-flexbox-container a {
+  line-height         : 0;
+}
+.anima-full-width-a {
+  width               : 100%;
+}
+.anima-full-height-a {
+  height              : 100%;
+}
+.anima-screen textarea:focus,
+.anima-screen input:focus {
+  outline             : none;
+}
+.anima-screen div {
+  -webkit-text-size-adjust: none;
+}
+.anima-container-center-vertical,
+.anima-container-center-horizontal {
+  pointer-events      : none;
+  display             : flex;
+  flex-direction      : row;
+  padding             : 0;
+  margin              : 0;
+}
+.anima-container-center-vertical {
+  align-items         : center;
+  height              : 100%;
+}
+.anima-container-center-horizontal {
+  justify-content     : center;
+  width               : 100%;
+}
+.anima-container-center-vertical > *,
+.anima-container-center-horizontal > * {
+  pointer-events      : auto;
+  flex-shrink         : 0;
+}
+.anima-word-break {
+  overflow-wrap       : break-word;
+  word-wrap           : break-word;
+  word-break          : break-all;
+  word-break          : break-word;
+}

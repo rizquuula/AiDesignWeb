@@ -1,0 +1,1294 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Application list</title>
+<style id="applicationStylesheet" type="text/css">
+	.mediaViewInfo {
+		--web-view-name: Application list;
+		--web-view-id: Application_list;
+		--web-scale-on-resize: true;
+		--web-center-horizontally: true;
+		--web-enable-deep-linking: true;
+	}
+	:root {
+		--web-view-ids: Application_list;
+	}
+	* {
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+		border: none;
+	}
+	#Application_list {
+		position: absolute;
+		transform: translateX(-50%);
+		left: 50%;
+		width: 1366px;
+		height: 768px;
+		background-color: rgba(48,48,48,1);
+		overflow: hidden;
+		--web-view-name: Application list;
+		--web-view-id: Application_list;
+		--web-scale-on-resize: true;
+		--web-center-horizontally: true;
+		--web-enable-deep-linking: true;
+	}
+	#sideNav_left {
+		position: absolute;
+		width: 256px;
+		height: 768px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+	#BG_Rect {
+		position: absolute;
+		width: 256px;
+		height: 768px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+	.rectangle {
+		filter: drop-shadow(0px 5.5px 5px rgba(0, 0, 0, 0.239));
+		position: absolute;
+		overflow: visible;
+		width: 271px;
+		height: 783px;
+		left: 0px;
+		top: 0px;
+	}
+	.rectangle_o {
+		filter: drop-shadow(0px 9px 18px rgba(0, 0, 0, 0.18));
+		overflow: visible;
+		position: absolute;
+		width: 310px;
+		height: 821.839px;
+		left: 0px;
+		top: 0px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#sideNav_left_top {
+		position: absolute;
+		width: 256px;
+		height: 144px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+	.sideNav_left_top_q {
+		position: absolute;
+		overflow: visible;
+		width: 256px;
+		height: 144px;
+		left: 0px;
+		top: 0px;
+	}
+	#Email {
+		position: absolute;
+		left: 24px;
+		top: 106px;
+		overflow: visible;
+		width: 77px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Roboto;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 13px;
+		color: rgba(255,255,255,1);
+	}
+	.ic_arrow_drop_down {
+		overflow: visible;
+		position: absolute;
+		width: 10px;
+		height: 5px;
+		left: 223px;
+		top: 113.233px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	.circle {
+		position: absolute;
+		overflow: visible;
+		width: 56px;
+		height: 56px;
+		left: 24px;
+		top: 24px;
+	}
+	#Quick_Start {
+		position: absolute;
+		width: 256px;
+		height: 37px;
+		left: 0px;
+		top: 152px;
+		overflow: visible;
+		hover-color:  #000000;
+	}
+	.Rectangle_186 {
+		position: absolute;
+		overflow: visible;
+		width: 256px;
+		height: 37px;
+		left: 0px;
+		top: 0px;
+	}
+	#Group_335 {
+		position: absolute;
+		width: 131px;
+		height: 24.238px;
+		left: 38px;
+		top: 6px;
+		overflow: visible;
+	}
+	.rectangle_x {
+		position: absolute;
+		overflow: visible;
+		width: 24px;
+		height: 24px;
+		left: 0px;
+		top: 0px;
+	}
+	#Quick_Start_y {
+		position: absolute;
+		left: 60px;
+		top: 3px;
+		overflow: visible;
+		width: 72px;
+		white-space: nowrap;
+		line-height: 20px;
+		margin-top: -3px;
+		text-align: left;
+		font-family: Roboto;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 14px;
+		color: rgba(110,110,110,1);
+	}
+	.Icon_awesome_play {
+		overflow: visible;
+		position: absolute;
+		width: 20.606px;
+		height: 23.552px;
+		left: 1.396px;
+		top: 0.687px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#Application {
+		position: absolute;
+		width: 256px;
+		height: 37px;
+		left: 0px;
+		top: 197px;
+		overflow: visible;
+		hover-color:  #000000;
+	}
+	.Rectangle_186_ {
+		position: absolute;
+		overflow: visible;
+		width: 256px;
+		height: 37px;
+		left: 0px;
+		top: 0px;
+	}
+	#Group_335_ {
+		position: absolute;
+		width: 131.536px;
+		height: 24px;
+		left: 37.464px;
+		top: 6px;
+		overflow: visible;
+	}
+	.rectangle_ {
+		position: absolute;
+		overflow: visible;
+		width: 24px;
+		height: 24px;
+		left: 0.536px;
+		top: 0px;
+	}
+	#Application_ {
+		position: absolute;
+		left: 60.536px;
+		top: 3px;
+		overflow: visible;
+		width: 72px;
+		white-space: nowrap;
+		line-height: 20px;
+		margin-top: -3px;
+		text-align: left;
+		font-family: Roboto;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 14px;
+		color: rgba(110,110,110,1);
+	}
+	#Icon_ionic_ios_apps {
+		position: absolute;
+		width: 23.08px;
+		height: 23.075px;
+		left: 0px;
+		top: 0.925px;
+		overflow: visible;
+	}
+	.Path_4 {
+		overflow: visible;
+		position: absolute;
+		width: 23.074px;
+		height: 10.577px;
+		left: 0.006px;
+		top: 0px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#Group_342 {
+		position: absolute;
+		width: 23.08px;
+		height: 13.352px;
+		left: 0px;
+		top: 9.724px;
+		overflow: visible;
+	}
+	.Path_5 {
+		overflow: visible;
+		position: absolute;
+		width: 23.074px;
+		height: 7.193px;
+		left: 0.006px;
+		top: 6.159px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	.Path_6 {
+		overflow: visible;
+		position: absolute;
+		width: 23.079px;
+		height: 7.103px;
+		left: 0px;
+		top: 0px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#Preferences {
+		position: absolute;
+		width: 256px;
+		height: 37px;
+		left: 0px;
+		top: 242px;
+		overflow: visible;
+		hover-color:  #000000;
+	}
+	.Rectangle_186_bb {
+		position: absolute;
+		overflow: visible;
+		width: 256px;
+		height: 37px;
+		left: 0px;
+		top: 0px;
+	}
+	#Group_335_bc {
+		position: absolute;
+		width: 137px;
+		height: 24.862px;
+		left: 37px;
+		top: 6px;
+		overflow: visible;
+	}
+	.rectangle_bd {
+		position: absolute;
+		overflow: visible;
+		width: 24px;
+		height: 24px;
+		left: 1px;
+		top: 0px;
+	}
+	#Preferences_be {
+		position: absolute;
+		left: 61px;
+		top: 3px;
+		overflow: visible;
+		width: 77px;
+		white-space: nowrap;
+		line-height: 20px;
+		margin-top: -3px;
+		text-align: left;
+		font-family: Roboto;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 14px;
+		color: rgba(110,110,110,1);
+	}
+	#Icon_feather_settings {
+		position: absolute;
+		width: 24.8px;
+		height: 24.8px;
+		left: 0px;
+		top: 0.063px;
+		overflow: visible;
+	}
+	.Path_7 {
+		overflow: visible;
+		position: absolute;
+		width: 9.764px;
+		height: 9.764px;
+		left: 9.018px;
+		top: 9.018px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	.Path_8 {
+		overflow: visible;
+		position: absolute;
+		width: 27.8px;
+		height: 27.8px;
+		left: 0px;
+		top: 0px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#Help {
+		position: absolute;
+		width: 256px;
+		height: 37px;
+		left: 0px;
+		top: 287px;
+		overflow: visible;
+		hover-color:  #000000;
+	}
+	.Rectangle_186_bj {
+		position: absolute;
+		overflow: visible;
+		width: 256px;
+		height: 37px;
+		left: 0px;
+		top: 0px;
+	}
+	#Group_335_bk {
+		position: absolute;
+		width: 89px;
+		height: 24px;
+		left: 38px;
+		top: 6px;
+		overflow: visible;
+	}
+	.rectangle_bl {
+		position: absolute;
+		overflow: visible;
+		width: 24px;
+		height: 24px;
+		left: 0px;
+		top: 0px;
+	}
+	#Help_bm {
+		position: absolute;
+		left: 60px;
+		top: 3px;
+		overflow: visible;
+		width: 30px;
+		white-space: nowrap;
+		line-height: 20px;
+		margin-top: -3px;
+		text-align: left;
+		font-family: Roboto;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 14px;
+		color: rgba(110,110,110,1);
+	}
+	#Icon_feather_help_circle {
+		position: absolute;
+		width: 19.075px;
+		height: 19.075px;
+		left: 2.062px;
+		top: 2.925px;
+		overflow: visible;
+	}
+	.Path_9 {
+		overflow: visible;
+		position: absolute;
+		width: 22.075px;
+		height: 22.075px;
+		left: 0px;
+		top: 0px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	.Path_10 {
+		overflow: visible;
+		position: absolute;
+		width: 8.973px;
+		height: 9.156px;
+		left: 6.762px;
+		top: 4.764px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	.Path_11 {
+		overflow: visible;
+		position: absolute;
+		width: 3px;
+		height: 3px;
+		left: 9.538px;
+		top: 14.306px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#Services {
+		position: absolute;
+		width: 842px;
+		height: 623px;
+		left: 317px;
+		top: 54px;
+		overflow: visible;
+	}
+	#App {
+		position: absolute;
+		width: 244px;
+		height: 57px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+	#Our_Services {
+		position: absolute;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+		width: 245px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Roboto;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 43px;
+		color: rgba(238,238,238,1);
+	}
+	#Items {
+		position: absolute;
+		width: 831px;
+		height: 499px;
+		left: 11px;
+		top: 124px;
+		overflow: visible;
+	}
+	#Image_Splitter {
+		position: absolute;
+		width: 253px;
+		height: 216px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+	#Group_346 {
+		position: absolute;
+		width: 253px;
+		height: 38px;
+		left: 0px;
+		top: 178px;
+		overflow: visible;
+	}
+	#Rectangle_193 {
+		opacity: 0.3;
+	}
+	.Rectangle_193 {
+		position: absolute;
+		overflow: visible;
+		width: 253px;
+		height: 38px;
+		left: 0px;
+		top: 0px;
+	}
+	#Image_Splitter_by {
+		position: absolute;
+		left: 83px;
+		top: 9px;
+		overflow: visible;
+		width: 89px;
+		white-space: nowrap;
+		line-height: 20px;
+		margin-top: -3px;
+		text-align: center;
+		font-family: Roboto;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 14px;
+		color: rgba(238,238,238,1);
+	}
+	#Group_345 {
+		position: absolute;
+		width: 253px;
+		height: 163px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+	.Rectangle_192 {
+		position: absolute;
+		overflow: visible;
+		width: 253px;
+		height: 163px;
+		left: 0px;
+		top: 0px;
+	}
+	#Icon_ionic_md_images {
+		position: absolute;
+		width: 113.439px;
+		height: 97.235px;
+		left: 69.48px;
+		top: 32.883px;
+		overflow: visible;
+	}
+	.Path_12 {
+		overflow: visible;
+		position: absolute;
+		width: 113.439px;
+		height: 97.235px;
+		left: 0px;
+		top: 0px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	.Path_13 {
+		overflow: visible;
+		position: absolute;
+		width: 16.206px;
+		height: 16.206px;
+		left: 81.021px;
+		top: 32.404px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#N_A__1 {
+		position: absolute;
+		width: 253px;
+		height: 216px;
+		left: 289px;
+		top: 0px;
+		overflow: visible;
+	}
+	#Group_346_b {
+		position: absolute;
+		width: 253px;
+		height: 38px;
+		left: 0px;
+		top: 178px;
+		overflow: visible;
+	}
+	#Rectangle_193_b {
+		opacity: 0.3;
+	}
+	.Rectangle_193_b {
+		position: absolute;
+		overflow: visible;
+		width: 253px;
+		height: 38px;
+		left: 0px;
+		top: 0px;
+	}
+	#N_A_ {
+		position: absolute;
+		left: 114px;
+		top: 9px;
+		overflow: visible;
+		width: 27px;
+		white-space: nowrap;
+		line-height: 20px;
+		margin-top: -3px;
+		text-align: center;
+		font-family: Roboto;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 14px;
+		color: rgba(238,238,238,1);
+	}
+	#Group_345_b {
+		position: absolute;
+		width: 253px;
+		height: 163px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+	.Path_14 {
+		overflow: visible;
+		position: absolute;
+		width: 253px;
+		height: 163px;
+		left: 0px;
+		top: 0px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#Icon_ionic_md_construct {
+		position: absolute;
+		width: 106.67px;
+		height: 92.477px;
+		left: 73.359px;
+		top: 35.718px;
+		overflow: visible;
+	}
+	.Path_15 {
+		overflow: visible;
+		position: absolute;
+		width: 93.346px;
+		height: 92.477px;
+		left: 0px;
+		top: 0px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	.Path_16 {
+		overflow: visible;
+		position: absolute;
+		width: 56.664px;
+		height: 51.858px;
+		left: 50.006px;
+		top: 0px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#N_A__2 {
+		position: absolute;
+		width: 253px;
+		height: 216px;
+		left: 578px;
+		top: 0px;
+		overflow: visible;
+	}
+	#Group_346_ce {
+		position: absolute;
+		width: 253px;
+		height: 38px;
+		left: 0px;
+		top: 178px;
+		overflow: visible;
+	}
+	#Rectangle_193_cf {
+		opacity: 0.3;
+	}
+	.Rectangle_193_cf {
+		position: absolute;
+		overflow: visible;
+		width: 253px;
+		height: 38px;
+		left: 0px;
+		top: 0px;
+	}
+	#N_A__cg {
+		position: absolute;
+		left: 114px;
+		top: 9px;
+		overflow: visible;
+		width: 27px;
+		white-space: nowrap;
+		line-height: 20px;
+		margin-top: -3px;
+		text-align: center;
+		font-family: Roboto;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 14px;
+		color: rgba(238,238,238,1);
+	}
+	#Group_345_ch {
+		position: absolute;
+		width: 253px;
+		height: 163px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+	.Path_14_ci {
+		overflow: visible;
+		position: absolute;
+		width: 253px;
+		height: 163px;
+		left: 0px;
+		top: 0px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#Icon_ionic_md_construct_cj {
+		position: absolute;
+		width: 106.67px;
+		height: 92.477px;
+		left: 73.359px;
+		top: 35.718px;
+		overflow: visible;
+	}
+	.Path_15_ck {
+		overflow: visible;
+		position: absolute;
+		width: 93.346px;
+		height: 92.477px;
+		left: 0px;
+		top: 0px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	.Path_16_cl {
+		overflow: visible;
+		position: absolute;
+		width: 56.664px;
+		height: 51.858px;
+		left: 50.006px;
+		top: 0px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#N_A__3 {
+		position: absolute;
+		width: 253px;
+		height: 216px;
+		left: 0px;
+		top: 283px;
+		overflow: visible;
+	}
+	#Group_346_cn {
+		position: absolute;
+		width: 253px;
+		height: 38px;
+		left: 0px;
+		top: 178px;
+		overflow: visible;
+	}
+	#Rectangle_193_co {
+		opacity: 0.3;
+	}
+	.Rectangle_193_co {
+		position: absolute;
+		overflow: visible;
+		width: 253px;
+		height: 38px;
+		left: 0px;
+		top: 0px;
+	}
+	#N_A__cp {
+		position: absolute;
+		left: 114px;
+		top: 9px;
+		overflow: visible;
+		width: 27px;
+		white-space: nowrap;
+		line-height: 20px;
+		margin-top: -3px;
+		text-align: center;
+		font-family: Roboto;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 14px;
+		color: rgba(238,238,238,1);
+	}
+	#Group_345_cq {
+		position: absolute;
+		width: 253px;
+		height: 163px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+	.Path_14_cr {
+		overflow: visible;
+		position: absolute;
+		width: 253px;
+		height: 163px;
+		left: 0px;
+		top: 0px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#Icon_ionic_md_construct_cs {
+		position: absolute;
+		width: 106.67px;
+		height: 92.477px;
+		left: 73.359px;
+		top: 35.718px;
+		overflow: visible;
+	}
+	.Path_15_ct {
+		overflow: visible;
+		position: absolute;
+		width: 93.346px;
+		height: 92.477px;
+		left: 0px;
+		top: 0px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	.Path_16_cu {
+		overflow: visible;
+		position: absolute;
+		width: 56.664px;
+		height: 51.858px;
+		left: 50.006px;
+		top: 0px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#N_A__4 {
+		position: absolute;
+		width: 253px;
+		height: 216px;
+		left: 289px;
+		top: 283px;
+		overflow: visible;
+	}
+	#Group_346_cw {
+		position: absolute;
+		width: 253px;
+		height: 38px;
+		left: 0px;
+		top: 178px;
+		overflow: visible;
+	}
+	#Rectangle_193_cx {
+		opacity: 0.3;
+	}
+	.Rectangle_193_cx {
+		position: absolute;
+		overflow: visible;
+		width: 253px;
+		height: 38px;
+		left: 0px;
+		top: 0px;
+	}
+	#N_A__cy {
+		position: absolute;
+		left: 114px;
+		top: 9px;
+		overflow: visible;
+		width: 27px;
+		white-space: nowrap;
+		line-height: 20px;
+		margin-top: -3px;
+		text-align: center;
+		font-family: Roboto;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 14px;
+		color: rgba(238,238,238,1);
+	}
+	#Group_345_cz {
+		position: absolute;
+		width: 253px;
+		height: 163px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+	.Path_14_c {
+		overflow: visible;
+		position: absolute;
+		width: 253px;
+		height: 163px;
+		left: 0px;
+		top: 0px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#Icon_ionic_md_construct_c {
+		position: absolute;
+		width: 106.67px;
+		height: 92.477px;
+		left: 73.359px;
+		top: 35.718px;
+		overflow: visible;
+	}
+	.Path_15_c {
+		overflow: visible;
+		position: absolute;
+		width: 93.346px;
+		height: 92.477px;
+		left: 0px;
+		top: 0px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	.Path_16_c {
+		overflow: visible;
+		position: absolute;
+		width: 56.664px;
+		height: 51.858px;
+		left: 50.006px;
+		top: 0px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#N_A__5 {
+		position: absolute;
+		width: 253px;
+		height: 216px;
+		left: 578px;
+		top: 283px;
+		overflow: visible;
+	}
+	#Group_346_c {
+		position: absolute;
+		width: 253px;
+		height: 38px;
+		left: 0px;
+		top: 178px;
+		overflow: visible;
+	}
+	#Rectangle_193_c {
+		opacity: 0.3;
+	}
+	.Rectangle_193_c {
+		position: absolute;
+		overflow: visible;
+		width: 253px;
+		height: 38px;
+		left: 0px;
+		top: 0px;
+	}
+	#N_A__c {
+		position: absolute;
+		left: 114px;
+		top: 9px;
+		overflow: visible;
+		width: 27px;
+		white-space: nowrap;
+		line-height: 20px;
+		margin-top: -3px;
+		text-align: center;
+		font-family: Roboto;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 14px;
+		color: rgba(238,238,238,1);
+	}
+	#Group_345_c {
+		position: absolute;
+		width: 253px;
+		height: 163px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+	.Path_14_da {
+		overflow: visible;
+		position: absolute;
+		width: 253px;
+		height: 163px;
+		left: 0px;
+		top: 0px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#Icon_ionic_md_construct_da {
+		position: absolute;
+		width: 106.67px;
+		height: 92.477px;
+		left: 73.359px;
+		top: 35.718px;
+		overflow: visible;
+	}
+	.Path_15_db {
+		overflow: visible;
+		position: absolute;
+		width: 93.346px;
+		height: 92.477px;
+		left: 0px;
+		top: 0px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	.Path_16_dc {
+		overflow: visible;
+		position: absolute;
+		width: 56.664px;
+		height: 51.858px;
+		left: 50.006px;
+		top: 0px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+</style>
+</head>
+<body>
+<div id="Application_list">
+	<div style="position:absolute;width:256px;height:768px;left:0px;top:0px;overflow:visible;" id="sideNav_left">
+		<div style="position:absolute;width:256px;height:768px;left:0px;top:0px;overflow:visible;" id="BG_Rect" class="BG_Rect">
+			<svg class="rectangle">
+				<rect fill="rgba(250,250,250,1)" id="rectangle" rx="0" ry="0" x="0" y="0" width="256" height="768">
+				</rect>
+			</svg>
+			<svg class="rectangle_o" viewBox="0 0 256 767.839">
+				<path fill="rgba(250,250,250,1)" id="rectangle_o" d="M 0 0 L 256 0 L 256 767.8392944335938 L 0 767.8392944335938 L 0 0 Z">
+				</path>
+			</svg>
+		</div>
+		<div style="position:absolute;width:256px;height:144px;left:0px;top:0px;overflow:visible;" id="sideNav_left_top">
+			<svg class="sideNav_left_top_q">
+				<rect fill="rgba(0,150,136,1)" id="sideNav_left_top_q" rx="0" ry="0" x="0" y="0" width="256" height="144">
+				</rect>
+			</svg>
+			<div id="Email">
+				<span>guest@email</span>
+			</div>
+			<svg class="ic_arrow_drop_down" viewBox="7 10 10 5">
+				<path fill="rgba(255,255,255,1)" id="ic_arrow_drop_down" d="M 7 10 L 17 10 L 12 15 L 7 10 Z">
+				</path>
+			</svg>
+			<svg class="circle">
+				<ellipse fill="rgba(0,0,0,1)" id="circle" rx="28" ry="28" cx="28" cy="28">
+				</ellipse>
+			</svg>
+		</div>
+		<div style="position:absolute;width:256px;height:37px;left:0px;top:152px;overflow:visible;" id="Quick_Start">
+			<svg class="Rectangle_186">
+				<rect fill="rgba(250,250,250,1)" id="Rectangle_186" rx="0" ry="0" x="0" y="0" width="256" height="37">
+				</rect>
+			</svg>
+			<div style="position:absolute;width:131px;height:24.238px;left:38px;top:6px;overflow:visible;" id="Group_335">
+				<svg class="rectangle_x">
+					<rect fill="transparent" id="rectangle_x" rx="0" ry="0" x="0" y="0" width="24" height="24">
+					</rect>
+				</svg>
+				<div id="Quick_Start_y">
+					<span>Quick Start</span>
+				</div>
+				<svg class="Icon_awesome_play" viewBox="0 0.002 20.606 23.552">
+					<path fill="rgba(110,110,110,1)" id="Icon_awesome_play" d="M 19.52120399475098 9.876374244689941 L 3.330195903778076 0.3043608367443085 C 2.014676570892334 -0.4729915261268616 0 0.2813622355461121 0 2.204044580459595 L 0 21.34347343444824 C 0 23.06836700439453 1.872085213661194 24.1079044342041 3.330195903778076 23.2431583404541 L 19.52120399475098 13.67574119567871 C 20.96551704406738 12.82479381561279 20.97011566162109 10.72732353210449 19.52120399475098 9.876374244689941 Z">
+					</path>
+				</svg>
+			</div>
+		</div>
+		<div style="position:absolute;width:256px;height:37px;left:0px;top:197px;overflow:visible;" id="Application">
+			<svg class="Rectangle_186_">
+				<rect fill="rgba(250,250,250,1)" id="Rectangle_186_" rx="0" ry="0" x="0" y="0" width="256" height="37">
+				</rect>
+			</svg>
+			<div style="position:absolute;width:131.536px;height:24px;left:37.464px;top:6px;overflow:visible;" id="Group_335_">
+				<svg class="rectangle_">
+					<rect fill="transparent" id="rectangle_" rx="0" ry="0" x="0" y="0" width="24" height="24">
+					</rect>
+				</svg>
+				<div id="Application_">
+					<span>Application</span>
+				</div>
+				<div style="position:absolute;width:23.08px;height:23.075px;left:0px;top:0.925px;overflow:visible;" id="Icon_ionic_ios_apps">
+					<svg class="Path_4" viewBox="4.5 4.496 23.074 10.577">
+						<path fill="rgba(110,110,110,1)" id="Path_4" d="M 26.7806510925293 8.921970367431641 L 17.80349540710449 4.829972743988037 C 16.83006858825684 4.385321617126465 15.23773670196533 4.385321617126465 14.26431083679199 4.829972743988037 L 5.293161869049072 8.921970367431641 C 4.235612392425537 9.402674674987793 4.235612392425537 10.18982887268066 5.293161869049072 10.67053318023682 L 14.18619537353516 14.72647666931152 C 15.20168399810791 15.18915557861328 16.87213134765625 15.18915557861328 17.88761901855469 14.72647666931152 L 26.78065299987793 10.67053318023682 C 27.83820152282715 10.18982887268066 27.83820152282715 9.402674674987793 26.7806510925293 8.921970367431641 Z">
+						</path>
+					</svg>
+					<div style="position:absolute;width:23.08px;height:13.352px;left:0px;top:9.724px;overflow:visible;" id="Group_342">
+						<svg class="Path_5" viewBox="4.5 23.082 23.074 7.193">
+							<path fill="rgba(110,110,110,1)" id="Path_5" d="M 14.18619537353516 25.90146827697754 L 8.189407348632813 23.16746139526367 C 7.937036991119385 23.05329322814941 7.642605781555176 23.05329322814941 7.390235900878906 23.16746139526367 L 5.29316234588623 24.12286186218262 C 4.235612392425537 24.60356712341309 4.235612392425537 25.39071846008301 5.29316234588623 25.87142372131348 L 14.18619537353516 29.9273681640625 C 15.20168399810791 30.39004516601563 16.87213134765625 30.39004516601563 17.88761901855469 29.9273681640625 L 26.78065299987793 25.87142372131348 C 27.83820152282715 25.39071846008301 27.83820152282715 24.60356712341309 26.78065299987793 24.12286186218262 L 24.68357849121094 23.16746139526367 C 24.43120765686035 23.05329322814941 24.13677787780762 23.05329322814941 23.88440704345703 23.16746139526367 L 17.88761901855469 25.90146827697754 C 16.87213134765625 26.36414527893066 15.20168304443359 26.36414527893066 14.18619537353516 25.90146827697754 Z">
+							</path>
+						</svg>
+						<svg class="Path_6" viewBox="4.493 15.875 23.079 7.102">
+							<path fill="rgba(110,110,110,1)" id="Path_6" d="M 26.77962875366211 16.82569694519043 L 24.87483596801758 15.96042919158936 C 24.62246704101563 15.84626197814941 24.33404350280762 15.84626197814941 24.08167457580566 15.96042919158936 L 17.5921630859375 18.89873695373535 C 16.67281723022461 19.21119499206543 15.39294147491455 19.21119499206543 14.47359275817871 18.89873695373535 L 7.984082698822021 15.96042919158936 C 7.731712341308594 15.84626197814941 7.443290233612061 15.84626197814941 7.190920352935791 15.96042919158936 L 5.286128997802734 16.82569694519043 C 4.228579044342041 17.3064022064209 4.228579044342041 18.09355545043945 5.286128997802734 18.57426071166992 L 14.17916202545166 22.63020324707031 C 15.1946496963501 23.09288215637207 16.86509704589844 23.09288215637207 17.88058662414551 22.63020324707031 L 26.77361869812012 18.57426071166992 C 27.83717918395996 18.09355735778809 27.83717918395996 17.3064022064209 26.77962875366211 16.82569694519043 Z">
+							</path>
+						</svg>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div style="position:absolute;width:256px;height:37px;left:0px;top:242px;overflow:visible;" id="Preferences">
+			<svg class="Rectangle_186_bb">
+				<rect fill="rgba(250,250,250,1)" id="Rectangle_186_bb" rx="0" ry="0" x="0" y="0" width="256" height="37">
+				</rect>
+			</svg>
+			<div style="position:absolute;width:137px;height:24.862px;left:37px;top:6px;overflow:visible;" id="Group_335_bc">
+				<svg class="rectangle_bd">
+					<rect fill="transparent" id="rectangle_bd" rx="0" ry="0" x="0" y="0" width="24" height="24">
+					</rect>
+				</svg>
+				<div id="Preferences_be">
+					<span>Preferences</span>
+				</div>
+				<div style="position:absolute;width:24.8px;height:24.8px;left:0px;top:0.063px;overflow:visible;" id="Icon_feather_settings">
+					<svg class="Path_7" viewBox="13.5 13.5 6.764 6.764">
+						<path fill="transparent" stroke="rgba(110,110,110,1)" stroke-width="3px" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" shape-rendering="auto" id="Path_7" d="M 20.26363563537598 16.8818187713623 C 20.26363563537598 18.74954414367676 18.74954414367676 20.26363563537598 16.8818187713623 20.26363563537598 C 15.01409244537354 20.26363563537598 13.5 18.74954414367676 13.5 16.8818187713623 C 13.5 15.01409244537354 15.01409244537354 13.5 16.8818187713623 13.5 C 18.74954414367676 13.5 20.26363563537598 15.01409244537354 20.26363563537598 16.8818187713623 Z">
+						</path>
+					</svg>
+					<svg class="Path_8" viewBox="1.5 1.5 24.8 24.8">
+						<path fill="transparent" stroke="rgba(110,110,110,1)" stroke-width="3px" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" shape-rendering="auto" id="Path_8" d="M 22.24181747436523 17.28181648254395 C 21.9348087310791 17.97744560241699 22.08212089538574 18.7898998260498 22.61381721496582 19.33345413208008 L 22.68145561218262 19.40109062194824 C 23.10480690002441 19.82397270202637 23.34268188476563 20.39780616760254 23.34268188476563 20.99618148803711 C 23.34268188476563 21.59455871582031 23.10480690002441 22.16839027404785 22.68145561218262 22.59127235412598 C 22.25857543945313 23.01462364196777 21.68474388122559 23.25249862670898 21.08636474609375 23.25249862670898 C 20.48799133300781 23.25249862670898 19.91415786743164 23.01462364196777 19.49127578735352 22.59127235412598 L 19.42363739013672 22.52363395690918 C 18.88008308410645 21.9919376373291 18.06763076782227 21.84462547302246 17.37200355529785 22.15163230895996 C 16.69060134887695 22.44367408752441 16.24768829345703 23.11247253417969 16.24472808837891 23.85381507873535 L 16.24472808837891 24.04545402526855 C 16.24472808837891 25.29060363769531 15.23533535003662 26.29999923706055 13.99018383026123 26.29999923706055 C 12.74503231048584 26.29999923706055 11.73563861846924 25.29060363769531 11.73563861846924 24.04545402526855 L 11.73563861846924 23.94399833679199 C 11.71777820587158 23.18046379089355 11.23498344421387 22.50544738769531 10.5181827545166 22.24181938171387 C 9.822554588317871 21.93480682373047 9.010101318359375 22.08212089538574 8.466546058654785 22.61381912231445 L 8.398909568786621 22.68145561218262 C 7.976028919219971 23.10480690002441 7.402195930480957 23.34268188476563 6.803818702697754 23.34268188476563 C 6.205441951751709 23.34268188476563 5.631609439849854 23.10480690002441 5.208728313446045 22.68145561218262 C 4.785377025604248 22.25857353210449 4.547501087188721 21.68474388122559 4.547501087188721 21.08636474609375 C 4.547501087188721 20.48798942565918 4.785377025604248 19.91415786743164 5.208727836608887 19.49127578735352 L 5.276364326477051 19.42363739013672 C 5.808059215545654 18.88008308410645 5.955372333526611 18.06763076782227 5.648364067077637 17.37200355529785 C 5.356324195861816 16.69059944152832 4.687525749206543 16.24768829345703 3.946182489395142 16.24472999572754 L 3.75454568862915 16.24472808837891 C 2.509394407272339 16.24472808837891 1.5 15.23533535003662 1.5 13.99018383026123 C 1.5 12.74503231048584 2.509394884109497 11.73563861846924 3.754545927047729 11.73563861846924 L 3.856000185012817 11.73563861846924 C 4.61953592300415 11.7177791595459 5.294553279876709 11.23498439788818 5.558182239532471 10.5181827545166 C 5.865190982818604 9.822553634643555 5.717877388000488 9.010101318359375 5.186181545257568 8.466546058654785 L 5.118545532226563 8.398909568786621 C 4.695194244384766 7.976028919219971 4.45731782913208 7.402196407318115 4.45731782913208 6.80381965637207 C 4.45731782913208 6.205441474914551 4.695194244384766 5.631608963012695 5.118546009063721 5.208727836608887 C 5.541427135467529 4.785376071929932 6.115259647369385 4.547500133514404 6.713637351989746 4.547500133514404 C 7.312013626098633 4.547500133514404 7.885846138000488 4.785376071929932 8.30872631072998 5.208727836608887 L 8.376363754272461 5.276364326477051 C 8.919919967651367 5.808060169219971 9.73237133026123 5.955372333526611 10.42799949645996 5.648364067077637 L 10.51818180084229 5.648364067077637 C 11.19958591461182 5.356323719024658 11.64249801635742 4.687525272369385 11.64545440673828 3.946182489395142 L 11.64545440673828 3.75454568862915 C 11.64545440673828 2.509394407272339 12.6548490524292 1.499999642372131 13.90000057220459 1.5 C 15.14515113830566 1.5 16.15454483032227 2.509394645690918 16.15454483032227 3.75454568862915 L 16.15454483032227 3.856000185012817 C 16.15750312805176 4.597343921661377 16.60041618347168 5.26614236831665 17.28181838989258 5.558182716369629 C 17.97744750976563 5.865190982818604 18.7898998260498 5.717878818511963 19.33345413208008 5.186182498931885 L 19.40109062194824 5.118546009063721 C 19.82397270202637 4.695194721221924 20.39780616760254 4.457319259643555 20.99618148803711 4.457319259643555 C 21.59455871582031 4.457319259643555 22.16839027404785 4.695195198059082 22.59127044677734 5.118546009063721 C 23.01462364196777 5.541427612304688 23.25249862670898 6.115260124206543 23.25249862670898 6.713637351989746 C 23.25249862670898 7.312014102935791 23.01462364196777 7.885846138000488 22.59127044677734 8.308727264404297 L 22.52363395690918 8.376363754272461 C 21.9919376373291 8.919919013977051 21.84462547302246 9.73237133026123 22.15163230895996 10.42800045013428 L 22.15163421630859 10.51818180084229 C 22.44367408752441 11.19958591461182 23.11247253417969 11.64249706268311 23.85381507873535 11.64545440673828 L 24.04545402526855 11.64545440673828 C 25.29060363769531 11.64545440673828 26.29999923706055 12.6548490524292 26.29999923706055 13.90000057220459 C 26.29999923706055 15.14515113830566 25.29060363769531 16.15454483032227 24.04545402526855 16.15454483032227 L 23.94399833679199 16.15454483032227 C 23.20265769958496 16.15750312805176 22.53386116027832 16.60041618347168 22.2418212890625 17.28181838989258 Z">
+						</path>
+					</svg>
+				</div>
+			</div>
+		</div>
+		<div style="position:absolute;width:256px;height:37px;left:0px;top:287px;overflow:visible;" id="Help">
+			<svg class="Rectangle_186_bj">
+				<rect fill="rgba(250,250,250,1)" id="Rectangle_186_bj" rx="0" ry="0" x="0" y="0" width="256" height="37">
+				</rect>
+			</svg>
+			<div style="position:absolute;width:89px;height:24px;left:38px;top:6px;overflow:visible;" id="Group_335_bk">
+				<svg class="rectangle_bl">
+					<rect fill="transparent" id="rectangle_bl" rx="0" ry="0" x="0" y="0" width="24" height="24">
+					</rect>
+				</svg>
+				<div id="Help_bm">
+					<span>Help</span>
+				</div>
+				<div style="position:absolute;width:19.075px;height:19.075px;left:2.062px;top:2.925px;overflow:visible;" id="Icon_feather_help_circle">
+					<svg class="Path_9" viewBox="3 3 19.075 19.075">
+						<path fill="transparent" stroke="rgba(110,110,110,1)" stroke-width="3px" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" shape-rendering="auto" id="Path_9" d="M 22.07531547546387 12.53765678405762 C 22.07531547546387 17.8051586151123 17.8051586151123 22.07531547546387 12.53765678405762 22.07531547546387 C 7.270154476165771 22.07531547546387 3 17.8051586151123 3 12.53765678405762 C 3 7.270154476165771 7.270154476165771 3 12.53765678405762 3 C 17.8051586151123 3 22.07531547546387 7.270154476165771 22.07531547546387 12.53765678405762 Z">
+						</path>
+					</svg>
+					<svg class="Path_10" viewBox="13.635 10.493 5.56 5.727">
+						<path fill="transparent" stroke="rgba(110,110,110,1)" stroke-width="3px" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" shape-rendering="auto" id="Path_10" d="M 13.63500022888184 12.40493392944336 C 14.09799194335938 11.08877563476563 15.44275188446045 10.29844665527344 16.81788444519043 10.53432083129883 C 18.19301986694336 10.77019119262695 19.19753646850586 11.9634838104248 19.19545364379883 13.35869789123535 C 19.19545364379883 15.2662296295166 16.33415794372559 16.21999549865723 16.33415794372559 16.21999549865723">
+						</path>
+					</svg>
+					<svg class="Path_11" viewBox="18 25.5 3 3">
+						<path fill="transparent" stroke="rgba(110,110,110,1)" stroke-width="3px" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" shape-rendering="auto" id="Path_11" d="M 18 25.5 L 18 25.5">
+						</path>
+					</svg>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div style="position:absolute;width:842px;height:623px;left:317px;top:54px;overflow:visible;" id="Services">
+		<div style="position:absolute;width:244px;height:57px;left:0px;top:0px;overflow:visible;" id="App">
+			<div id="Our_Services">
+				<span>Our Services</span>
+			</div>
+		</div>
+		<div style="position:absolute;width:831px;height:499px;left:11px;top:124px;overflow:visible;" id="Items">
+			<div style="position:absolute;width:253px;height:216px;left:0px;top:0px;overflow:visible;" id="Image_Splitter">
+				<div style="position:absolute;width:253px;height:38px;left:0px;top:178px;overflow:visible;" id="Group_346">
+					<svg class="Rectangle_193">
+						<rect fill="rgba(255,255,255,1)" stroke="rgba(112,112,112,1)" stroke-width="1px" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" shape-rendering="auto" id="Rectangle_193" rx="19" ry="19" x="0" y="0" width="253" height="38">
+						</rect>
+					</svg>
+					<div id="Image_Splitter_by">
+						<span>Image Splitter</span>
+					</div>
+				</div>
+				<div style="position:absolute;width:253px;height:163px;left:0px;top:0px;overflow:visible;" id="Group_345">
+					<svg class="Rectangle_192">
+						<rect fill="rgba(0,150,136,1)" stroke="rgba(112,112,112,1)" stroke-width="1px" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" shape-rendering="auto" id="Rectangle_192" rx="19" ry="19" x="0" y="0" width="253" height="163">
+						</rect>
+					</svg>
+					<div style="position:absolute;width:113.439px;height:97.235px;left:69.48px;top:32.883px;overflow:visible;" id="Icon_ionic_md_images">
+						<svg class="Path_12" viewBox="2.252 4.502 113.439 97.235">
+							<path fill="rgba(238,238,238,1)" id="Path_12" d="M 110.0129165649414 23.78962707519531 L 89.12248992919922 22.77676010131836 L 87.90705108642578 9.153668403625488 C 87.65383148193359 6.292313575744629 85.09634399414063 4.291897773742676 82.10837554931641 4.519793510437012 L 7.18139123916626 10.67297077178955 C 4.193427562713623 10.92618846893311 2.041080951690674 13.33175182342529 2.26897668838501 16.16778564453125 L 7.637182712554932 75.87641143798828 C 7.890400409698486 78.73777008056641 10.47321701049805 80.73818969726563 13.43585968017578 80.51028442382813 L 17.2341194152832 80.20642852783203 L 16.62639808654785 91.80377197265625 C 16.47446632385254 94.99430847167969 18.95599746704102 97.57712554931641 22.29846382141113 97.75437927246094 L 105.8854751586914 101.7298965454102 C 109.2279434204102 101.8818283081055 111.9880142211914 99.55223083496094 112.1652603149414 96.3616943359375 L 115.6849899291992 29.68959045410156 C 115.8369140625 26.52437210083008 113.3300628662109 23.94155502319336 110.0129165649414 23.78962707519531 Z M 20.14611625671387 25.13167953491211 L 18.3482723236084 59.26536560058594 L 13.91697120666504 65.51982879638672 L 9.840173721313477 20.44715881347656 C 9.840173721313477 20.39651489257813 9.840173721313477 20.37119674682617 9.840173721313477 20.32054901123047 C 9.840173721313477 20.26990509033203 9.840173721313477 20.24458694458008 9.840173721313477 20.19393920898438 C 10.0933895111084 18.92785263061523 10.9543285369873 17.91498565673828 12.27105903625488 17.81369781494141 L 78.36075592041016 12.394850730896 C 79.677490234375 12.29356479644775 80.81697082519531 13.15450191497803 81.01953887939453 14.39526653289795 C 81.01953887939453 14.44590854644775 81.09550476074219 14.44590854644775 81.09550476074219 14.49655246734619 C 81.09550476074219 14.52187442779541 81.17147064208984 14.547194480896 81.17147064208984 14.59783840179443 L 81.85515594482422 22.39693450927734 L 26.40057945251465 19.73815155029297 C 23.05811500549316 19.63685989379883 20.29804611206055 21.96646118164063 20.14611625671387 25.13167953491211 Z M 104.7206802368164 85.11885070800781 L 83.24785614013672 59.92372894287109 L 73.77752685546875 68.60908508300781 L 56.2548942565918 48.14913177490234 L 25.18514060974121 81.24462127685547 L 27.8185977935791 30.82906723022461 C 27.8185977935791 30.82906723022461 27.8185977935791 30.75310134887695 27.8185977935791 30.72777938842773 C 28.07181739807129 29.36040878295898 29.38854789733887 28.37285995483398 30.83188438415527 28.44882583618164 L 104.5687484741211 31.99386596679688 C 106.0374069213867 32.06983184814453 107.1768798828125 33.18399047851563 107.2022094726563 34.57668304443359 C 107.2022094726563 34.62732696533203 107.2781753540039 34.65264892578125 107.2781753540039 34.70329284667969 L 104.7206802368164 85.11885070800781 Z">
+							</path>
+						</svg>
+						<svg class="Path_13" viewBox="24.75 13.5 16.206 16.206">
+							<path fill="rgba(238,238,238,1)" id="Path_13" d="M 32.85295104980469 29.70590209960938 C 37.3095703125 29.70590209960938 40.95590209960938 26.05957412719727 40.95590209960938 21.60295104980469 C 40.95590209960938 17.14633178710938 37.33489990234375 13.5 32.85295104980469 13.5 C 28.39633178710938 13.5 24.75 17.12100601196289 24.75 21.60295104980469 C 24.75 26.08489990234375 28.37100219726563 29.70590209960938 32.85295104980469 29.70590209960938 Z">
+							</path>
+						</svg>
+					</div>
+				</div>
+			</div>
+			<div style="position:absolute;width:253px;height:216px;left:289px;top:0px;overflow:visible;" id="N_A__1">
+				<div style="position:absolute;width:253px;height:38px;left:0px;top:178px;overflow:visible;" id="Group_346_b">
+					<svg class="Rectangle_193_b">
+						<rect fill="rgba(255,255,255,1)" stroke="rgba(112,112,112,1)" stroke-width="1px" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" shape-rendering="auto" id="Rectangle_193_b" rx="19" ry="19" x="0" y="0" width="253" height="38">
+						</rect>
+					</svg>
+					<div id="N_A_">
+						<span>N.A.</span>
+					</div>
+				</div>
+				<div style="position:absolute;width:253px;height:163px;left:0px;top:0px;overflow:visible;" id="Group_345_b">
+					<svg class="Path_14" viewBox="0 0 253 163">
+						<path fill="rgba(149,152,154,1)" stroke="rgba(112,112,112,1)" stroke-width="1px" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" shape-rendering="auto" id="Path_14" d="M 19 0 L 234 0 C 244.493408203125 0 253 8.506588935852051 253 19 L 253 144 C 253 154.493408203125 244.493408203125 163 234 163 L 19 163 C 8.506588935852051 163 0 154.493408203125 0 144 L 0 19 C 0 8.506588935852051 8.506588935852051 0 19 0 Z">
+						</path>
+					</svg>
+					<div style="position:absolute;width:106.67px;height:92.477px;left:73.359px;top:35.718px;overflow:visible;" id="Icon_ionic_md_construct">
+						<svg class="Path_15" viewBox="1.124 3.375 93.346 92.476">
+							<path fill="rgba(193,193,193,1)" id="Path_15" d="M 93.33186340332031 80.13408660888672 L 66.75284576416016 53.68840789794922 L 66.75284576416016 53.68840789794922 L 53.84112548828125 40.82113647460938 L 53.84112548828125 40.82113647460938 L 50.86320877075195 37.86544418334961 C 54.39670562744141 28.84280014038086 52.44105911254883 18.26452827453613 44.95182037353516 10.81973457336426 C 37.08478546142578 2.974924802780151 25.28423690795898 1.419296503067017 15.83935070037842 5.73060941696167 L 32.75125122070313 22.57583999633789 L 20.9507007598877 34.33194351196289 L 3.638780832290649 17.4867115020752 C -1.050319194793701 26.88714790344238 0.9053278565406799 38.64325332641602 8.772360801696777 46.48806762695313 C 16.23937606811523 53.932861328125 26.86209106445313 55.88850402832031 35.90695953369141 52.37723159790039 L 39.10711288452148 55.55515670776367 L 15.72824192047119 78.93402099609375 C 14.03927421569824 80.20075225830078 14.03927421569824 83.15644073486328 16.15048408508301 84.84540557861328 L 25.8842716217041 94.55696868896484 C 27.57323837280273 96.24593353271484 30.12891006469727 96.24593353271484 31.81788063049316 94.55696868896484 L 53.17443466186523 69.57802581787109 L 78.3756103515625 94.6680908203125 C 79.95346069335938 96.24593353271484 82.30912780761719 96.24593353271484 83.88697814941406 94.6680908203125 L 92.93183898925781 85.64544677734375 C 94.90971374511719 84.06759643554688 94.90971374511719 81.31191253662109 93.33186340332031 80.13408660888672 Z">
+							</path>
+						</svg>
+						<svg class="Path_16" viewBox="16.945 3.375 56.664 51.858">
+							<path fill="rgba(193,193,193,1)" id="Path_16" d="M 73.25904846191406 40.84341430664063 L 65.59202575683594 33.26528167724609 C 65.10312652587891 32.7763671875 64.30308532714844 32.7763671875 63.81416320800781 33.26528167724609 L 62.99190521240234 34.08754348754883 L 58.8806037902832 30.57627296447754 C 58.8806037902832 30.57627296447754 59.14727783203125 28.35394668579102 57.79166793823242 26.42052268981934 C 56.41381454467773 24.48709869384766 54.21372222900391 22.02031707763672 52.6358642578125 20.44246482849121 C 51.05801391601563 18.88683891296387 45.05773544311523 12.90878009796143 37.14625549316406 9.019709587097168 C 29.21255302429199 5.086191177368164 23.6122932434082 3.375 16.94531631469727 3.375 L 16.94531631469727 9.975307464599609 C 16.94531631469727 9.975307464599609 23.32338905334473 13.66436767578125 26.96799850463867 16.57561492919922 C 30.59039306640625 19.48686408996582 30.70150947570801 29.7984561920166 30.70150947570801 29.7984561920166 L 24.36787986755371 36.13208389282227 L 36.92402267456055 48.59933471679688 L 43.813232421875 40.53228759765625 C 46.68003463745117 39.75447463989258 49.10236358642578 39.68780899047852 50.52465438842773 40.46562194824219 L 53.56924438476563 43.42131042480469 L 51.43581390380859 45.53252029418945 C 50.9468994140625 46.02143478393555 50.9468994140625 46.79925155639648 51.43581390380859 47.28815841674805 L 59.10283660888672 54.86629104614258 C 59.59174346923828 55.35520553588867 60.39178848266602 55.35520553588867 60.88069534301758 54.86629104614258 L 73.25904846191406 42.59904861450195 C 73.72574615478516 42.11013793945313 73.72574615478516 41.31010055541992 73.25904846191406 40.84341430664063 Z">
+							</path>
+						</svg>
+					</div>
+				</div>
+			</div>
+			<div style="position:absolute;width:253px;height:216px;left:578px;top:0px;overflow:visible;" id="N_A__2">
+				<div style="position:absolute;width:253px;height:38px;left:0px;top:178px;overflow:visible;" id="Group_346_ce">
+					<svg class="Rectangle_193_cf">
+						<rect fill="rgba(255,255,255,1)" stroke="rgba(112,112,112,1)" stroke-width="1px" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" shape-rendering="auto" id="Rectangle_193_cf" rx="19" ry="19" x="0" y="0" width="253" height="38">
+						</rect>
+					</svg>
+					<div id="N_A__cg">
+						<span>N.A.</span>
+					</div>
+				</div>
+				<div style="position:absolute;width:253px;height:163px;left:0px;top:0px;overflow:visible;" id="Group_345_ch">
+					<svg class="Path_14_ci" viewBox="0 0 253 163">
+						<path fill="rgba(149,152,154,1)" stroke="rgba(112,112,112,1)" stroke-width="1px" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" shape-rendering="auto" id="Path_14_ci" d="M 19 0 L 234 0 C 244.493408203125 0 253 8.506588935852051 253 19 L 253 144 C 253 154.493408203125 244.493408203125 163 234 163 L 19 163 C 8.506588935852051 163 0 154.493408203125 0 144 L 0 19 C 0 8.506588935852051 8.506588935852051 0 19 0 Z">
+						</path>
+					</svg>
+					<div style="position:absolute;width:106.67px;height:92.477px;left:73.359px;top:35.718px;overflow:visible;" id="Icon_ionic_md_construct_cj">
+						<svg class="Path_15_ck" viewBox="1.124 3.375 93.346 92.476">
+							<path fill="rgba(193,193,193,1)" id="Path_15_ck" d="M 93.33186340332031 80.13408660888672 L 66.75284576416016 53.68840789794922 L 66.75284576416016 53.68840789794922 L 53.84112548828125 40.82113647460938 L 53.84112548828125 40.82113647460938 L 50.86320877075195 37.86544418334961 C 54.39670562744141 28.84280014038086 52.44105911254883 18.26452827453613 44.95182037353516 10.81973457336426 C 37.08478546142578 2.974924802780151 25.28423690795898 1.419296503067017 15.83935070037842 5.73060941696167 L 32.75125122070313 22.57583999633789 L 20.9507007598877 34.33194351196289 L 3.638780832290649 17.4867115020752 C -1.050319194793701 26.88714790344238 0.9053278565406799 38.64325332641602 8.772360801696777 46.48806762695313 C 16.23937606811523 53.932861328125 26.86209106445313 55.88850402832031 35.90695953369141 52.37723159790039 L 39.10711288452148 55.55515670776367 L 15.72824192047119 78.93402099609375 C 14.03927421569824 80.20075225830078 14.03927421569824 83.15644073486328 16.15048408508301 84.84540557861328 L 25.8842716217041 94.55696868896484 C 27.57323837280273 96.24593353271484 30.12891006469727 96.24593353271484 31.81788063049316 94.55696868896484 L 53.17443466186523 69.57802581787109 L 78.3756103515625 94.6680908203125 C 79.95346069335938 96.24593353271484 82.30912780761719 96.24593353271484 83.88697814941406 94.6680908203125 L 92.93183898925781 85.64544677734375 C 94.90971374511719 84.06759643554688 94.90971374511719 81.31191253662109 93.33186340332031 80.13408660888672 Z">
+							</path>
+						</svg>
+						<svg class="Path_16_cl" viewBox="16.945 3.375 56.664 51.858">
+							<path fill="rgba(193,193,193,1)" id="Path_16_cl" d="M 73.25904846191406 40.84341430664063 L 65.59202575683594 33.26528167724609 C 65.10312652587891 32.7763671875 64.30308532714844 32.7763671875 63.81416320800781 33.26528167724609 L 62.99190521240234 34.08754348754883 L 58.8806037902832 30.57627296447754 C 58.8806037902832 30.57627296447754 59.14727783203125 28.35394668579102 57.79166793823242 26.42052268981934 C 56.41381454467773 24.48709869384766 54.21372222900391 22.02031707763672 52.6358642578125 20.44246482849121 C 51.05801391601563 18.88683891296387 45.05773544311523 12.90878009796143 37.14625549316406 9.019709587097168 C 29.21255302429199 5.086191177368164 23.6122932434082 3.375 16.94531631469727 3.375 L 16.94531631469727 9.975307464599609 C 16.94531631469727 9.975307464599609 23.32338905334473 13.66436767578125 26.96799850463867 16.57561492919922 C 30.59039306640625 19.48686408996582 30.70150947570801 29.7984561920166 30.70150947570801 29.7984561920166 L 24.36787986755371 36.13208389282227 L 36.92402267456055 48.59933471679688 L 43.813232421875 40.53228759765625 C 46.68003463745117 39.75447463989258 49.10236358642578 39.68780899047852 50.52465438842773 40.46562194824219 L 53.56924438476563 43.42131042480469 L 51.43581390380859 45.53252029418945 C 50.9468994140625 46.02143478393555 50.9468994140625 46.79925155639648 51.43581390380859 47.28815841674805 L 59.10283660888672 54.86629104614258 C 59.59174346923828 55.35520553588867 60.39178848266602 55.35520553588867 60.88069534301758 54.86629104614258 L 73.25904846191406 42.59904861450195 C 73.72574615478516 42.11013793945313 73.72574615478516 41.31010055541992 73.25904846191406 40.84341430664063 Z">
+							</path>
+						</svg>
+					</div>
+				</div>
+			</div>
+			<div style="position:absolute;width:253px;height:216px;left:0px;top:283px;overflow:visible;" id="N_A__3">
+				<div style="position:absolute;width:253px;height:38px;left:0px;top:178px;overflow:visible;" id="Group_346_cn">
+					<svg class="Rectangle_193_co">
+						<rect fill="rgba(255,255,255,1)" stroke="rgba(112,112,112,1)" stroke-width="1px" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" shape-rendering="auto" id="Rectangle_193_co" rx="19" ry="19" x="0" y="0" width="253" height="38">
+						</rect>
+					</svg>
+					<div id="N_A__cp">
+						<span>N.A.</span>
+					</div>
+				</div>
+				<div style="position:absolute;width:253px;height:163px;left:0px;top:0px;overflow:visible;" id="Group_345_cq">
+					<svg class="Path_14_cr" viewBox="0 0 253 163">
+						<path fill="rgba(149,152,154,1)" stroke="rgba(112,112,112,1)" stroke-width="1px" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" shape-rendering="auto" id="Path_14_cr" d="M 19 0 L 234 0 C 244.493408203125 0 253 8.506588935852051 253 19 L 253 144 C 253 154.493408203125 244.493408203125 163 234 163 L 19 163 C 8.506588935852051 163 0 154.493408203125 0 144 L 0 19 C 0 8.506588935852051 8.506588935852051 0 19 0 Z">
+						</path>
+					</svg>
+					<div style="position:absolute;width:106.67px;height:92.477px;left:73.359px;top:35.718px;overflow:visible;" id="Icon_ionic_md_construct_cs">
+						<svg class="Path_15_ct" viewBox="1.124 3.375 93.346 92.476">
+							<path fill="rgba(193,193,193,1)" id="Path_15_ct" d="M 93.33186340332031 80.13408660888672 L 66.75284576416016 53.68840789794922 L 66.75284576416016 53.68840789794922 L 53.84112548828125 40.82113647460938 L 53.84112548828125 40.82113647460938 L 50.86320877075195 37.86544418334961 C 54.39670562744141 28.84280014038086 52.44105911254883 18.26452827453613 44.95182037353516 10.81973457336426 C 37.08478546142578 2.974924802780151 25.28423690795898 1.419296503067017 15.83935070037842 5.73060941696167 L 32.75125122070313 22.57583999633789 L 20.9507007598877 34.33194351196289 L 3.638780832290649 17.4867115020752 C -1.050319194793701 26.88714790344238 0.9053278565406799 38.64325332641602 8.772360801696777 46.48806762695313 C 16.23937606811523 53.932861328125 26.86209106445313 55.88850402832031 35.90695953369141 52.37723159790039 L 39.10711288452148 55.55515670776367 L 15.72824192047119 78.93402099609375 C 14.03927421569824 80.20075225830078 14.03927421569824 83.15644073486328 16.15048408508301 84.84540557861328 L 25.8842716217041 94.55696868896484 C 27.57323837280273 96.24593353271484 30.12891006469727 96.24593353271484 31.81788063049316 94.55696868896484 L 53.17443466186523 69.57802581787109 L 78.3756103515625 94.6680908203125 C 79.95346069335938 96.24593353271484 82.30912780761719 96.24593353271484 83.88697814941406 94.6680908203125 L 92.93183898925781 85.64544677734375 C 94.90971374511719 84.06759643554688 94.90971374511719 81.31191253662109 93.33186340332031 80.13408660888672 Z">
+							</path>
+						</svg>
+						<svg class="Path_16_cu" viewBox="16.945 3.375 56.664 51.858">
+							<path fill="rgba(193,193,193,1)" id="Path_16_cu" d="M 73.25904846191406 40.84341430664063 L 65.59202575683594 33.26528167724609 C 65.10312652587891 32.7763671875 64.30308532714844 32.7763671875 63.81416320800781 33.26528167724609 L 62.99190521240234 34.08754348754883 L 58.8806037902832 30.57627296447754 C 58.8806037902832 30.57627296447754 59.14727783203125 28.35394668579102 57.79166793823242 26.42052268981934 C 56.41381454467773 24.48709869384766 54.21372222900391 22.02031707763672 52.6358642578125 20.44246482849121 C 51.05801391601563 18.88683891296387 45.05773544311523 12.90878009796143 37.14625549316406 9.019709587097168 C 29.21255302429199 5.086191177368164 23.6122932434082 3.375 16.94531631469727 3.375 L 16.94531631469727 9.975307464599609 C 16.94531631469727 9.975307464599609 23.32338905334473 13.66436767578125 26.96799850463867 16.57561492919922 C 30.59039306640625 19.48686408996582 30.70150947570801 29.7984561920166 30.70150947570801 29.7984561920166 L 24.36787986755371 36.13208389282227 L 36.92402267456055 48.59933471679688 L 43.813232421875 40.53228759765625 C 46.68003463745117 39.75447463989258 49.10236358642578 39.68780899047852 50.52465438842773 40.46562194824219 L 53.56924438476563 43.42131042480469 L 51.43581390380859 45.53252029418945 C 50.9468994140625 46.02143478393555 50.9468994140625 46.79925155639648 51.43581390380859 47.28815841674805 L 59.10283660888672 54.86629104614258 C 59.59174346923828 55.35520553588867 60.39178848266602 55.35520553588867 60.88069534301758 54.86629104614258 L 73.25904846191406 42.59904861450195 C 73.72574615478516 42.11013793945313 73.72574615478516 41.31010055541992 73.25904846191406 40.84341430664063 Z">
+							</path>
+						</svg>
+					</div>
+				</div>
+			</div>
+			<div style="position:absolute;width:253px;height:216px;left:289px;top:283px;overflow:visible;" id="N_A__4">
+				<div style="position:absolute;width:253px;height:38px;left:0px;top:178px;overflow:visible;" id="Group_346_cw">
+					<svg class="Rectangle_193_cx">
+						<rect fill="rgba(255,255,255,1)" stroke="rgba(112,112,112,1)" stroke-width="1px" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" shape-rendering="auto" id="Rectangle_193_cx" rx="19" ry="19" x="0" y="0" width="253" height="38">
+						</rect>
+					</svg>
+					<div id="N_A__cy">
+						<span>N.A.</span>
+					</div>
+				</div>
+				<div style="position:absolute;width:253px;height:163px;left:0px;top:0px;overflow:visible;" id="Group_345_cz">
+					<svg class="Path_14_c" viewBox="0 0 253 163">
+						<path fill="rgba(149,152,154,1)" stroke="rgba(112,112,112,1)" stroke-width="1px" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" shape-rendering="auto" id="Path_14_c" d="M 19 0 L 234 0 C 244.493408203125 0 253 8.506588935852051 253 19 L 253 144 C 253 154.493408203125 244.493408203125 163 234 163 L 19 163 C 8.506588935852051 163 0 154.493408203125 0 144 L 0 19 C 0 8.506588935852051 8.506588935852051 0 19 0 Z">
+						</path>
+					</svg>
+					<div style="position:absolute;width:106.67px;height:92.477px;left:73.359px;top:35.718px;overflow:visible;" id="Icon_ionic_md_construct_c">
+						<svg class="Path_15_c" viewBox="1.124 3.375 93.346 92.476">
+							<path fill="rgba(193,193,193,1)" id="Path_15_c" d="M 93.33186340332031 80.13408660888672 L 66.75284576416016 53.68840789794922 L 66.75284576416016 53.68840789794922 L 53.84112548828125 40.82113647460938 L 53.84112548828125 40.82113647460938 L 50.86320877075195 37.86544418334961 C 54.39670562744141 28.84280014038086 52.44105911254883 18.26452827453613 44.95182037353516 10.81973457336426 C 37.08478546142578 2.974924802780151 25.28423690795898 1.419296503067017 15.83935070037842 5.73060941696167 L 32.75125122070313 22.57583999633789 L 20.9507007598877 34.33194351196289 L 3.638780832290649 17.4867115020752 C -1.050319194793701 26.88714790344238 0.9053278565406799 38.64325332641602 8.772360801696777 46.48806762695313 C 16.23937606811523 53.932861328125 26.86209106445313 55.88850402832031 35.90695953369141 52.37723159790039 L 39.10711288452148 55.55515670776367 L 15.72824192047119 78.93402099609375 C 14.03927421569824 80.20075225830078 14.03927421569824 83.15644073486328 16.15048408508301 84.84540557861328 L 25.8842716217041 94.55696868896484 C 27.57323837280273 96.24593353271484 30.12891006469727 96.24593353271484 31.81788063049316 94.55696868896484 L 53.17443466186523 69.57802581787109 L 78.3756103515625 94.6680908203125 C 79.95346069335938 96.24593353271484 82.30912780761719 96.24593353271484 83.88697814941406 94.6680908203125 L 92.93183898925781 85.64544677734375 C 94.90971374511719 84.06759643554688 94.90971374511719 81.31191253662109 93.33186340332031 80.13408660888672 Z">
+							</path>
+						</svg>
+						<svg class="Path_16_c" viewBox="16.945 3.375 56.664 51.858">
+							<path fill="rgba(193,193,193,1)" id="Path_16_c" d="M 73.25904846191406 40.84341430664063 L 65.59202575683594 33.26528167724609 C 65.10312652587891 32.7763671875 64.30308532714844 32.7763671875 63.81416320800781 33.26528167724609 L 62.99190521240234 34.08754348754883 L 58.8806037902832 30.57627296447754 C 58.8806037902832 30.57627296447754 59.14727783203125 28.35394668579102 57.79166793823242 26.42052268981934 C 56.41381454467773 24.48709869384766 54.21372222900391 22.02031707763672 52.6358642578125 20.44246482849121 C 51.05801391601563 18.88683891296387 45.05773544311523 12.90878009796143 37.14625549316406 9.019709587097168 C 29.21255302429199 5.086191177368164 23.6122932434082 3.375 16.94531631469727 3.375 L 16.94531631469727 9.975307464599609 C 16.94531631469727 9.975307464599609 23.32338905334473 13.66436767578125 26.96799850463867 16.57561492919922 C 30.59039306640625 19.48686408996582 30.70150947570801 29.7984561920166 30.70150947570801 29.7984561920166 L 24.36787986755371 36.13208389282227 L 36.92402267456055 48.59933471679688 L 43.813232421875 40.53228759765625 C 46.68003463745117 39.75447463989258 49.10236358642578 39.68780899047852 50.52465438842773 40.46562194824219 L 53.56924438476563 43.42131042480469 L 51.43581390380859 45.53252029418945 C 50.9468994140625 46.02143478393555 50.9468994140625 46.79925155639648 51.43581390380859 47.28815841674805 L 59.10283660888672 54.86629104614258 C 59.59174346923828 55.35520553588867 60.39178848266602 55.35520553588867 60.88069534301758 54.86629104614258 L 73.25904846191406 42.59904861450195 C 73.72574615478516 42.11013793945313 73.72574615478516 41.31010055541992 73.25904846191406 40.84341430664063 Z">
+							</path>
+						</svg>
+					</div>
+				</div>
+			</div>
+			<div style="position:absolute;width:253px;height:216px;left:578px;top:283px;overflow:visible;" id="N_A__5">
+				<div style="position:absolute;width:253px;height:38px;left:0px;top:178px;overflow:visible;" id="Group_346_c">
+					<svg class="Rectangle_193_c">
+						<rect fill="rgba(255,255,255,1)" stroke="rgba(112,112,112,1)" stroke-width="1px" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" shape-rendering="auto" id="Rectangle_193_c" rx="19" ry="19" x="0" y="0" width="253" height="38">
+						</rect>
+					</svg>
+					<div id="N_A__c">
+						<span>N.A.</span>
+					</div>
+				</div>
+				<div style="position:absolute;width:253px;height:163px;left:0px;top:0px;overflow:visible;" id="Group_345_c">
+					<svg class="Path_14_da" viewBox="0 0 253 163">
+						<path fill="rgba(149,152,154,1)" stroke="rgba(112,112,112,1)" stroke-width="1px" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" shape-rendering="auto" id="Path_14_da" d="M 19 0 L 234 0 C 244.493408203125 0 253 8.506588935852051 253 19 L 253 144 C 253 154.493408203125 244.493408203125 163 234 163 L 19 163 C 8.506588935852051 163 0 154.493408203125 0 144 L 0 19 C 0 8.506588935852051 8.506588935852051 0 19 0 Z">
+						</path>
+					</svg>
+					<div style="position:absolute;width:106.67px;height:92.477px;left:73.359px;top:35.718px;overflow:visible;" id="Icon_ionic_md_construct_da">
+						<svg class="Path_15_db" viewBox="1.124 3.375 93.346 92.476">
+							<path fill="rgba(193,193,193,1)" id="Path_15_db" d="M 93.33186340332031 80.13408660888672 L 66.75284576416016 53.68840789794922 L 66.75284576416016 53.68840789794922 L 53.84112548828125 40.82113647460938 L 53.84112548828125 40.82113647460938 L 50.86320877075195 37.86544418334961 C 54.39670562744141 28.84280014038086 52.44105911254883 18.26452827453613 44.95182037353516 10.81973457336426 C 37.08478546142578 2.974924802780151 25.28423690795898 1.419296503067017 15.83935070037842 5.73060941696167 L 32.75125122070313 22.57583999633789 L 20.9507007598877 34.33194351196289 L 3.638780832290649 17.4867115020752 C -1.050319194793701 26.88714790344238 0.9053278565406799 38.64325332641602 8.772360801696777 46.48806762695313 C 16.23937606811523 53.932861328125 26.86209106445313 55.88850402832031 35.90695953369141 52.37723159790039 L 39.10711288452148 55.55515670776367 L 15.72824192047119 78.93402099609375 C 14.03927421569824 80.20075225830078 14.03927421569824 83.15644073486328 16.15048408508301 84.84540557861328 L 25.8842716217041 94.55696868896484 C 27.57323837280273 96.24593353271484 30.12891006469727 96.24593353271484 31.81788063049316 94.55696868896484 L 53.17443466186523 69.57802581787109 L 78.3756103515625 94.6680908203125 C 79.95346069335938 96.24593353271484 82.30912780761719 96.24593353271484 83.88697814941406 94.6680908203125 L 92.93183898925781 85.64544677734375 C 94.90971374511719 84.06759643554688 94.90971374511719 81.31191253662109 93.33186340332031 80.13408660888672 Z">
+							</path>
+						</svg>
+						<svg class="Path_16_dc" viewBox="16.945 3.375 56.664 51.858">
+							<path fill="rgba(193,193,193,1)" id="Path_16_dc" d="M 73.25904846191406 40.84341430664063 L 65.59202575683594 33.26528167724609 C 65.10312652587891 32.7763671875 64.30308532714844 32.7763671875 63.81416320800781 33.26528167724609 L 62.99190521240234 34.08754348754883 L 58.8806037902832 30.57627296447754 C 58.8806037902832 30.57627296447754 59.14727783203125 28.35394668579102 57.79166793823242 26.42052268981934 C 56.41381454467773 24.48709869384766 54.21372222900391 22.02031707763672 52.6358642578125 20.44246482849121 C 51.05801391601563 18.88683891296387 45.05773544311523 12.90878009796143 37.14625549316406 9.019709587097168 C 29.21255302429199 5.086191177368164 23.6122932434082 3.375 16.94531631469727 3.375 L 16.94531631469727 9.975307464599609 C 16.94531631469727 9.975307464599609 23.32338905334473 13.66436767578125 26.96799850463867 16.57561492919922 C 30.59039306640625 19.48686408996582 30.70150947570801 29.7984561920166 30.70150947570801 29.7984561920166 L 24.36787986755371 36.13208389282227 L 36.92402267456055 48.59933471679688 L 43.813232421875 40.53228759765625 C 46.68003463745117 39.75447463989258 49.10236358642578 39.68780899047852 50.52465438842773 40.46562194824219 L 53.56924438476563 43.42131042480469 L 51.43581390380859 45.53252029418945 C 50.9468994140625 46.02143478393555 50.9468994140625 46.79925155639648 51.43581390380859 47.28815841674805 L 59.10283660888672 54.86629104614258 C 59.59174346923828 55.35520553588867 60.39178848266602 55.35520553588867 60.88069534301758 54.86629104614258 L 73.25904846191406 42.59904861450195 C 73.72574615478516 42.11013793945313 73.72574615478516 41.31010055541992 73.25904846191406 40.84341430664063 Z">
+							</path>
+						</svg>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+</body>
+
+</html>
