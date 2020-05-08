@@ -10,15 +10,22 @@ app = Flask(__name__)
 
 @app.route('/') #, methods=['GET', 'POST'])
 def landingPage():
-    return render_template('landing-page.html')
+    if 'name' in session:
+        return redirect('/dashboard')
+    else:
+        return render_template('landing-page.html')
+
     # return("Bismillah")
 
 @app.route('/login', methods=['GET', 'POST'])
 def loginPage():
+    if 'name' in session:
+        return redirect('/dashboard')
+
     if request.method == 'GET':
         return render_template('login-page.html')
     else:
-        print('login post working')
+        # print('login post working')
         userInput = request.form['username']
         password = request.form['password']
 
@@ -26,7 +33,7 @@ def loginPage():
         c = conn.cursor()
         c.execute("SELECT username, email, password_salt, password_hash FROM Login_DB")
         for row in c.fetchall():
-            print('Inside the row is = ',row)
+            # print('Inside the row is = ',row)
             if row[0]==userInput or row[1]==userInput:
                 salt = row[2].encode('utf-8')
                 passw = password.encode('utf-8')
@@ -45,18 +52,22 @@ def loginPage():
                     return redirect(request.url)
 
             # else:
-            #     print('username not match')
-            #     c.close()
-            #     flash('Login failed : Username/email not registered')
-            #     return redirect(request.url)
+        print('username not match')
+        c.close()
+        # session.clear()
+        flash('Login failed : Username/email not registered')
+        return redirect(request.url)
 
 @app.route('/register', methods=['GET', 'POST'])
 def registerPage():
+    if 'name' in session:
+        return redirect('/dashboard')
+
     if request.method == 'GET':
-        print('register - get method')
+        # print('register - get method')
         return render_template('sign-up.html')
     else:
-        print('register - post method')
+        # print('register - post method')
 
         username = request.form['username']
         email = request.form['email']
@@ -69,7 +80,7 @@ def registerPage():
         hash = str(hash)
 
         isActive = 0
-        print('Value is : ',username, email, salt, hash, dateToday, isActive)
+        # print('Value is : ',username, email, salt, hash, dateToday, isActive)
 
         conn = sqlite3.connect('AiDdatabase.db')
         c = conn.cursor()
@@ -84,12 +95,14 @@ def registerPage():
             c.close()
             flash('username already taken by other user')
             return redirect(request.url)
+            # return redirect('/register')
 
         elif email in emails:
             print("Email taken, break.")
             c.close()
             flash('email already used')
             return redirect(request.url)
+            # return redirect('/register')
 
         else:
             insert_query = "INSERT INTO Login_DB \
@@ -105,24 +118,47 @@ def registerPage():
 
 @app.route('/dashboard') #, methods=['GET', 'POST'])
 def dashboard():
-    if session:
+    print('Session now is : ', session)
+    if 'name' in session:
+        # session.clear()
+        # return render_template('landing-page.html')
         return render_template('quick-start.html')
-    else:
+    elif not session:
         return redirect('/')
+        # return render_template('landing-page.html')
+    else:
+        session.clear()
+        # return render_template('quick-start.html')
+        return redirect('/')
+        # return render_template('landing-page.html')
 
 @app.route('/image-splitter') #, methods=['GET', 'POST'])
 def imageSplitter():
-    return render_template('image-splitter.html')
+    if 'name' in session:
+
+        return render_template('image-splitter.html')
+    elif not session:
+        return redirect('/')
+    else:
+        session.clear()
+        return redirect('/')
+
 
 @app.route('/logout') #, methods=['GET', 'POST'])
 def logout():
     session.clear()
     return redirect('/')
 
+@app.errorhandler(404)
+def page_not_found(error):
+    return redirect('/')
+    # return 'This page does not exist', 777
+
 app.secret_key = 'Nh9huif8GV^Gs68D$A@#%S$fsgha'
 if __name__ == '__main__':
     app.config['PERMANENT_SESSION_LIFETIME'] = timedelta(minutes=1440)
     app.config['SESSION_TYPE'] = 'filesystem'
+    # app.config['SECRET_KEY'] = 'Nh9huif8GV^Gs68D$A@#%S$fsgha'
     # app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
 
     # session.init_app(app)
