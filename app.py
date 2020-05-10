@@ -19,6 +19,7 @@ def landingPage():
 
     # return("Bismillah")
 
+
 @app.route('/login', methods=['GET', 'POST'])
 def loginPage():
     if 'name' in session:
