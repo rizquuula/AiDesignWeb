@@ -1,6 +1,8 @@
 from flask import Flask, render_template, request, redirect, url_for, session, flash
-import hashlib, sqlite3, random, string, os
-from datetime import datetime
+from werkzeug.utils import secure_filename
+import hashlib, sqlite3, random, string, os, time, shutil
+from datetime import datetime, timedelta
+from Split import responsive
 
 def randomString(stringLength):
     letters = string.ascii_letters
@@ -40,19 +42,19 @@ def loginPage():
                 hash = hashlib.sha512(salt + passw).hexdigest()
                 if hash==row[3]:
                     #Logged in
-                    print('logged in')
+                    # print('logged in')
                     c.close()
                     session['name'] = row[0]
                     session.permanent = True
                     return redirect(url_for('dashboard'))
                 else:
-                    print('wrong password')
+                    # print('wrong password')
                     c.close()
                     flash('Wrong password')
                     return redirect(request.url)
 
             # else:
-        print('username not match')
+        # print('username not match')
         c.close()
         # session.clear()
         flash('Login failed : Username/email not registered')
@@ -91,14 +93,14 @@ def registerPage():
         emails = {em[0] for em in c.fetchall()}
 
         if username in names:
-            print("Username taken, break.")
+            # print("Username taken, break.")
             c.close()
             flash('username already taken by other user')
             return redirect(request.url)
             # return redirect('/register')
 
         elif email in emails:
-            print("Email taken, break.")
+            # print("Email taken, break.")
             c.close()
             flash('email already used')
             return redirect(request.url)
@@ -111,14 +113,14 @@ def registerPage():
                                                                                isActive)
             c = c.execute((insert_query))
             conn.commit()
-            print("Done commit to database")
+            # print("Done commit to database")
             c.close()
             return redirect('/login')
 
 
 @app.route('/dashboard') #, methods=['GET', 'POST'])
 def dashboard():
-    print('Session now is : ', session)
+    # print('Session now is : ', session)
     if 'name' in session:
         # session.clear()
         # return render_template('landing-page.html')
@@ -132,11 +134,50 @@ def dashboard():
         return redirect('/')
         # return render_template('landing-page.html')
 
-@app.route('/image-splitter') #, methods=['GET', 'POST'])
+@app.route('/image-splitter', methods=['GET', 'POST'])
 def imageSplitter():
-    if 'name' in session:
 
-        return render_template('image-splitter.html')
+    if 'name' in session:
+        if request.method == 'GET':
+            return render_template('image-splitter.html', list_file = None, result_folder=None, isResult=False)
+
+        else:
+            numX = request.form['horizontal-input']
+            numY = request.form['vertical-input']
+            file = request.files['file']
+            filename = secure_filename(file.filename)
+            # print('the file isss.............')
+            # print(file)
+            # print(filename)
+            if filename=='':
+                flash('Input file first')
+                return redirect(request.url)
+            nowTime = int(time.time())
+            username = session['name']
+            UPLOAD_FOLDER = str('static/user/' + username + '/splitter/' + str(nowTime) + '/')
+            RES_FOLDER = str('static/user/' + username + '/splitter/' + str(nowTime) + '/result/')
+            # print('UPLOAD_FOLDER = ', UPLOAD_FOLDER)
+
+            if not os.path.isdir(UPLOAD_FOLDER):
+                os.makedirs(UPLOAD_FOLDER)
+                os.makedirs(RES_FOLDER)
+
+            full_filename = os.path.join((UPLOAD_FOLDER), filename)
+            file.save(full_filename)
+
+            responsive(img_src=full_filename,
+                       numX=numX,
+                       numY=numY,
+                       saveIn=RES_FOLDER)
+
+            result_files = os.listdir(RES_FOLDER)
+
+            shutil.make_archive(full_filename, 'zip', RES_FOLDER)
+            zipFileName = str(full_filename+'.zip')
+            # return redirect('#')
+            return render_template('image-splitter.html', list_file=result_files,
+                                   result_folder=RES_FOLDER, isResult=True, zipFile=zipFileName)
+
     elif not session:
         return redirect('/')
     else:
@@ -159,8 +200,6 @@ if __name__ == '__main__':
     app.config['PERMANENT_SESSION_LIFETIME'] = timedelta(minutes=1440)
     app.config['SESSION_TYPE'] = 'filesystem'
     # app.config['SECRET_KEY'] = 'Nh9huif8GV^Gs68D$A@#%S$fsgha'
-    # app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
-
     # session.init_app(app)
     app.run(debug=True)
 
