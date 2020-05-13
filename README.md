@@ -12,6 +12,7 @@ This is free resource that you can inspect. But other things are keep secret on 
 
 # Library
 - Flask
+- Sqlite3
 - PIL
 - Hashlib
 - Numpy
