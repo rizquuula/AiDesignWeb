@@ -12,7 +12,7 @@ def responsive(img_src, numX, numY, saveIn):
     setX, setY = 0, 0
     for x in range(numX):
         for y in range(numY):
-            fileName = (img_src.split('/')[-1]).split('.')[0]+'-Aidesign-'+str(y)+str(x)+'.'+img_src.split('.')[-1]
+            fileName = (img_src.split('/')[-1]).split('.')[0]+'-Aidesign-'+str(x)+str(y)+'.'+img_src.split('.')[-1]
             # fileName = 'Aidesign-Splitter-'+str(x)+str(y)+'.'+img_src.split('.')[-1]
             # print('Manual Debugging (File name)= ', fileName)
             croppedImage = img.crop((setX, setY, setX + rangeX, setY + rangeY))

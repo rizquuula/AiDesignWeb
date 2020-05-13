@@ -53,11 +53,11 @@
 <!--                            </div>-->
                         </div>
                         <div class="number-of-horizontal-parts1-AgpvLQ anima-flexbox-container">
-                            <input class="inputtext11-VcAgED font-class-3" name="horizontal-input" placeholder="Horizontal Part(s)" required="" type="number"/>
+                            <input class="inputtext11-VcAgED font-class-3" name="horizontal-input" placeholder="Horizontal Part(s)" required type="number" min="1" max="100"/>
                             <img anima-src="{{ url_for('static',filename='img/text-path@1x.png') }}" class="textpath07-FLVfDU" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="/>
                         </div>
                         <div class="number-of-vertical-parts0-PpGUJH anima-flexbox-container">
-                            <input class="inputtext1-QOtsfy font-class-3" name="vertical-input" placeholder="Vertical Part(s)" required="" type="number"/>
+                            <input class="inputtext1-QOtsfy font-class-3" name="vertical-input" placeholder="Vertical Part(s)" required type="number" min="1" max="100"/>
                             <img anima-src="{{ url_for('static',filename='img/text-path@1x.png') }}" class="textpath06-LkfeoP" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="/>
                         </div>
 
@@ -83,7 +83,7 @@
                                 {% if list_file %}
                                     {% for file in list_file %}
     <!--                                    <li><a href="/static/User/{{ user }}/ImageSplitter/{{ saveTime }}/{{ file }}">{{ file }}</a></li>-->
-                                        <img src="{{ result_folder }}/{{ file }}" style="max-width:130px; max-height:130px;"/>
+                                        <img src="{{ result_folder }}{{ file }}" style="max-width:130px; max-height:130px;"/>
                                     {% endfor %}
                                 {% endif %}
 

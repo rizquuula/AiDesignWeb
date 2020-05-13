@@ -3,6 +3,11 @@ from werkzeug.utils import secure_filename
 import hashlib, sqlite3, random, string, os, time, shutil
 from datetime import datetime, timedelta
 from Split import responsive
+# import os.path
+
+# BASE_DIR = '/var/www/AiDesignWeb/'
+# db_path = os.path.join(BASE_DIR, "AiDdatabase.db")
+db_path = "/var/www/AiDesignWeb/AiDdatabase.db"
 
 def randomString(stringLength):
     letters = string.ascii_letters
@@ -32,7 +37,7 @@ def loginPage():
         userInput = request.form['username']
         password = request.form['password']
 
-        conn = sqlite3.connect('AiDdatabase.db')
+        conn = sqlite3.connect(db_path)
         c = conn.cursor()
         c.execute("SELECT username, email, password_salt, password_hash FROM Login_DB")
         for row in c.fetchall():
@@ -85,7 +90,7 @@ def registerPage():
         isActive = 0
         # print('Value is : ',username, email, salt, hash, dateToday, isActive)
 
-        conn = sqlite3.connect('AiDdatabase.db')
+        conn = sqlite3.connect(db_path)
         c = conn.cursor()
 
         c.execute("SELECT username FROM Login_DB")
@@ -155,8 +160,11 @@ def imageSplitter():
                 return redirect(request.url)
             nowTime = int(time.time())
             username = session['name']
-            UPLOAD_FOLDER = str('static/user/' + username + '/splitter/' + str(nowTime) + '/')
-            RES_FOLDER = str('static/user/' + username + '/splitter/' + str(nowTime) + '/result/')
+            UPLOAD_FOLDER = str('/var/www/AiDesignWeb/static/user/' + username + '/splitter/' + str(nowTime) + '/')
+            RES_FOLDER = str('/var/www/AiDesignWeb/static/user/' + username + '/splitter/' + str(nowTime) + '/result/')
+            USER_FOLDER = str('static/user/' + username + '/splitter/' + str(nowTime) + '/result/')
+            ZIP_FOLDER = str('static/user/' + username + '/splitter/' + str(nowTime) +'/')
+
             # print('UPLOAD_FOLDER = ', UPLOAD_FOLDER)
 
             if not os.path.isdir(UPLOAD_FOLDER):
@@ -174,10 +182,10 @@ def imageSplitter():
             result_files = os.listdir(RES_FOLDER)
 
             shutil.make_archive(full_filename, 'zip', RES_FOLDER)
-            zipFileName = str(full_filename+'.zip')
+            zipFileName = str(ZIP_FOLDER+filename+'.zip')
             # return redirect('#')
             return render_template('image-splitter.html', list_file=result_files,
-                                   result_folder=RES_FOLDER, isResult=True, zipFile=zipFileName)
+                                   result_folder=USER_FOLDER, isResult=True, zipFile=zipFileName)
 
     elif not session:
         return redirect('/')
@@ -198,11 +206,12 @@ def page_not_found(error):
 
 app.secret_key = 'Nh9huif8GV^Gs68D$A@#%S$fsgha'
 if __name__ == '__main__':
-    app.config['PERMANENT_SESSION_LIFETIME'] = timedelta(minutes=1440)
+    #app.config['PERMANENT_SESSION_LIFETIME'] = timedelta(minutes=1440)
     app.config['SESSION_TYPE'] = 'filesystem'
     # app.config['SECRET_KEY'] = 'Nh9huif8GV^Gs68D$A@#%S$fsgha'
     # session.init_app(app)
-    app.run(debug=True)
+    app.debug = True
+    app.run(host='0.0.0.0')
 
 # To run on windows
 # set FLASK_APP=main_flask.py
