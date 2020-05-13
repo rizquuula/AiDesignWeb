@@ -180,6 +180,7 @@ def imageSplitter():
                        saveIn=RES_FOLDER)
 
             result_files = os.listdir(RES_FOLDER)
+            result_files.sort()
 
             shutil.make_archive(full_filename, 'zip', RES_FOLDER)
             zipFileName = str(ZIP_FOLDER+filename+'.zip')
